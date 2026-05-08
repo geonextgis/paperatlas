@@ -214,6 +214,23 @@
       .replace(/'/g, "&#39;");
   }
 
+  // Render scientific text safely: HTML-escape everything, then re-enable
+  // ONLY <sub>/<sup> (case-insensitive, no attributes). WoS returns these
+  // as literal markup inside titles, abstracts and keywords (e.g. "CO<sub>2</sub>").
+  function renderSciText(str) {
+    return escapeHtml(str).replace(
+      /&lt;(\/?)(sub|sup)&gt;/gi,
+      (_, slash, tag) => `<${slash}${tag.toLowerCase()}>`
+    );
+  }
+
+  // Strip <sub>/<sup> markers from a value before using it as a search /
+  // sort key, so typing "CO2" matches "CO<sub>2</sub>".
+  function stripSciTags(str) {
+    if (str === null || str === undefined) return "";
+    return String(str).replace(/<\/?(?:sub|sup)>/gi, "");
+  }
+
   function formatDate(iso) {
     try {
       const d = new Date(iso);
@@ -448,9 +465,9 @@
 
       if (q) {
         const hay = [
-          p.title,
+          stripSciTags(p.title),
           (p.authors || []).join(" "),
-          (p.keywords || []).join(" "),
+          (p.keywords || []).map(stripSciTags).join(" "),
           p.journal,
           String(p.year || ""),
         ]
@@ -471,7 +488,9 @@
         );
         break;
       case "alpha":
-        sorted.sort((a, b) => (a.title || "").localeCompare(b.title || ""));
+        sorted.sort((a, b) =>
+          stripSciTags(a.title || "").localeCompare(stripSciTags(b.title || ""))
+        );
         break;
       case "year":
       default:
@@ -507,13 +526,13 @@
       Array.isArray(p.keywords) && p.keywords.length
         ? `<div class="pub-keywords">${p.keywords
             .slice(0, 8)
-            .map((k) => `<span class="keyword-tag">${escapeHtml(k)}</span>`)
+            .map((k) => `<span class="keyword-tag">${renderSciText(k)}</span>`)
             .join("")}</div>`
         : "";
 
     const abstractHtml = p.abstract
       ? `<button class="abstract-toggle" type="button" aria-expanded="false">Show abstract</button>
-         <p class="pub-abstract">${escapeHtml(p.abstract)}</p>`
+         <p class="pub-abstract">${renderSciText(p.abstract)}</p>`
       : "";
 
     const doiHtml = p.doi
@@ -543,7 +562,7 @@
     card.style.animationDelay = `${Math.min(idx * 30, 600)}ms`;
     card.setAttribute(
       "aria-label",
-      `${p.title || "Untitled"} (${p.year || "n.d."})`
+      `${stripSciTags(p.title) || "Untitled"} (${p.year || "n.d."})`
     );
 
     card.innerHTML = `
@@ -551,7 +570,7 @@
         <span class="pub-year">${escapeHtml(p.year || "n.d.")}</span>
         ${badges.join("")}
       </div>
-      <h2 class="pub-title">${escapeHtml(p.title || "Untitled")}</h2>
+      <h2 class="pub-title">${renderSciText(p.title || "Untitled")}</h2>
       <p class="pub-authors">${authorsHtml}</p>
       <p class="pub-journal">${escapeHtml(p.journal || "—")}${journalMetaHtml}</p>
       ${keywordsHtml}

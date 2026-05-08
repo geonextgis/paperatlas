@@ -604,6 +604,25 @@ button {
 
 .pub-card.is-clickable:hover .pub-title { color: var(--accent-hi); }
 
+/* Tame <sub>/<sup> coming from WoS markup so they don't disturb line-height. */
+.pub-title sub,
+.pub-title sup,
+.pub-abstract sub,
+.pub-abstract sup,
+.keyword-tag sub,
+.keyword-tag sup {
+  font-size: 0.72em;
+  line-height: 0;
+  vertical-align: baseline;
+  position: relative;
+}
+.pub-title sup,
+.pub-abstract sup,
+.keyword-tag sup { top: -0.45em; }
+.pub-title sub,
+.pub-abstract sub,
+.keyword-tag sub { bottom: -0.2em; }
+
 .pub-authors {
   font-family: var(--font-body);
   font-size: 0.92rem;
