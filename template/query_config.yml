@@ -1,0 +1,82 @@
+# ============================================================
+# query_config.yml
+# Edit this file to customise which publications are fetched.
+# No Python or workflow files need to be changed.
+#
+# This site is a research-interest feed: it pulls the latest
+# publications matching your topic terms and your journals of
+# interest. It does NOT fetch your own author publications.
+# ============================================================
+
+# ── Site identity (used only for page title / header text) ──
+site:
+  title: "Krishnagopal Halder — Research Feed"
+  subtitle: "Latest in crop modelling, nitrogen dynamics, and agricultural AI"
+
+# ── Topic interest search ────────────────────────────────────
+# Publications matching your research interests.
+# Uses WoS TS= (Topic: title + abstract + keywords) field.
+# Each item in `terms` becomes one clause joined by OR inside TS=().
+# Use WoS wildcard syntax: * for suffix (e.g. "model*" matches modeling, models).
+topic_query:
+  terms:
+    - "crop model*"
+    - "nitrogen dynamic*"
+    - "agricultural landscape"
+    - "crop yield forecast*"
+    - '"deep learning" AND "agriculture"'
+    - "SIMPLACE"
+    - '"planetary boundaries" AND "nitrogen"'
+    - '"climate change" AND "crop*" AND "SSP"'
+
+  # Optional: restrict results to a year range.
+  # Use integers or the special token CURRENT_YEAR.
+  # Leave blank (null) to fetch all years.
+  year_from: null
+  year_to: null
+
+  # Maximum results to retrieve for the topic query (WoS API max per page = 50).
+  max_results: 200
+
+# ── Journals of interest ────────────────────────────────────
+# Two roles:
+#   1. The site populates a "Filter by Journal" dropdown from this list.
+#   2. The fetch script also pulls the latest N papers from each journal
+#      (controlled by `fetch.journal_max_results` below). This way the
+#      feed surfaces new papers from these outlets even if they don't
+#      match a topic term.
+#
+# Use exact journal names as they appear in Web of Science (SO= field).
+# Leave empty ([]) to skip journal-based fetching and let the dropdown
+# auto-populate from whatever journals are returned by the topic query.
+journals_of_interest:
+  - "Agricultural and Forest Meteorology"
+  - "Field Crops Research"
+  - "European Journal of Agronomy"
+  - "Agricultural Systems"
+  - "Global Change Biology"
+  - "Nature Food"
+  - "Environmental Research Letters"
+  - "Computers and Electronics in Agriculture"
+  - "Remote Sensing of Environment"
+  - "Science of the Total Environment"
+
+# ── Additional named queries (optional) ─────────────────────
+# Add extra standalone queries — e.g. a collaborator's work, a research group.
+# Each entry: { label: str, query: str, max_results: int }
+extra_queries: []
+# Example:
+# extra_queries:
+#   - label: "ZALF group output"
+#     query: 'OG=("Leibniz Centre for Agricultural Landscape Research")'
+#     max_results: 100
+
+# ── Fetch settings ───────────────────────────────────────────
+fetch:
+  requests_per_second: 2
+  retry_attempts: 3
+  retry_backoff_seconds: 5
+  # Latest papers to pull from each journal in `journals_of_interest`.
+  # Set to 0 (or null) to skip per-journal fetching — then the dropdown
+  # is just a filter over whatever the topic query returned.
+  journal_max_results: 25
