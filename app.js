@@ -13,8 +13,8 @@
     publications: [],
     journalsOfInterest: [],
     filters: {
-      type: "all",      // all | oa
       journal: "",
+      publisher: "",     // "" = all; else group label e.g. "Nature"
       year: null,
       search: "",
     },
@@ -24,16 +24,174 @@
   const els = {
     grid: document.getElementById("pubGrid"),
     search: document.getElementById("searchInput"),
-    pills: document.querySelectorAll(".pill"),
     journal: document.getElementById("journalSelect"),
     sort: document.getElementById("sortSelect"),
     yearFilter: document.getElementById("yearFilter"),
+    publisherTabs: document.getElementById("publisherTabs"),
     lastUpdated: document.getElementById("lastUpdated"),
     pubCount: document.getElementById("pubCount"),
+    resultCount: document.getElementById("resultCount"),
     siteTitle: document.getElementById("siteTitle"),
     siteSubtitle: document.getElementById("siteSubtitle"),
     themeToggle: document.getElementById("themeToggle"),
   };
+
+  // ─── Publisher / source-family mapping ─────────────────
+  // Maps a journal source title to a display group. Patterns are matched in
+  // order; the first hit wins. Anything unmatched falls into "Other".
+  const PUBLISHER_GROUPS = [
+    {
+      label: "Nature",
+      test: (j) => /\bnature\b/i.test(j) || /^communications\s+(earth|biology|materials|chemistry|physics|engineering)/i.test(j) || /^scientific reports$/i.test(j) || /^npj\b/i.test(j),
+    },
+    {
+      label: "Science",
+      test: (j) =>
+        /^science$/i.test(j) ||
+        /^science\s+(advances|signaling|robotics|translational|immunology)/i.test(j),
+    },
+    {
+      label: "Cell",
+      test: (j) =>
+        /^cell\b/i.test(j) ||
+        /^(current biology|one earth|joule|patterns|matter|chem|iscience|heliyon|trends in)/i.test(j),
+    },
+    {
+      label: "PNAS",
+      test: (j) =>
+        /proceedings of the national academy/i.test(j) || /^pnas\b/i.test(j),
+    },
+    {
+      label: "Elsevier",
+      test: (j) =>
+        /^(field crops research|agricultural systems|agricultural and forest meteorology|computers and electronics in agriculture|remote sensing of environment|science of the total environment|european journal of agronomy|soil & tillage research|soil and tillage research|environmental modelling.*software|environmental modeling.*software|geoderma|catena|ecological modelling|ecological modeling|agricultural water management|isprs journal of photogrammetry|international journal of applied earth observation|computers .+ geosciences|earth-?science reviews|advances in water resources|biosystems engineering|smart agricultural technology|computers and electronics|crop protection|european journal of soil science|land use policy|global ecology and conservation)$/i.test(
+          j
+        ),
+    },
+    {
+      label: "Wiley",
+      test: (j) =>
+        /^(global change biology|new phytologist|plant cell .+environment|plant,? cell .+environment|ecology letters|journal of agronomy and crop science|food and energy security|gcb bioenergy|earth's future|journal of geophysical research|water resources research|geophysical research letters|journal of advances in modeling earth systems|land degradation .+development|hydrological processes|river research and applications)$/i.test(
+          j
+        ),
+    },
+    {
+      label: "Springer",
+      test: (j) =>
+        /^(climatic change|biogeochemistry|theoretical and applied climatology|precision agriculture|nutrient cycling in agroecosystems|plant and soil|euphytica|regional environmental change|mitigation and adaptation strategies for global change|agronomy for sustainable development|food security|environmental monitoring and assessment|environmental science and pollution research|paddy and water environment|earth systems and environment|natural hazards|geoinformatica)$/i.test(
+          j
+        ),
+    },
+    {
+      label: "Taylor & Francis",
+      test: (j) =>
+        /^(international journal of remote sensing|gisscience .+ remote sensing|gi science .+ remote sensing|geocarto international|remote sensing letters|international journal of digital earth|international journal of geographical information science|cartography and geographic information science|journal of land use science|international journal of agricultural sustainability|journal of sustainable agriculture|critical reviews in plant sciences|big earth data)$/i.test(
+          j
+        ),
+    },
+    {
+      label: "IOP",
+      test: (j) =>
+        /^environmental research letters$/i.test(j) ||
+        /^environmental research:\s/i.test(j),
+    },
+    {
+      label: "MDPI",
+      test: (j) =>
+        /^(remote sensing|agronomy-basel|agronomy$|agriculture-basel|agriculture$|sustainability|land-basel|land$|water-basel|water$|atmosphere-basel|atmosphere$|sensors-basel|sensors$|drones-basel|drones$|forests$|plants-basel|plants$|ijgi$|isprs international journal of geo-information)$/i.test(
+          j
+        ),
+    },
+    {
+      label: "Frontiers",
+      test: (j) => /^frontiers in\b/i.test(j),
+    },
+    {
+      label: "ACS",
+      test: (j) =>
+        /^journal of agricultural and food chemistry$/i.test(j) ||
+        /^environmental science[\s&.]+(technology|letters)/i.test(j) ||
+        /^acs\s/i.test(j),
+    },
+    {
+      label: "IEEE",
+      test: (j) =>
+        /^ieee\b/i.test(j) ||
+        /^proceedings of the ieee$/i.test(j),
+    },
+    {
+      label: "AGU",
+      test: (j) =>
+        /\b(eos|earth and space science|agu advances)\b/i.test(j),
+    },
+    {
+      label: "AMS",
+      test: (j) =>
+        /^(journal of climate|journal of hydrometeorology|monthly weather review|journal of applied meteorology|weather and forecasting|bulletin of the american meteorological society)$/i.test(
+          j
+        ),
+    },
+    {
+      label: "Annual Reviews",
+      test: (j) => /^annual review of\b/i.test(j),
+    },
+    {
+      label: "Cambridge",
+      test: (j) =>
+        /^(journal of agricultural science|experimental agriculture|environment and development economics|weed science)$/i.test(
+          j
+        ),
+    },
+    {
+      label: "Oxford",
+      test: (j) =>
+        /^(journal of experimental botany|tree physiology|plant physiology|bioscience|forestry|oxford open climate change)$/i.test(
+          j
+        ),
+    },
+    {
+      label: "RSC",
+      test: (j) =>
+        /^environmental science:\s+(processes|water|advances|atmospheres|nano)/i.test(
+          j
+        ) || /^(green chemistry|food .+ function)$/i.test(j),
+    },
+    {
+      label: "Sage",
+      test: (j) =>
+        /^(progress in physical geography|the holocene|outlook on agriculture)$/i.test(
+          j
+        ),
+    },
+    {
+      label: "ESA",
+      test: (j) => /^(ecology|ecological applications|ecosphere|frontiers in ecology and the environment|ecological monographs)$/i.test(j),
+    },
+    {
+      label: "PLOS",
+      test: (j) => /^plos\b/i.test(j),
+    },
+    {
+      label: "Copernicus",
+      test: (j) =>
+        /^(biogeosciences|hydrology and earth system sciences|earth system science data|geoscientific model development|atmospheric chemistry and physics|the cryosphere|earth system dynamics|soil$|soil-eu|natural hazards and earth system sciences)$/i.test(
+          j
+        ),
+    },
+    {
+      label: "arXiv",
+      test: (j) => /^(arxiv|biorxiv|medrxiv|earth?xiv|chemrxiv)\b|preprint/i.test(j),
+    },
+  ];
+
+  function publisherFor(journal) {
+    const j = String(journal || "").trim();
+    if (!j) return "Other";
+    for (const g of PUBLISHER_GROUPS) {
+      if (g.test(j)) return g.label;
+    }
+    return "Other";
+  }
 
   // ─── Utilities ──────────────────────────────────────────
 
@@ -135,6 +293,7 @@
       }
 
       populateJournals();
+      populatePublishers();
       populateYears();
       render();
     } catch (err) {
@@ -179,6 +338,57 @@
     });
   }
 
+  // ─── Publisher / source filter ──────────────────────────
+
+  function populatePublishers() {
+    const container = els.publisherTabs;
+    if (!container) return;
+
+    // Wipe out every tab except the static "All publishers" tab.
+    container
+      .querySelectorAll(".publisher-tab:not([data-publisher=''])")
+      .forEach((b) => b.remove());
+
+    const counts = new Map();
+    state.publications.forEach((p) => {
+      const g = publisherFor(p.journal);
+      counts.set(g, (counts.get(g) || 0) + 1);
+    });
+
+    // Only show publishers that actually have papers. Order = canonical
+    // PUBLISHER_GROUPS order, with "Other" last if present.
+    const ordered = [];
+    PUBLISHER_GROUPS.forEach((g) => {
+      if ((counts.get(g.label) || 0) > 0) ordered.push(g.label);
+    });
+    if ((counts.get("Other") || 0) > 0) ordered.push("Other");
+
+    ordered.forEach((label) => {
+      const c = counts.get(label) || 0;
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "publisher-tab";
+      btn.dataset.publisher = label;
+      btn.setAttribute("role", "tab");
+      btn.setAttribute("aria-selected", "false");
+      btn.innerHTML = `<span class="tab-label">${escapeHtml(label)}</span><span class="tab-count">${c}</span>`;
+      container.appendChild(btn);
+    });
+
+    container.onclick = (e) => {
+      const btn = e.target.closest(".publisher-tab");
+      if (!btn) return;
+      container.querySelectorAll(".publisher-tab").forEach((b) => {
+        b.classList.remove("is-active");
+        b.setAttribute("aria-selected", "false");
+      });
+      btn.classList.add("is-active");
+      btn.setAttribute("aria-selected", "true");
+      state.filters.publisher = btn.dataset.publisher || "";
+      render();
+    };
+  }
+
   // ─── Year filter ────────────────────────────────────────
 
   function populateYears() {
@@ -192,29 +402,34 @@
     els.yearFilter.innerHTML = "";
     if (years.length === 0) return;
 
+    const yearLabel = document.createElement("span");
+    yearLabel.className = "filter-strip-label";
+    yearLabel.textContent = "Year";
+    els.yearFilter.appendChild(yearLabel);
+
     const allBtn = document.createElement("button");
     allBtn.type = "button";
-    allBtn.className = "year-pill active";
-    allBtn.textContent = "All Years";
+    allBtn.className = "year-chip is-active";
+    allBtn.textContent = "All";
     allBtn.dataset.year = "";
     els.yearFilter.appendChild(allBtn);
 
     years.forEach((y) => {
       const btn = document.createElement("button");
       btn.type = "button";
-      btn.className = "year-pill";
+      btn.className = "year-chip";
       btn.textContent = y;
       btn.dataset.year = y;
       els.yearFilter.appendChild(btn);
     });
 
     els.yearFilter.addEventListener("click", (e) => {
-      const btn = e.target.closest(".year-pill");
+      const btn = e.target.closest(".year-chip");
       if (!btn) return;
       els.yearFilter
-        .querySelectorAll(".year-pill")
-        .forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
+        .querySelectorAll(".year-chip")
+        .forEach((b) => b.classList.remove("is-active"));
+      btn.classList.add("is-active");
       state.filters.year = btn.dataset.year || null;
       render();
     });
@@ -227,8 +442,8 @@
     const q = f.search.trim().toLowerCase();
 
     return list.filter((p) => {
-      if (f.type === "oa" && !p.open_access) return false;
       if (f.journal && p.journal !== f.journal) return false;
+      if (f.publisher && publisherFor(p.journal) !== f.publisher) return false;
       if (f.year && String(p.year) !== String(f.year)) return false;
 
       if (q) {
@@ -308,15 +523,20 @@
       : `<span class="pub-doi" style="color: var(--text-mute); border:none">—</span>`;
 
     const badges = [];
+    const publisher = publisherFor(p.journal);
+    if (publisher && publisher !== "Other") {
+      badges.push(
+        `<span class="pub-publisher" data-publisher="${escapeHtml(publisher)}">${escapeHtml(publisher)}</span>`
+      );
+    }
     if (Array.isArray(p.sources) && p.sources.includes("journal")) {
       badges.push(`<span class="pub-source">Journal feed</span>`);
     }
-    if (p.open_access) badges.push(`<span class="pub-oa">Open Access</span>`);
-    badges.push(
-      `<span class="pub-citations ${citeCls}">${cites} cite${
-        cites === 1 ? "" : "s"
-      }</span>`
-    );
+    if (cites > 0) {
+      badges.push(
+        `<span class="pub-citations ${citeCls}">${cites} cite${cites === 1 ? "" : "s"}</span>`
+      );
+    }
 
     const card = document.createElement("article");
     card.className = "pub-card";
@@ -343,10 +563,30 @@
 
     const toggle = card.querySelector(".abstract-toggle");
     if (toggle) {
-      toggle.addEventListener("click", () => {
+      toggle.addEventListener("click", (e) => {
+        e.stopPropagation();
         const expanded = card.classList.toggle("expanded");
         toggle.setAttribute("aria-expanded", expanded ? "true" : "false");
         toggle.textContent = expanded ? "Hide abstract" : "Show abstract";
+      });
+    }
+
+    // Whole-card → DOI link (skip clicks on inner buttons / anchors).
+    if (p.doi) {
+      const url = `https://doi.org/${encodeURIComponent(p.doi)}`;
+      card.classList.add("is-clickable");
+      card.setAttribute("role", "link");
+      card.tabIndex = 0;
+      card.addEventListener("click", (e) => {
+        if (e.target.closest("a, button")) return;
+        window.open(url, "_blank", "noopener,noreferrer");
+      });
+      card.addEventListener("keydown", (e) => {
+        if (e.target.closest("a, button")) return;
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          window.open(url, "_blank", "noopener,noreferrer");
+        }
       });
     }
 
@@ -365,21 +605,22 @@
       els.grid.appendChild(frag);
     }
 
-    els.pubCount.textContent = `${filtered.length} of ${state.publications.length} publications`;
+    const total = state.publications.length;
+    const count = filtered.length;
+    if (els.pubCount) {
+      els.pubCount.textContent = `${total} ${total === 1 ? "paper" : "papers"}`;
+    }
+    if (els.resultCount) {
+      els.resultCount.textContent =
+        count === total
+          ? `Showing all ${total}`
+          : `Showing ${count} of ${total}`;
+    }
   }
 
   // ─── Wire up controls ───────────────────────────────────
 
   function bindControls() {
-    els.pills.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        els.pills.forEach((b) => b.classList.remove("active"));
-        btn.classList.add("active");
-        state.filters.type = btn.dataset.filter;
-        render();
-      });
-    });
-
     els.journal.addEventListener("change", () => {
       state.filters.journal = els.journal.value;
       render();

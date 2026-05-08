@@ -6,10 +6,9 @@
     <title>Krishnagopal Halder — Research Feed</title>
     <meta
       name="description"
-      content="Latest publications in crop modelling, nitrogen dynamics, and agricultural AI — curated for Krishnagopal Halder, ZALF."
+      content="Latest publications in GeoAI, remote sensing, AI, and agriculture — curated for Krishnagopal Halder, ZALF."
     />
     <script>
-      // Apply theme before paint to avoid flash.
       (function () {
         try {
           var saved = localStorage.getItem("paperatlas-theme");
@@ -27,7 +26,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -38,12 +37,15 @@
           <p class="researcher-eyebrow">Research Feed</p>
           <h1 class="researcher-name" id="siteTitle">Krishnagopal Halder</h1>
           <p class="researcher-affiliation" id="siteSubtitle">
-            Latest publications in crop modelling, nitrogen dynamics, and
-            agricultural AI · Leibniz Centre for Agricultural Landscape
-            Research (ZALF)
+            Latest in GeoAI, remote sensing, artificial intelligence, and
+            agriculture · Leibniz Centre for Agricultural Landscape Research
+            (ZALF)
           </p>
         </div>
         <div class="header-meta">
+          <span class="last-updated" id="lastUpdated">Loading…</span>
+          <span class="meta-sep" aria-hidden="true">·</span>
+          <span class="pub-count" id="pubCount"></span>
           <button
             class="theme-toggle"
             id="themeToggle"
@@ -52,46 +54,87 @@
             title="Toggle theme"
           >
             <span class="theme-icon" aria-hidden="true">☾</span>
-            <span class="theme-label">Theme</span>
           </button>
-          <span class="last-updated" id="lastUpdated">Loading…</span>
-          <span class="pub-count" id="pubCount"></span>
         </div>
       </div>
     </header>
 
-    <div class="controls-bar" role="region" aria-label="Filter publications">
-      <input
-        type="search"
-        id="searchInput"
-        placeholder="Search publications, authors, keywords…"
-        class="search-input"
-        aria-label="Search publications"
-      />
-
-      <div class="filter-row">
-        <div class="filter-pills" role="group" aria-label="Type filter">
-          <button class="pill active" data-filter="all" type="button">All</button>
-          <button class="pill" data-filter="oa" type="button">Open Access</button>
+    <div class="toolbar" role="region" aria-label="Filter publications">
+      <div class="toolbar-inner">
+        <div class="search-row">
+          <svg
+            class="search-icon"
+            viewBox="0 0 24 24"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="11" cy="11" r="7" />
+            <path d="m20 20-3.5-3.5" />
+          </svg>
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Search publications, authors, keywords…"
+            class="search-input"
+            aria-label="Search publications"
+          />
         </div>
 
-        <select
-          id="journalSelect"
-          class="journal-select"
-          aria-label="Filter by journal"
-        >
-          <option value="">All Journals</option>
-        </select>
+        <div class="select-row">
+          <label class="select-field">
+            <span class="select-label">Journal</span>
+            <select
+              id="journalSelect"
+              class="select-control"
+              aria-label="Filter by journal"
+            >
+              <option value="">All journals</option>
+            </select>
+          </label>
 
-        <select id="sortSelect" class="sort-select" aria-label="Sort">
-          <option value="year">Newest First</option>
-          <option value="cited">Most Cited</option>
-          <option value="alpha">A → Z</option>
-        </select>
+          <label class="select-field">
+            <span class="select-label">Sort</span>
+            <select id="sortSelect" class="select-control" aria-label="Sort">
+              <option value="year">Newest first</option>
+              <option value="cited">Most cited</option>
+              <option value="alpha">A → Z</option>
+            </select>
+          </label>
+
+          <span class="result-count" id="resultCount" aria-live="polite"></span>
+        </div>
+
+        <nav
+          class="publisher-tabs"
+          id="publisherTabs"
+          role="tablist"
+          aria-label="Filter by publisher"
+        >
+          <button
+            class="publisher-tab is-active"
+            data-publisher=""
+            type="button"
+            role="tab"
+            aria-selected="true"
+          >
+            All publishers
+          </button>
+        </nav>
+
+        <div
+          class="year-chips"
+          id="yearFilter"
+          role="group"
+          aria-label="Filter by year"
+        ></div>
       </div>
     </div>
-
-    <div class="year-filter" id="yearFilter" role="group" aria-label="Year filter"></div>
 
     <main class="publications-grid" id="pubGrid" aria-live="polite">
       <div class="loading-state">Fetching publications…</div>

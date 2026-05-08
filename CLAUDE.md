@@ -4,8 +4,8 @@
 
 Build a **research-interest feed** for **Krishnagopal Halder**, a researcher at
 ZALF (Leibniz Centre for Agricultural Landscape Research). The site automatically
-fetches the latest publications weekly from the **Web of Science (WoS) API** that
-match (a) configured **topic terms** and (b) configured **journals of interest**,
+fetches publications weekly from the **Web of Science (WoS) API** that match
+(a) configured **topic terms** and (b) configured **journals of interest**,
 structures them beautifully, and is deployed via **GitHub Pages**. The entire
 pipeline runs on **GitHub Actions** on a weekly schedule with zero manual
 intervention.
@@ -13,6 +13,27 @@ intervention.
 > The site is **not** an author self-publication page. It does **not** fetch
 > Krishnagopal's own papers. It is a curated feed of new work in his research
 > areas and his journals of interest.
+
+### Fetch semantics — "up to N latest papers per query"
+
+- For **every query** (each topic term, each entry in `keywords`, each
+  journal in `journals_of_interest`, each entry in `extra_queries`), the
+  script fetches up to `fetch.results_per_query` papers (default **50**),
+  paginated in 50-record WoS pages and sorted by `PY+D` (publication year
+  descending). The site is designed to comfortably display 50+ papers; with
+  several queries the deduplicated total is typically in the hundreds.
+- **Topic, keyword and extra queries** are **strictly scoped** to
+  `journals_of_interest` via an `AND SO=(...)` clause. Papers can only come
+  from journals listed there. A belt-and-braces post-filter discards anything
+  WoS returns whose source title isn't on the allow-list (case-insensitive).
+- **Per-journal queries** (one per entry in `journals_of_interest`) ensure
+  the latest papers from each watched journal are present even if no topic
+  or keyword query matched them.
+- If a query returns no match, that query simply contributes no result —
+  this is expected and never an error.
+- The WoS API key is read from the `WOS_API_KEY` environment variable. The
+  script auto-loads `.env` from the repo root for local runs (`.env` is
+  gitignored). In GitHub Actions the secret is injected as an env var.
 
 The site supports both **dark and light themes**, with a toggle in the header
 that persists choice via `localStorage` and respects the user's
@@ -45,9 +66,9 @@ site:
   subtitle: "Latest in crop modelling, nitrogen dynamics, and agricultural AI"
 
 # ── Topic interest search ────────────────────────────────────
-# Publications matching your research interests.
-# Uses WoS TS= (Topic: title + abstract + keywords) field.
-# Each item in `terms` becomes one clause joined by OR inside TS=().
+# Broad themes. Each term becomes its own query:
+#   TS=("term") AND SO=(<journals_of_interest>)
+# Up to fetch.results_per_query papers are returned per query.
 # Use WoS wildcard syntax: * for suffix (e.g. "model*" matches modeling, models).
 topic_query:
   terms:
@@ -61,16 +82,29 @@ topic_query:
     - '"climate change" AND "crop*" AND "SSP"'
   year_from: null            # e.g. 2020
   year_to: null              # e.g. CURRENT_YEAR
-  max_results: 200
 
-# ── Journals of interest ────────────────────────────────────
-# Two roles:
-#   1. Populate the "Filter by Journal" dropdown on the website.
-#   2. Drive a per-journal fetch — the script pulls the latest N papers from
-#      each of these journals (controlled by `fetch.journal_max_results`).
+# ── Keyword search ───────────────────────────────────────────
+# Specific tags or phrases. Each entry becomes its own TS=(...) query, identical
+# in mechanics to topic terms but tagged `source: "keyword"` so the feed and
+# the website can distinguish broad themes from specific keywords.
+keywords:
+  - "remote sensing"
+  - "deep learning"
+  - "machine learning"
+  - "satellite imagery"
+  - "GeoAI"
+  - "convolutional neural network*"
+  - "Sentinel-2"
+  - "land use"
+  - "precision agriculture"
+
+# ── Journals of interest (the strict allow-list) ────────────
+# Used to:
+#   1. Scope every topic and extra query via SO=(<journals_of_interest>).
+#   2. Drive a per-journal fetch — the latest paper from each is included.
+#   3. Populate the "Filter by Journal" dropdown on the website.
+# A post-fetch guard drops any record whose source title isn't on this list.
 # Use exact journal names as they appear in Web of Science (SO= field).
-# Leave empty ([]) to skip journal-based fetching and let the dropdown
-# auto-populate from whatever journals are returned by the topic query.
 journals_of_interest:
   - "Agricultural and Forest Meteorology"
   - "Field Crops Research"
@@ -84,21 +118,22 @@ journals_of_interest:
   - "Science of the Total Environment"
 
 # ── Additional named queries (optional) ─────────────────────
+# Each entry: { label: str, query: str }. The script combines the query with
+# the journals_of_interest SO=(...) clause via AND, and keeps the latest match.
 extra_queries: []
 # Example:
 # extra_queries:
 #   - label: "ZALF group output"
 #     query: 'OG=("Leibniz Centre for Agricultural Landscape Research")'
-#     max_results: 100
 
 # ── Fetch settings ───────────────────────────────────────────
 fetch:
+  # Up to this many most recent papers are pulled per query. WoS pages of 50
+  # are fetched and concatenated. Default 50 keeps the feed >=50 papers wide.
+  results_per_query: 50
   requests_per_second: 2
   retry_attempts: 3
   retry_backoff_seconds: 5
-  # Latest papers to pull from each journal in `journals_of_interest`.
-  # Set to 0 (or null) to skip per-journal fetching.
-  journal_max_results: 25
 ```
 
 ### How the Python script reads this config
@@ -205,17 +240,71 @@ Implement this script with the following logic. **Queries must be loaded from
 
 ### Sources merged into the feed
 
-1. **Topic query** — `TS=(... OR ...)` built from `topic_query.terms`.
-2. **Per-journal queries** — for each entry in `journals_of_interest`, run
-   `SO=("<journal name>")` and pull the latest `fetch.journal_max_results`
-   papers (skip when that value is 0/null).
-3. **Extra queries** — anything in `extra_queries`.
+For every query the script asks WoS for up to **`fetch.results_per_query`**
+papers (default 50), sorted `PY+D`, paginated 50 at a time:
 
-Records are tagged with their `sources` (a list of strings: `"topic"`,
-`"journal"`, `"extra:<label>"`). When the same DOI/UID is returned by multiple
-sources, the entry is kept once and the additional source labels are merged
-onto it. There is **no `is_author_pub` field** — the feed has no concept of
-"my publications".
+1. **Topic queries** — for each term `t` in `topic_query.terms`, run
+   `TS=("t") AND SO=(<journals_of_interest>)` (plus the optional
+   `AND PY=...` year clause).
+2. **Keyword queries** — for each entry `k` in `keywords`, run
+   `TS=("k") AND SO=(<journals_of_interest>)` (with the same year clause).
+3. **Per-journal queries** — for each entry `j` in `journals_of_interest`,
+   run `SO=("j")` (no year filter — absolute latest).
+4. **Extra queries** — for each entry in `extra_queries`, AND its query with
+   the `SO=(<journals_of_interest>)` clause.
+
+Records are tagged with their `sources` (a list of strings:
+`"topic"`, `"keyword"`, `"journal"`, `"extra:<label>"`) and a
+`matched_queries` list of the specific query labels that returned that paper
+(e.g. `"topic:crop model*"`, `"keyword:Sentinel-2"`). When the same DOI/UID
+is returned by multiple queries, the entry is stored once and the additional
+labels are merged onto it. There is **no `is_author_pub` field** — the feed
+has no concept of "my publications".
+
+### Embedded query log
+
+Every executed WoS query is recorded under the top-level `queries` key in
+`data/publications.json`, bucketed by kind (`topic` / `keyword` / `journal`
+/ `extra`). Each entry contains:
+
+- `label` — the user-facing identifier (e.g. `"crop model*"`, `"NATURE FOOD"`).
+- `wos_query` — the **full** WoS query string sent to the API, including the
+  AND-joined `SO=(...)` journal scope and any `PY=(...)` year clause. This
+  is the value to copy and paste into another tool.
+- `hits` — number of papers WoS returned for that query.
+- `new` — how many of those were newly added to the feed (the rest were
+  duplicates already brought in by earlier queries).
+
+This gives a complete, machine-readable audit of what was asked and what
+came back.
+
+### Strict journal scoping
+
+After fetching, the script discards any record whose `source.sourceTitle`
+isn't in `journals_of_interest` (case-insensitive comparison). This is a
+defence-in-depth safeguard against fuzzy WoS `SO=` matches. If
+`journals_of_interest` is empty while `topic_query.terms` is set, the script
+aborts with a clear error.
+
+### API key handling
+
+The script reads `WOS_API_KEY` from the environment. For local runs it also
+auto-loads variables from a `.env` file at the repo root (`.env` is in
+`.gitignore`):
+
+```python
+def load_dotenv(path=".env"):
+    if not os.path.isfile(path): return
+    with open(path) as f:
+        for raw in f:
+            line = raw.strip()
+            if not line or line.startswith("#") or "=" not in line: continue
+            k, _, v = line.partition("=")
+            os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+```
+
+The key is **never** hardcoded. In GitHub Actions, `WOS_API_KEY` is provided
+as a repository secret.
 
 ### API details
 
@@ -234,6 +323,12 @@ onto it. There is **no `is_author_pub` field** — the feed has no concept of
     "subtitle": "Latest in crop modelling, nitrogen dynamics, and agricultural AI"
   },
   "journals_of_interest": ["Agricultural and Forest Meteorology", "..."],
+  "queries": {
+    "topic":   [{"label": "crop model*",     "wos_query": "TS=(\"crop model*\") AND SO=(\"...\") AND PY=(2020-2026)", "hits": 50, "new": 50}],
+    "keyword": [{"label": "Sentinel-2",      "wos_query": "TS=(\"Sentinel-2\") AND SO=(\"...\") AND PY=(2020-2026)", "hits": 50, "new": 27}],
+    "journal": [{"label": "NATURE FOOD",     "wos_query": "SO=(\"NATURE FOOD\")",                                   "hits": 50, "new": 36}],
+    "extra":   [{"label": "ZALF group",      "wos_query": "(OG=(\"...\")) AND SO=(\"...\")",                         "hits":  3, "new":  3}]
+  },
   "publications": [
     {
       "uid": "WOS:000...",
@@ -249,7 +344,12 @@ onto it. There is **no `is_author_pub` field** — the feed has no concept of
       "keywords": ["crop model", "nitrogen"],
       "citations": 4,
       "open_access": true,
-      "sources": ["topic", "journal"]
+      "sources": ["topic", "keyword", "journal"],
+      "matched_queries": [
+        "topic:crop model*",
+        "keyword:Sentinel-2",
+        "journal:Agricultural Systems"
+      ]
     }
   ]
 }
@@ -262,28 +362,60 @@ run fails visibly and `publications.json` is never overwritten with empty data.
 
 ## 3. Website (`index.html` + `style.css` + `app.js`)
 
-### Design Direction
+### Design Direction — clean modern editorial
 
-**Editorial / scientific journal aesthetic** — refined, data-rich,
-authoritative. Think Nature or Annual Reviews meets a modern research page.
+Solid surfaces, crisp 1px borders, generous whitespace. No glass blur, no
+gradient blobs. Inspired by Linear / Stripe / GitHub feeds applied to a
+scientific paper context.
 
-- **Dark palette:** Deep navy (`#0a1628`) bg, warm off-white (`#f5f0e8`) text,
-  ZALF green (`#4a7c59`) and amber (`#d4a843`) accents.
-- **Light palette:** Warm cream (`#faf7f0`) bg, deep navy text, deeper
-  green/amber for contrast (WCAG AA).
-- **Theme toggle:** A button in the header switches between themes. Choice is
-  stored in `localStorage` (key `paperatlas-theme`). On first visit, the site
-  honours the user's `prefers-color-scheme`. An inline pre-paint script applies
-  the saved theme before first render to avoid a light/dark flash.
-- **Typography:** Google Fonts — **Playfair Display** (headings), **Source
-  Serif 4** (body), **JetBrains Mono** (metadata: year/DOI/citations).
-- **Layout:** Full-bleed hero header, sticky filter/search bar, then a 1/2/3-
-  column responsive card grid.
-- **Cards:** title, authors, journal (italic), year, citation badge,
-  Open-Access badge, "Journal feed" badge if the paper came from the per-journal
-  fetch, DOI link, expandable abstract, keyword tags.
-- **Animations:** subtle fade-in stagger on card load; smooth filter
-  transitions. Honours `prefers-reduced-motion`.
+- **Background:** Solid `var(--bg)`. A single 3px gradient strip
+  (green → amber → green) runs across the very top of the header as the
+  only chromatic flourish.
+- **Surfaces:** Cards, search input, dropdowns, theme toggle and footer
+  all sit on `var(--surface)` with a 1px `var(--border)`. Hover bumps the
+  border to `var(--border-hi)` and adds a soft drop shadow; on clickable
+  cards the hover border is the accent green and the title shifts colour.
+- **Dark palette:** `#0d1322` bg, `#131a2d` surface, warm off-white text
+  (`#e8e3d8`), brighter ZALF green (`#6db685`) and amber (`#e2b758`) for
+  AA contrast on dark.
+- **Light palette:** `#f7f4ec` warm cream bg, white surfaces, deep navy
+  (`#1a2440`) text, deeper green (`#2d5440`) and amber (`#a06f0e`).
+- **Typography:** **Inter** for UI (headers, controls, body of cards),
+  **Playfair Display** for the researcher name and paper titles only,
+  **Source Serif 4** for italic affiliations / author lists / abstracts,
+  **JetBrains Mono** for metadata (year, DOI, citations, counts). Inter
+  was added in this redesign to give the chrome a more modern feel; the
+  serif fonts remain for editorial weight on titles and abstracts.
+- **Theme toggle:** small icon button (34×34) in the header meta row.
+  Choice is stored in `localStorage` (key `paperatlas-theme`); first
+  visit honours `prefers-color-scheme`. An inline pre-paint script
+  applies the saved theme before first render to avoid a flash.
+- **Layout:** Hero header → sticky toolbar (search row → dropdowns +
+  result counter row → publisher tabs row → year-chip row) → 1/2/3-column
+  responsive card grid → footer.
+- **Filter bar:**
+  - **Search** — single full-width input with an inline magnifier icon
+    and an accent focus ring.
+  - **Dropdowns** — Journal and Sort, each rendered as a labelled chip
+    (`Journal`/`Sort` mono caps inside, native `<select>` to the right).
+  - **Publisher tabs** — a real tab strip with an underline indicator on
+    the active tab. Each tab carries a count badge. **Only publishers
+    with at least one paper in the data are rendered** (empty groups are
+    omitted entirely).
+  - **Year chips** — small mono pills with `Year` label prefix; "All"
+    plus each year present in the data.
+  - **No "Open Access" pill** — removed in this iteration.
+- **Cards:** Solid surface, 1px border, soft shadow; hover lifts 2px and
+  brightens the border (accent on clickable cards). Header line carries
+  year (chip), publisher badge, "Journal feed" badge, and a citation
+  badge **only when count > 0** (no "0 cites" noise). Title links to DOI
+  on hover via colour shift. Authors in italic Source Serif. Journal name
+  in italic accent. Keyword tags in mono with accent-tinted backgrounds.
+  Expandable abstract with mono toggle. **The whole card is clickable**
+  (role="link", tabIndex=0) and opens `https://doi.org/{doi}` in a new
+  tab; clicks on inner buttons or links do not trigger navigation.
+- **Animations:** subtle fade-in stagger on card load; smooth hover lift;
+  smooth focus-ring transitions. Honours `prefers-reduced-motion`.
 
 ### Functional Requirements
 
@@ -291,18 +423,27 @@ authoritative. Think Nature or Annual Reviews meets a modern research page.
 // 1. On page load, fetch ./data/publications.json
 // 2. Render all publications as cards
 // 3. Search bar: title/author/keyword/journal/year (live, debounced 300ms)
-// 4. Filter pills: All | Open Access  (no "My Publications" pill)
+// 4. (Removed) — no Open Access filter pill, no type filter
 // 5. Journal dropdown: populated from journals_of_interest; if empty, auto-
 //    populated from unique journal names in the data
-// 6. Year pills: injected dynamically; "All Years" + each year
-// 7. Sort dropdown: Newest First | Most Cited | Alphabetical
-// 8. Each card: expandable abstract
-// 9. DOI badge: links to https://doi.org/{doi} in new tab
-// 10. Citation badge styled with color scale (gray=0, green>10, gold>50)
-// 11. Show "Last updated: {date}" from publications.json
-// 12. Show total count: "Showing X of Y publications"
-// 13. All active filters compose with AND logic
-// 14. Theme toggle button; persisted across sessions
+// 6. Publisher tabs: only publishers with at least one paper in the data are
+//    rendered. Order = canonical PUBLISHER_GROUPS order, with "Other" last
+//    if present. Active tab gets an underline indicator and accent-tinted
+//    count badge. Mapping (journal → publisher) lives in PUBLISHER_GROUPS
+//    in app.js; new journals are auto-classified from regexes.
+// 7. Year chips: injected dynamically; "Year" label prefix, "All" + each year.
+// 8. Sort dropdown: Newest First | Most Cited | Alphabetical
+// 9. Each card: expandable abstract; publisher badge in header.
+//    The entire card is clickable (role="link", keyboard-accessible) and
+//    opens https://doi.org/{doi} in a new tab. Inner buttons/anchors
+//    (abstract toggle, DOI link) don't trigger navigation.
+// 10. DOI badge: links to https://doi.org/{doi} in new tab
+// 11. Citation badge: only rendered when count > 0; colour scale
+//     (low/mid/hi) based on thresholds (>10, >50).
+// 12. Header shows "Updated · {date}" and "{N} papers" total count.
+// 13. Toolbar shows live "Showing X of Y" via #resultCount.
+// 14. All active filters compose with AND logic
+// 15. Theme toggle button; persisted across sessions
 ```
 
 ### HTML Skeleton
@@ -391,12 +532,27 @@ themes is a one-attribute swap.
 - Fetch `./data/publications.json`; render cards.
 - Show a "Journal feed" badge on cards whose `sources` array includes
   `"journal"`.
-- Populate the journal dropdown from `data.journals_of_interest`; fall back to
-  unique journal names if that list is empty.
-- All active filters (type pill + journal + year + search) compose with AND.
+- Show a publisher badge (Nature, Elsevier, …) on each card based on the
+  journal→publisher mapping (`publisherFor(journal)` in `app.js`).
+- Populate the journal dropdown from `data.journals_of_interest`; fall back
+  to unique journal names if that list is empty.
+- Populate the **Publisher tab strip** dynamically: only render tabs whose
+  count is > 0 in the current data. Active tab gets an underline indicator.
+- Bind a **whole-card click** handler that opens `https://doi.org/{doi}` in
+  a new tab; suppresses navigation when the click originated from a `button`
+  or `a` inside the card. Cards with no DOI are not clickable.
+- All active filters (journal + publisher + year + search) compose with AND.
 - Filtering and sorting operate on the in-memory array (no re-fetch).
 - Search input is debounced 300 ms.
 - Per-card abstract toggle.
+
+### Citation parsing
+
+WoS Starter returns `hit.citations` as a list of `{db, count}` objects (often
+just one, with `db: "WOS"`). The script's `parse_citations()` prefers the
+WoS DB count and falls back to the maximum across all reported databases.
+The earlier `metrics.timesCited` path was a dead-end — `metrics` is `null`
+in this endpoint's responses and produced 0-citation values for every paper.
 
 ---
 
