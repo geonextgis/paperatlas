@@ -1,38 +1,83 @@
-name: Weekly Publications Update
+name: Update publications and deploy
+
+# Pages must be configured to deploy from "GitHub Actions"
+# (Settings → Pages → Build and deployment → Source → GitHub Actions).
 
 on:
   schedule:
-    - cron: "0 6 * * 1"
+    - cron: "0 6 * * 1"   # Every Monday 06:00 UTC
   workflow_dispatch:
+  push:
+    branches: [main]
 
 permissions:
-  contents: write
+  contents: write   # commit refreshed publications.json back to main
+  pages: write      # publish to GitHub Pages
+  id-token: write   # OIDC for actions/deploy-pages@v4
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
-  update-publications:
+  build:
+    name: Fetch papers and build site
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
-        run: pip install requests pyyaml
+      - run: pip install requests pyyaml
 
+      # Only fetch from WoS when the workflow is invoked by the cron schedule
+      # or manually. Push-triggered runs (e.g. CSS/HTML edits) reuse the
+      # last-committed publications.json so we don't burn API quota on every
+      # site tweak.
       - name: Fetch publications from Web of Science
+        if: github.event_name != 'push'
         env:
           WOS_API_KEY: ${{ secrets.WOS_API_KEY }}
         run: python scripts/fetch_publications.py
 
-      - name: Commit updated publications
+      - name: Commit refreshed publications
+        if: github.event_name != 'push'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/publications.json
-          git diff --cached --quiet || git commit -m "chore: update publications $(date -u +%Y-%m-%d)"
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update publications $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      # Stage only the static site (no scripts, no .git, no CLAUDE.md)
+      # for the Pages artifact.
+      - name: Stage static site
+        run: |
+          mkdir -p _site
+          cp index.html style.css app.js _site/
+          cp -r data _site/
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

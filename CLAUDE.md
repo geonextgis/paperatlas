@@ -195,41 +195,95 @@ Install `pyyaml` alongside `requests` in the workflow and locally.
 
 ## 1. GitHub Actions Workflow (`.github/workflows/update-publications.yml`)
 
+The workflow is a single ordered pipeline that **fetches first, then
+deploys** — guaranteeing GitHub Pages always builds with fresh data.
+
 ```yaml
-name: Weekly Publications Update
+name: Update publications and deploy
 
 on:
   schedule:
-    - cron: "0 6 * * 1"   # Every Monday at 06:00 UTC
-  workflow_dispatch:       # Allow manual trigger
+    - cron: "0 6 * * 1"   # Mondays 06:00 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
 
 permissions:
-  contents: write          # Allow the workflow to commit updated JSON
+  contents: write   # commit refreshed publications.json
+  pages: write      # publish to GitHub Pages
+  id-token: write   # OIDC for actions/deploy-pages@v4
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
-  update-publications:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+
       - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
+        with: { python-version: "3.11" }
+
       - run: pip install requests pyyaml
-      - name: Fetch publications from Web of Science
-        env:
-          WOS_API_KEY: ${{ secrets.WOS_API_KEY }}
+
+      # Skip fetch on push events (don't burn API quota on CSS tweaks)
+      - if: github.event_name != 'push'
+        env: { WOS_API_KEY: ${{ secrets.WOS_API_KEY }} }
         run: python scripts/fetch_publications.py
-      - name: Commit updated publications
+
+      - if: github.event_name != 'push'
+        name: Commit refreshed publications
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/publications.json
-          git diff --cached --quiet || git commit -m "chore: update publications $(date -u +%Y-%m-%d)"
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update publications $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Stage static site
+        run: |
+          mkdir -p _site
+          cp index.html style.css app.js _site/
+          cp -r data _site/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: _site }
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
 ```
 
-**Secret required:** Add `WOS_API_KEY` to your GitHub repository
-→ Settings → Secrets → Actions.
+**Required setup:**
+
+- Repository secret `WOS_API_KEY` (Settings → Secrets and variables →
+  Actions).
+- **Pages source = GitHub Actions** (Settings → Pages → Build and deployment
+  → Source → GitHub Actions). The "Deploy from branch" mode is *not* used
+  any more — the workflow uploads its own artifact.
+
+**Trigger semantics:**
+
+- *Schedule / manual dispatch* — runs the full pipeline (fetch → commit →
+  stage → deploy). The fresh `publications.json` is committed back to
+  `main` so the data persists and the deploy uses the same refresh.
+- *Push to main* — skips the fetch (no API call) and just rebuilds /
+  redeploys the site from whatever data is already committed. Use this for
+  CSS/HTML tweaks.
 
 ---
 
@@ -556,12 +610,15 @@ in this endpoint's responses and produced 0-citation values for every paper.
 
 ---
 
-## 4. Deployment (GitHub Pages)
+## 4. Deployment (GitHub Pages via GitHub Actions)
 
-1. **Settings → Pages → Source → Deploy from branch → `main` → `/ (root)`**
-2. Site lives at `https://{user}.github.io/{repo}/`
-3. Every Monday the workflow updates `data/publications.json` and commits it,
-   triggering a Pages rebuild.
+1. **Settings → Pages → Build and deployment → Source → GitHub Actions.**
+2. Site lives at `https://{user}.github.io/{repo}/`.
+3. Every Monday the workflow fetches new papers, commits the JSON, and
+   deploys the site in one ordered pipeline. Pages **always builds after
+   the fetch** because the deploy job declares `needs: build`.
+4. Pushing CSS / HTML / JS edits to `main` redeploys without re-fetching
+   from WoS.
 
 ---
 
@@ -577,8 +634,10 @@ Add to `README.md`:
 3. Get a Web of Science API key: https://developer.clarivate.com/
 4. Add it as a GitHub secret: Settings → Secrets → Actions
    - Name: `WOS_API_KEY`
-5. Enable GitHub Pages: Settings → Pages → main → /(root)
-6. Run the workflow once: Actions → Weekly Publications Update → Run workflow
+5. Enable GitHub Pages: Settings → Pages → Build and deployment →
+   Source → **GitHub Actions** (not "Deploy from branch")
+6. Run the workflow once: Actions → "Update publications and deploy" →
+   Run workflow
 7. Site is live and refreshes every Monday.
 ```
 

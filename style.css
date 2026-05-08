@@ -211,9 +211,17 @@ button {
   background: var(--surface-2);
 }
 
-.theme-icon { font-size: 1rem; line-height: 1; }
-:root[data-theme="dark"]  .theme-icon::before { content: "☾"; }
-:root[data-theme="light"] .theme-icon::before { content: "☀"; }
+.theme-toggle .icon-moon,
+.theme-toggle .icon-sun {
+  display: none;
+  transition: transform 220ms ease;
+}
+
+:root[data-theme="dark"]  .theme-toggle .icon-moon { display: inline-block; }
+:root[data-theme="light"] .theme-toggle .icon-sun  { display: inline-block; }
+
+.theme-toggle:hover .icon-moon { transform: rotate(-15deg); }
+.theme-toggle:hover .icon-sun  { transform: rotate(45deg); }
 
 /* ─── Toolbar (search + filters) ─────────────────────────── */
 
@@ -344,12 +352,25 @@ button {
 
 .publisher-tabs {
   display: flex;
-  flex-wrap: wrap;
   gap: 0.1rem;
   padding-bottom: 0;
   margin: 0 -0.4rem 0.6rem;
   border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-hi) transparent;
 }
+
+.publisher-tabs::-webkit-scrollbar { height: 4px; }
+.publisher-tabs::-webkit-scrollbar-track { background: transparent; }
+.publisher-tabs::-webkit-scrollbar-thumb {
+  background: var(--border-hi);
+  border-radius: 999px;
+}
+.publisher-tabs::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
 .publisher-tab {
   position: relative;
@@ -364,6 +385,8 @@ button {
   border-bottom: 2px solid transparent;
   margin-bottom: -1px;
   transition: color 150ms ease, border-color 150ms ease;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .publisher-tab:hover {
@@ -696,20 +719,97 @@ button {
   border-bottom: 1px solid var(--border);
 }
 
-/* ─── Responsive tweaks ──────────────────────────────────── */
+/* ─── Responsive ────────────────────────────────────────── */
 
-@media (max-width: 600px) {
-  .header-inner {
-    align-items: flex-start;
-    flex-direction: column;
+/* Tablet & narrower desktops -------------------------------- */
+@media (max-width: 900px) {
+  .header-inner { gap: 1rem; align-items: flex-start; }
+  .researcher-identity { flex-basis: 100%; }
+  .header-meta { width: 100%; flex-wrap: wrap; }
+  .result-count { margin-left: auto; font-size: 0.72rem; }
+}
+
+/* Standard mobile ------------------------------------------ */
+@media (max-width: 640px) {
+  body { font-size: 15px; }
+
+  .site-header {
+    padding: clamp(2rem, 8vw, 3rem) clamp(1rem, 5vw, 1.5rem)
+             clamp(1.5rem, 5vw, 2.25rem);
   }
-  .header-meta { width: 100%; }
-  .select-row { flex-direction: column; align-items: stretch; }
+
+  .researcher-name { font-size: clamp(2rem, 9vw, 2.6rem); }
+  .researcher-affiliation { font-size: 0.95rem; }
+
+  .toolbar-inner { padding: 0.85rem clamp(1rem, 5vw, 1.5rem) 0; }
+
+  .search-row { margin-bottom: 0.7rem; }
+  .search-input {
+    padding: 0.75rem 0.9rem 0.75rem 2.4rem;
+    font-size: 0.95rem;
+  }
+  .search-icon { left: 0.85rem; }
+
+  /* Stack the two dropdowns full-width; counter hops to its own line */
+  .select-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
   .select-field { width: 100%; }
-  .select-control { width: 100%; }
-  .result-count { margin-left: 0; }
-  .publisher-tabs { gap: 0; overflow-x: auto; flex-wrap: nowrap; }
-  .publisher-tab { white-space: nowrap; }
+  .select-control { width: 100%; min-width: 0; }
+  .result-count {
+    margin-left: 0;
+    text-align: left;
+    padding: 0.15rem 0.1rem 0;
+  }
+
+  .publisher-tab { padding: 0.6rem 0.75rem; font-size: 0.8rem; }
+  .publisher-tab .tab-count {
+    font-size: 0.66rem;
+    padding: 0.08rem 0.4rem;
+  }
+
+  .year-chips { padding-bottom: 0.85rem; }
+  .year-chip { padding: 0.3rem 0.65rem; font-size: 0.72rem; }
+  .filter-strip-label { font-size: 0.64rem; letter-spacing: 0.14em; }
+
+  .publications-grid {
+    margin: 1.1rem auto 2.5rem;
+    padding: 0 clamp(1rem, 5vw, 1.5rem);
+    gap: 0.85rem;
+  }
+
+  .pub-card { padding: 1.1rem 1.15rem 1rem; gap: 0.6rem; }
+  .pub-title { font-size: 1.08rem; line-height: 1.3; }
+  .pub-authors, .pub-journal, .pub-abstract { font-size: 0.88rem; }
+  .pub-card-header { font-size: 0.65rem; gap: 0.3rem; }
+  .pub-publisher,
+  .pub-citations,
+  .pub-source,
+  .pub-year {
+    padding: 0.15rem 0.45rem;
+    font-size: 0.65rem;
+  }
+
+  .site-footer {
+    padding: 1.25rem clamp(1rem, 5vw, 1.5rem);
+    font-size: 0.7rem;
+  }
+}
+
+/* Tiny screens (≤380px) ------------------------------------ */
+@media (max-width: 380px) {
+  .researcher-name { font-size: 1.85rem; }
+  .pub-card { padding: 0.95rem 1rem 0.9rem; }
+  .pub-title { font-size: 1rem; }
+  .toolbar-inner { padding: 0.7rem 0.95rem 0; }
+}
+
+/* Print ---------------------------------------------------- */
+@media print {
+  .toolbar, .site-footer, .theme-toggle { display: none; }
+  .pub-card { break-inside: avoid; box-shadow: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
