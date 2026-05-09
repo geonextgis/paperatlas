@@ -1,0 +1,258 @@
+# ============================================================
+# publishers_config.yml
+# Single source of truth for the journal -> publisher mapping
+# used by the "publisher tabs" on the website.
+#
+# How it works
+# ------------
+# Each entry under `publishers` has:
+#   - label    : the display name shown on the tab
+#   - patterns : a list of regular expressions, matched against
+#                the journal name (case-insensitive). The FIRST
+#                publisher whose regexes hit wins.
+# Anything matching no group falls into "Other".
+#
+# `overrides` lets you pin specific journals to specific
+# publishers without writing a regex. Keys are exact journal
+# names (case-insensitive). Overrides win over `patterns`.
+#
+# Tab order on the site = the order of `publishers` here, with
+# "Other" appended last when present.
+#
+# Edit this file freely — it is loaded by scripts/fetch_publi-
+# cations.py and embedded into data/publications.json so the
+# website picks it up automatically.
+# ============================================================
+
+publishers:
+  - label: "Nature"
+    patterns:
+      - '^nature\b'
+      - '^communications\s+(earth|biology|materials|chemistry|physics|engineering)'
+      - '^scientific reports$'
+      - '^npj\b'
+
+  - label: "Science"
+    patterns:
+      - '^science$'
+      - '^science\s+(advances|signaling|robotics|translational|immunology)'
+
+  - label: "Cell"
+    patterns:
+      - '^cell\b'
+      - '^current biology$'
+      - '^one earth$'
+      - '^joule$'
+      - '^patterns$'
+      - '^matter$'
+      - '^chem$'
+      - '^iscience$'
+      - '^heliyon$'
+      - '^trends in\b'
+
+  - label: "PNAS"
+    patterns:
+      - 'proceedings of the national academy'
+      - '^pnas\b'
+
+  - label: "Elsevier"
+    patterns:
+      - '^field crops research$'
+      - '^agricultural systems$'
+      - '^agricultural and forest meteorology$'
+      - '^computers and electronics in agriculture$'
+      - '^remote sensing of environment$'
+      - '^science of the total environment$'
+      - '^european journal of agronomy$'
+      - '^soil (?:&|and) tillage research$'
+      - '^environmental modell?ing\s*(?:&|and)?\s*software$'
+      - '^geoderma$'
+      - '^catena$'
+      - '^ecological modell?ing$'
+      - '^agricultural water management$'
+      - '^isprs journal of photogrammetry and remote sensing$'
+      - '^international journal of applied earth observation and geoinformation$'
+      - '^computers\s+\S+\s+geosciences$'
+      - '^earth-?science reviews$'
+      - '^advances in water resources$'
+      - '^biosystems engineering$'
+      - '^smart agricultural technology$'
+      - '^crop protection$'
+      - '^european journal of soil science$'
+      - '^land use policy$'
+      - '^global ecology and conservation$'
+      - '^journal of hydrology$'
+
+  - label: "Wiley"
+    patterns:
+      - '^global change biology$'
+      - '^new phytologist$'
+      - '^plant,?\s+cell\s+(?:and|&)\s+environment$'
+      - '^ecology letters$'
+      - '^journal of agronomy and crop science$'
+      - '^food and energy security$'
+      - '^gcb bioenergy$'
+      - "^earth's future$"
+      - '^journal of geophysical research'
+      - '^water resources research$'
+      - '^geophysical research letters$'
+      - '^journal of advances in modeling earth systems$'
+      - '^land degradation\s+(?:and|&)\s+development$'
+      - '^hydrological processes$'
+      - '^river research and applications$'
+
+  - label: "Springer"
+    patterns:
+      - '^climatic change$'
+      - '^biogeochemistry$'
+      - '^theoretical and applied climatology$'
+      - '^precision agriculture$'
+      - '^nutrient cycling in agroecosystems$'
+      - '^plant and soil$'
+      - '^euphytica$'
+      - '^regional environmental change$'
+      - '^mitigation and adaptation strategies for global change$'
+      - '^agronomy for sustainable development$'
+      - '^food security$'
+      - '^environmental monitoring and assessment$'
+      - '^environmental science and pollution research$'
+      - '^paddy and water environment$'
+      - '^earth systems and environment$'
+      - '^natural hazards$'
+      - '^geoinformatica$'
+
+  - label: "Taylor & Francis"
+    patterns:
+      - '^international journal of remote sensing$'
+      - '^gi\s*science\s+(?:and|&)\s+remote sensing$'
+      - '^geocarto international$'
+      - '^remote sensing letters$'
+      - '^international journal of digital earth$'
+      - '^international journal of geographical information science$'
+      - '^cartography and geographic information science$'
+      - '^journal of land use science$'
+      - '^international journal of agricultural sustainability$'
+      - '^journal of sustainable agriculture$'
+      - '^critical reviews in plant sciences$'
+      - '^big earth data$'
+
+  - label: "IOP"
+    patterns:
+      - '^environmental research letters$'
+      - '^environmental research:\s'
+
+  - label: "MDPI"
+    patterns:
+      - '^remote sensing$'
+      - '^agronomy(?:-basel)?$'
+      - '^agriculture(?:-basel)?$'
+      - '^sustainability$'
+      - '^land(?:-basel)?$'
+      - '^water(?:-basel)?$'
+      - '^atmosphere(?:-basel)?$'
+      - '^sensors(?:-basel)?$'
+      - '^drones(?:-basel)?$'
+      - '^forests$'
+      - '^plants(?:-basel)?$'
+      - '^ijgi$'
+      - '^isprs international journal of geo-information$'
+
+  - label: "Frontiers"
+    patterns:
+      - '^frontiers in\b'
+
+  - label: "ACS"
+    patterns:
+      - '^journal of agricultural and food chemistry$'
+      - '^environmental science[\s&.]+(technology|letters)'
+      - '^acs\s'
+
+  - label: "IEEE"
+    patterns:
+      - '^ieee\b'
+      - '^proceedings of the ieee$'
+
+  - label: "AGU"
+    patterns:
+      - '\b(eos|earth and space science|agu advances)\b'
+
+  - label: "AMS"
+    patterns:
+      - '^journal of climate$'
+      - '^journal of hydrometeorology$'
+      - '^monthly weather review$'
+      - '^journal of applied meteorology'
+      - '^weather and forecasting$'
+      - '^bulletin of the american meteorological society$'
+
+  - label: "Annual Reviews"
+    patterns:
+      - '^annual review of\b'
+
+  - label: "Cambridge"
+    patterns:
+      - '^journal of agricultural science$'
+      - '^experimental agriculture$'
+      - '^environment and development economics$'
+      - '^weed science$'
+
+  - label: "Oxford"
+    patterns:
+      - '^journal of experimental botany$'
+      - '^tree physiology$'
+      - '^plant physiology$'
+      - '^bioscience$'
+      - '^forestry$'
+      - '^oxford open climate change$'
+
+  - label: "RSC"
+    patterns:
+      - '^environmental science:\s+(processes|water|advances|atmospheres|nano)'
+      - '^green chemistry$'
+      - '^food\s+(?:and|&)\s+function$'
+
+  - label: "Sage"
+    patterns:
+      - '^progress in physical geography$'
+      - '^the holocene$'
+      - '^outlook on agriculture$'
+
+  - label: "ESA"
+    patterns:
+      - '^ecology$'
+      - '^ecological applications$'
+      - '^ecosphere$'
+      - '^frontiers in ecology and the environment$'
+      - '^ecological monographs$'
+
+  - label: "PLOS"
+    patterns:
+      - '^plos\b'
+
+  - label: "Copernicus"
+    patterns:
+      - '^biogeosciences$'
+      - '^hydrology and earth system sciences$'
+      - '^earth system science data$'
+      - '^geoscientific model development$'
+      - '^atmospheric chemistry and physics$'
+      - '^the cryosphere$'
+      - '^earth system dynamics$'
+      - '^soil(?:-eu)?$'
+      - '^natural hazards and earth system sciences$'
+
+  - label: "arXiv"
+    patterns:
+      - '^arxiv\b'
+      - '^biorxiv\b'
+      - '^medrxiv\b'
+      - '^earth?xiv\b'
+      - '^chemrxiv\b'
+      - 'preprint'
+
+# Pin specific journals to specific publishers. Exact match
+# (case-insensitive) wins over `patterns` matching above.
+# Example:
+#   "Remote Sensing of Environment": "Elsevier"
+#   "Nature Food": "Nature"
+overrides: {}

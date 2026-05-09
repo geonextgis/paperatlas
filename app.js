@@ -37,9 +37,13 @@
   };
 
   // ─── Publisher / source-family mapping ─────────────────
-  // Maps a journal source title to a display group. Patterns are matched in
-  // order; the first hit wins. Anything unmatched falls into "Other".
-  const PUBLISHER_GROUPS = [
+  // The authoritative mapping lives in `publishers_config.yml` and is loaded
+  // by the Python fetch script into `data.publishers` of publications.json.
+  // The constant below is only a fallback used when that field is missing
+  // (e.g. during local development before the script has been re-run).
+  // Patterns are matched in order; the first hit wins. Anything unmatched
+  // falls into "Other".
+  const DEFAULT_PUBLISHER_GROUPS = [
     {
       label: "Nature",
       test: (j) => /\bnature\b/i.test(j) || /^communications\s+(earth|biology|materials|chemistry|physics|engineering)/i.test(j) || /^scientific reports$/i.test(j) || /^npj\b/i.test(j),
@@ -184,13 +188,77 @@
     },
   ];
 
-  function publisherFor(journal) {
+  function defaultPublisherFor(journal) {
     const j = String(journal || "").trim();
     if (!j) return "Other";
-    for (const g of PUBLISHER_GROUPS) {
+    for (const g of DEFAULT_PUBLISHER_GROUPS) {
       if (g.test(j)) return g.label;
     }
     return "Other";
+  }
+
+  // These are reassigned in loadData() once data.publishers has been read.
+  let publisherFor = defaultPublisherFor;
+  let publisherOrder = DEFAULT_PUBLISHER_GROUPS.map((g) => g.label);
+
+  function buildPublisherMatcher(payload) {
+    if (
+      !payload ||
+      !Array.isArray(payload.groups) ||
+      payload.groups.length === 0
+    ) {
+      return {
+        matcher: defaultPublisherFor,
+        order: DEFAULT_PUBLISHER_GROUPS.map((g) => g.label),
+      };
+    }
+    const overridesObj =
+      payload.overrides && typeof payload.overrides === "object"
+        ? payload.overrides
+        : {};
+    const overrideMap = new Map();
+    Object.keys(overridesObj).forEach((k) => {
+      const v = String(overridesObj[k] || "").trim();
+      if (v) overrideMap.set(String(k).toLowerCase(), v);
+    });
+
+    const compiled = [];
+    payload.groups.forEach((g) => {
+      const label = String((g && g.label) || "").trim();
+      const patterns = Array.isArray(g && g.patterns) ? g.patterns : [];
+      if (!label || patterns.length === 0) return;
+      const regexes = [];
+      patterns.forEach((p) => {
+        try {
+          regexes.push(new RegExp(p, "i"));
+        } catch (err) {
+          console.warn(
+            `publishers_config.yml: skipping invalid regex for ${label}: ${p}`,
+            err
+          );
+        }
+      });
+      if (regexes.length > 0) compiled.push({ label, regexes });
+    });
+
+    if (compiled.length === 0) {
+      return {
+        matcher: defaultPublisherFor,
+        order: DEFAULT_PUBLISHER_GROUPS.map((g) => g.label),
+      };
+    }
+
+    const matcher = function (journal) {
+      const j = String(journal || "").trim();
+      if (!j) return "Other";
+      const ov = overrideMap.get(j.toLowerCase());
+      if (ov) return ov;
+      for (const g of compiled) {
+        if (g.regexes.some((r) => r.test(j))) return g.label;
+      }
+      return "Other";
+    };
+    return { matcher, order: compiled.map((g) => g.label) };
   }
 
   // ─── Utilities ──────────────────────────────────────────
@@ -295,6 +363,12 @@
         ? data.journals_of_interest
         : [];
 
+      // Install the publisher matcher from the YAML-driven payload
+      // (falls back to the bundled defaults if absent).
+      const built = buildPublisherMatcher(data.publishers);
+      publisherFor = built.matcher;
+      publisherOrder = built.order;
+
       els.lastUpdated.textContent = formatDate(data.updated_at);
 
       if (data.site && typeof data.site === "object") {
@@ -372,11 +446,12 @@
       counts.set(g, (counts.get(g) || 0) + 1);
     });
 
-    // Only show publishers that actually have papers. Order = canonical
-    // PUBLISHER_GROUPS order, with "Other" last if present.
+    // Only show publishers that actually have papers. Order = the order
+    // declared in publishers_config.yml (or the defaults), with "Other"
+    // last if present.
     const ordered = [];
-    PUBLISHER_GROUPS.forEach((g) => {
-      if ((counts.get(g.label) || 0) > 0) ordered.push(g.label);
+    publisherOrder.forEach((label) => {
+      if ((counts.get(label) || 0) > 0) ordered.push(label);
     });
     if ((counts.get("Other") || 0) > 0) ordered.push("Other");
 

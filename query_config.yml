@@ -30,8 +30,20 @@ topic_query:
     - '"food security" AND crop*'
     - '"climate change" AND crop*'
     - '"agriculture" AND "deep learning"'
+    - '"agriculture" AND "machine learning"'
     - '"crop yield*" AND "deep learning"'
+    - '"crop yield*" AND "machine learning"'
     - '"remote sensing" AND "deep learning" AND agriculture'
+    - '"remote sensing" AND "machine learning" AND agriculture'
+    - '"agriculture" AND "generative AI"'
+    - '"agriculture" AND "generative model*"'
+    - '"agriculture" AND "foundation model*"'
+    - '"crop yield*" AND "generative model*"'
+    - '"remote sensing" AND "generative model*" AND agriculture'
+    - '"remote sensing" AND "diffusion model*" AND agriculture'
+    - '"remote sensing" AND "transformer*" AND agriculture'
+    - '"agriculture" AND "large language model*"'
+    - '"precision agriculture" AND "foundation model*"'
 
   # Optional: restrict topic and keyword queries to a publication-year range.
   # Use integers or the special token CURRENT_YEAR. Leave blank (null) for all years.
@@ -46,13 +58,17 @@ keywords:
   - "remote sensing"
   - "deep learning"
   - "machine learning"
-  - "satellite imagery"
   - "GeoAI"
-  - "convolutional neural network*"
-  - "random forest"
-  - "Sentinel-2"
-  - "land use"
   - "precision agriculture"
+  - "agriculture"
+  - "computer vision"
+  - "generative AI"
+  - "generative models"
+  - "foundation models"
+  - "diffusion models"
+  - "transformers"
+  - "large language models"
+  - "multimodal learning"
 
 # ── Journals of interest (the strict allow-list) ────────────
 # Used to:
@@ -78,17 +94,11 @@ journals_of_interest:
 
   # Agriculture & food systems
   - "COMPUTERS AND ELECTRONICS IN AGRICULTURE"
+  - "ARTIFICIAL INTELLIGENCE IN AGRICULTURE"
   - "AGRICULTURAL AND FOREST METEOROLOGY"
   - "FIELD CROPS RESEARCH"
   - "EUROPEAN JOURNAL OF AGRONOMY"
   - "AGRICULTURAL SYSTEMS"
-
-  # Environmental modelling & Earth systems
-  - "ENVIRONMENTAL MODELLING & SOFTWARE"
-  - "AGRICULTURAL WATER MANAGEMENT"
-  - "JOURNAL OF HYDROLOGY"
-  - "HYDROLOGY AND EARTH SYSTEM SCIENCES"
-  - "WATER RESOURCES RESEARCH"
 
 # ── Additional named queries (optional) ─────────────────────
 # Each entry: { label: str, query: str }. The query is AND-combined with the
@@ -98,6 +108,64 @@ extra_queries: []
 # extra_queries:
 #   - label: "ZALF group output"
 #     query: 'OG=("Leibniz Centre for Agricultural Landscape Research")'
+
+# ── arXiv preprint server ───────────────────────────────────
+# Pulls the latest preprints from arXiv that match the queries
+# below. Set `enabled: false` to skip arXiv entirely.
+#
+# arXiv records bypass the `journals_of_interest` allow-list
+# (preprints aren't in journals). They show up under the
+# "arXiv" publisher tab. When an arXiv preprint has been
+# published in a tracked journal, the records merge by DOI so
+# you don't see duplicates.
+#
+# arXiv search syntax:
+#   ti:"crop model"            — title
+#   abs:"deep learning"        — abstract
+#   all:agriculture            — anywhere
+#   cat:cs.LG                  — primary or cross-listed category
+#   AND / OR / ANDNOT
+# If both `query` and `categories` are set, each query is
+# AND-combined with `(cat:c1 OR cat:c2 ...)`.
+arxiv:
+  enabled: true
+  queries:
+    - label: "Crop modelling + ML"
+      query: 'all:"crop model" AND (all:"deep learning" OR all:"machine learning")'
+    - label: "Crop yield + DL"
+      query: 'all:"crop yield" AND (all:"deep learning" OR all:"machine learning")'
+    - label: "Remote sensing for agriculture"
+      query: 'all:"remote sensing" AND all:agriculture'
+    - label: "Sentinel-2 + agriculture"
+      query: 'all:"Sentinel-2" AND all:agriculture'
+    - label: "Precision agriculture"
+      query: 'all:"precision agriculture"'
+    - label: "GeoAI"
+      query: 'all:GeoAI OR (all:"geospatial" AND all:"deep learning")'
+    - label: "Generative AI for agriculture"
+      query: 'all:agriculture AND (all:"generative AI" OR all:"generative model")'
+    - label: "Diffusion models + remote sensing"
+      query: 'all:"remote sensing" AND all:"diffusion model"'
+    - label: "Foundation models for Earth observation"
+      query: '(all:"foundation model" OR all:"foundation models") AND (all:"remote sensing" OR all:"Earth observation")'
+    - label: "LLMs in agriculture"
+      query: 'all:agriculture AND (all:"large language model" OR all:"LLM")'
+  # AND-restrict every query to these arXiv categories. Leave
+  # the list empty to search across all categories.
+  categories:
+    - cs.LG
+    - cs.CV
+    - stat.ML
+    - eess.IV
+  # Up to this many most recent preprints are pulled per query.
+  results_per_query: 10
+  # Drop preprints older than this many days. Use null for no
+  # age limit. Combined with `topic_query.year_from` /
+  # `year_to` above — both filters apply (a record must pass
+  # the year range AND be no older than max_age_days). Set
+  # max_age_days: null if you only want the year range to
+  # decide.
+  max_age_days: 365
 
 # ── Fetch settings ───────────────────────────────────────────
 fetch:
