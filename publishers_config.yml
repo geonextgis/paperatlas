@@ -61,6 +61,7 @@ publishers:
       - '^agricultural systems$'
       - '^agricultural and forest meteorology$'
       - '^computers and electronics in agriculture$'
+      - '^artificial intelligence in agriculture$'
       - '^remote sensing of environment$'
       - '^science of the total environment$'
       - '^european journal of agronomy$'
