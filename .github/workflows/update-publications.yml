@@ -5,15 +5,15 @@ name: Update publications and deploy
 
 on:
   schedule:
-    - cron: "0 6 * * 1"   # Every Monday 06:00 UTC
+    - cron: "0 6 * * 1" # Every Monday 06:00 UTC
   workflow_dispatch:
   push:
     branches: [main]
 
 permissions:
-  contents: write   # commit refreshed publications.json back to main
-  pages: write      # publish to GitHub Pages
-  id-token: write   # OIDC for actions/deploy-pages@v4
+  contents: write # commit refreshed publications.json back to main
+  pages: write # publish to GitHub Pages
+  id-token: write # OIDC for actions/deploy-pages@v4
 
 concurrency:
   group: pages

@@ -14,7 +14,7 @@
     journalsOfInterest: [],
     filters: {
       journal: "",
-      publisher: "",     // "" = all; else group label e.g. "Nature"
+      publisher: "", // "" = all; else group label e.g. "Nature"
       year: null,
       search: "",
     },
@@ -46,19 +46,29 @@
   const DEFAULT_PUBLISHER_GROUPS = [
     {
       label: "Nature",
-      test: (j) => /\bnature\b/i.test(j) || /^communications\s+(earth|biology|materials|chemistry|physics|engineering)/i.test(j) || /^scientific reports$/i.test(j) || /^npj\b/i.test(j),
+      test: (j) =>
+        /\bnature\b/i.test(j) ||
+        /^communications\s+(earth|biology|materials|chemistry|physics|engineering)/i.test(
+          j,
+        ) ||
+        /^scientific reports$/i.test(j) ||
+        /^npj\b/i.test(j),
     },
     {
       label: "Science",
       test: (j) =>
         /^science$/i.test(j) ||
-        /^science\s+(advances|signaling|robotics|translational|immunology)/i.test(j),
+        /^science\s+(advances|signaling|robotics|translational|immunology)/i.test(
+          j,
+        ),
     },
     {
       label: "Cell",
       test: (j) =>
         /^cell\b/i.test(j) ||
-        /^(current biology|one earth|joule|patterns|matter|chem|iscience|heliyon|trends in)/i.test(j),
+        /^(current biology|one earth|joule|patterns|matter|chem|iscience|heliyon|trends in)/i.test(
+          j,
+        ),
     },
     {
       label: "PNAS",
@@ -69,28 +79,28 @@
       label: "Elsevier",
       test: (j) =>
         /^(field crops research|agricultural systems|agricultural and forest meteorology|computers and electronics in agriculture|remote sensing of environment|science of the total environment|european journal of agronomy|soil & tillage research|soil and tillage research|environmental modelling.*software|environmental modeling.*software|geoderma|catena|ecological modelling|ecological modeling|agricultural water management|isprs journal of photogrammetry|international journal of applied earth observation|computers .+ geosciences|earth-?science reviews|advances in water resources|biosystems engineering|smart agricultural technology|computers and electronics|crop protection|european journal of soil science|land use policy|global ecology and conservation)$/i.test(
-          j
+          j,
         ),
     },
     {
       label: "Wiley",
       test: (j) =>
         /^(global change biology|new phytologist|plant cell .+environment|plant,? cell .+environment|ecology letters|journal of agronomy and crop science|food and energy security|gcb bioenergy|earth's future|journal of geophysical research|water resources research|geophysical research letters|journal of advances in modeling earth systems|land degradation .+development|hydrological processes|river research and applications)$/i.test(
-          j
+          j,
         ),
     },
     {
       label: "Springer",
       test: (j) =>
         /^(climatic change|biogeochemistry|theoretical and applied climatology|precision agriculture|nutrient cycling in agroecosystems|plant and soil|euphytica|regional environmental change|mitigation and adaptation strategies for global change|agronomy for sustainable development|food security|environmental monitoring and assessment|environmental science and pollution research|paddy and water environment|earth systems and environment|natural hazards|geoinformatica)$/i.test(
-          j
+          j,
         ),
     },
     {
       label: "Taylor & Francis",
       test: (j) =>
         /^(international journal of remote sensing|gisscience .+ remote sensing|gi science .+ remote sensing|geocarto international|remote sensing letters|international journal of digital earth|international journal of geographical information science|cartography and geographic information science|journal of land use science|international journal of agricultural sustainability|journal of sustainable agriculture|critical reviews in plant sciences|big earth data)$/i.test(
-          j
+          j,
         ),
     },
     {
@@ -103,7 +113,7 @@
       label: "MDPI",
       test: (j) =>
         /^(remote sensing|agronomy-basel|agronomy$|agriculture-basel|agriculture$|sustainability|land-basel|land$|water-basel|water$|atmosphere-basel|atmosphere$|sensors-basel|sensors$|drones-basel|drones$|forests$|plants-basel|plants$|ijgi$|isprs international journal of geo-information)$/i.test(
-          j
+          j,
         ),
     },
     {
@@ -119,20 +129,17 @@
     },
     {
       label: "IEEE",
-      test: (j) =>
-        /^ieee\b/i.test(j) ||
-        /^proceedings of the ieee$/i.test(j),
+      test: (j) => /^ieee\b/i.test(j) || /^proceedings of the ieee$/i.test(j),
     },
     {
       label: "AGU",
-      test: (j) =>
-        /\b(eos|earth and space science|agu advances)\b/i.test(j),
+      test: (j) => /\b(eos|earth and space science|agu advances)\b/i.test(j),
     },
     {
       label: "AMS",
       test: (j) =>
         /^(journal of climate|journal of hydrometeorology|monthly weather review|journal of applied meteorology|weather and forecasting|bulletin of the american meteorological society)$/i.test(
-          j
+          j,
         ),
     },
     {
@@ -143,33 +150,36 @@
       label: "Cambridge",
       test: (j) =>
         /^(journal of agricultural science|experimental agriculture|environment and development economics|weed science)$/i.test(
-          j
+          j,
         ),
     },
     {
       label: "Oxford",
       test: (j) =>
         /^(journal of experimental botany|tree physiology|plant physiology|bioscience|forestry|oxford open climate change)$/i.test(
-          j
+          j,
         ),
     },
     {
       label: "RSC",
       test: (j) =>
         /^environmental science:\s+(processes|water|advances|atmospheres|nano)/i.test(
-          j
+          j,
         ) || /^(green chemistry|food .+ function)$/i.test(j),
     },
     {
       label: "Sage",
       test: (j) =>
         /^(progress in physical geography|the holocene|outlook on agriculture)$/i.test(
-          j
+          j,
         ),
     },
     {
       label: "ESA",
-      test: (j) => /^(ecology|ecological applications|ecosphere|frontiers in ecology and the environment|ecological monographs)$/i.test(j),
+      test: (j) =>
+        /^(ecology|ecological applications|ecosphere|frontiers in ecology and the environment|ecological monographs)$/i.test(
+          j,
+        ),
     },
     {
       label: "PLOS",
@@ -179,12 +189,13 @@
       label: "Copernicus",
       test: (j) =>
         /^(biogeosciences|hydrology and earth system sciences|earth system science data|geoscientific model development|atmospheric chemistry and physics|the cryosphere|earth system dynamics|soil$|soil-eu|natural hazards and earth system sciences)$/i.test(
-          j
+          j,
         ),
     },
     {
       label: "arXiv",
-      test: (j) => /^(arxiv|biorxiv|medrxiv|earth?xiv|chemrxiv)\b|preprint/i.test(j),
+      test: (j) =>
+        /^(arxiv|biorxiv|medrxiv|earth?xiv|chemrxiv)\b|preprint/i.test(j),
     },
   ];
 
@@ -234,7 +245,7 @@
         } catch (err) {
           console.warn(
             `publishers_config.yml: skipping invalid regex for ${label}: ${p}`,
-            err
+            err,
           );
         }
       });
@@ -288,7 +299,7 @@
   function renderSciText(str) {
     return escapeHtml(str).replace(
       /&lt;(\/?)(sub|sup)&gt;/gi,
-      (_, slash, tag) => `<${slash}${tag.toLowerCase()}>`
+      (_, slash, tag) => `<${slash}${tag.toLowerCase()}>`,
     );
   }
 
@@ -330,7 +341,7 @@
     if (els.themeToggle) {
       els.themeToggle.setAttribute(
         "title",
-        theme === "light" ? "Switch to dark theme" : "Switch to light theme"
+        theme === "light" ? "Switch to dark theme" : "Switch to light theme",
       );
     }
   }
@@ -559,12 +570,14 @@
     switch (state.sort) {
       case "cited":
         sorted.sort(
-          (a, b) => (Number(b.citations) || 0) - (Number(a.citations) || 0)
+          (a, b) => (Number(b.citations) || 0) - (Number(a.citations) || 0),
         );
         break;
       case "alpha":
         sorted.sort((a, b) =>
-          stripSciTags(a.title || "").localeCompare(stripSciTags(b.title || ""))
+          stripSciTags(a.title || "").localeCompare(
+            stripSciTags(b.title || ""),
+          ),
         );
         break;
       case "year":
@@ -582,9 +595,10 @@
   // ─── Rendering ──────────────────────────────────────────
 
   function renderCard(p, idx) {
-    const authorsHtml = (p.authors && p.authors.length)
-      ? p.authors.map(escapeHtml).join(", ")
-      : "—";
+    const authorsHtml =
+      p.authors && p.authors.length
+        ? p.authors.map(escapeHtml).join(", ")
+        : "—";
 
     const cites = Number(p.citations) || 0;
     const citeCls = citationClass(cites);
@@ -612,7 +626,7 @@
 
     const doiHtml = p.doi
       ? `<a class="pub-doi" href="https://doi.org/${encodeURIComponent(
-          p.doi
+          p.doi,
         )}" target="_blank" rel="noopener">${escapeHtml(p.doi)}</a>`
       : `<span class="pub-doi" style="color: var(--text-mute); border:none">—</span>`;
 
@@ -620,7 +634,7 @@
     const publisher = publisherFor(p.journal);
     if (publisher && publisher !== "Other") {
       badges.push(
-        `<span class="pub-publisher" data-publisher="${escapeHtml(publisher)}">${escapeHtml(publisher)}</span>`
+        `<span class="pub-publisher" data-publisher="${escapeHtml(publisher)}">${escapeHtml(publisher)}</span>`,
       );
     }
     if (Array.isArray(p.sources) && p.sources.includes("journal")) {
@@ -628,7 +642,7 @@
     }
     if (cites > 0) {
       badges.push(
-        `<span class="pub-citations ${citeCls}">${cites} cite${cites === 1 ? "" : "s"}</span>`
+        `<span class="pub-citations ${citeCls}">${cites} cite${cites === 1 ? "" : "s"}</span>`,
       );
     }
 
@@ -637,7 +651,7 @@
     card.style.animationDelay = `${Math.min(idx * 30, 600)}ms`;
     card.setAttribute(
       "aria-label",
-      `${stripSciTags(p.title) || "Untitled"} (${p.year || "n.d."})`
+      `${stripSciTags(p.title) || "Untitled"} (${p.year || "n.d."})`,
     );
 
     card.innerHTML = `
@@ -730,7 +744,7 @@
       debounce(() => {
         state.filters.search = els.search.value;
         render();
-      }, 300)
+      }, 300),
     );
   }
 
