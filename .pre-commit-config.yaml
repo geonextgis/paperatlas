@@ -4,8 +4,6 @@ repos:
     hooks:
       - id: check-toml
       - id: check-yaml
-        exclude: ^cropengine/configs/
-      - id: end-of-file-fixer
-        types: [python]
+        exclude: ^paperatlas/configs/
       - id: check-added-large-files
         args: ["--maxkb=500"]
