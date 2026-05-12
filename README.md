@@ -27,7 +27,7 @@ The site supports both **dark and light themes**, with a toggle in the header.
 1. Fork / clone this repository.
 2. **Edit `query_config.yml`** to set your topic terms, keywords, journals of
    interest, and arXiv queries. This is the only file you need to edit to
-   change *what* gets fetched.
+   change _what_ gets fetched.
 3. (Optional) **Edit `publishers_config.yml`** to fix or extend the journal →
    publisher mapping that drives the publisher tabs on the site.
 4. Obtain a Web of Science API key from <https://developer.clarivate.com/>
@@ -39,7 +39,7 @@ The site supports both **dark and light themes**, with a toggle in the header.
 6. **Enable GitHub Pages with GitHub Actions as the source:**
    **Settings → Pages → Build and deployment → Source → GitHub Actions.**
    (The "Deploy from branch" mode is no longer used — the workflow now
-   deploys directly so the fetch always runs *before* the docs are built.)
+   deploys directly so the fetch always runs _before_ the docs are built.)
 7. Run the workflow manually once: **Actions → Update publications and
    deploy → Run workflow**.
 8. Your site is live at `https://{your-github-username}.github.io/{repo-name}/`
@@ -47,7 +47,7 @@ The site supports both **dark and light themes**, with a toggle in the header.
 
 ## How the workflow works
 
-A single workflow (`update-publications.yml`) does both fetch *and* deploy in
+A single workflow (`update-publications.yml`) does both fetch _and_ deploy in
 order, so the published site is guaranteed to use fresh data:
 
 1. **Fetch** (only on cron + manual triggers) — runs
@@ -98,7 +98,7 @@ title isn't on the allow-list.
    `(<your query>) AND (cat:c1 OR cat:c2 ...)` when `arxiv.categories` is
    set. Records:
    - bypass the `journals_of_interest` allow-list (preprints aren't journals);
-   - honour the same `topic_query.year_from` / `year_to` range *plus* an
+   - honour the same `topic_query.year_from` / `year_to` range _plus_ an
      additional rolling `arxiv.max_age_days` window — both filters apply;
    - dedupe against WoS via DOI when the preprint has been formally
      published. Otherwise the record carries the arXiv-assigned DOI

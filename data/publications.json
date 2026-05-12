@@ -58,10 +58,7 @@
       },
       {
         "label": "PNAS",
-        "patterns": [
-          "proceedings of the national academy",
-          "^pnas\\b"
-        ]
+        "patterns": ["proceedings of the national academy", "^pnas\\b"]
       },
       {
         "label": "Elsevier",
@@ -180,9 +177,7 @@
       },
       {
         "label": "Frontiers",
-        "patterns": [
-          "^frontiers in\\b"
-        ]
+        "patterns": ["^frontiers in\\b"]
       },
       {
         "label": "ACS",
@@ -194,16 +189,11 @@
       },
       {
         "label": "IEEE",
-        "patterns": [
-          "^ieee\\b",
-          "^proceedings of the ieee$"
-        ]
+        "patterns": ["^ieee\\b", "^proceedings of the ieee$"]
       },
       {
         "label": "AGU",
-        "patterns": [
-          "\\b(eos|earth and space science|agu advances)\\b"
-        ]
+        "patterns": ["\\b(eos|earth and space science|agu advances)\\b"]
       },
       {
         "label": "AMS",
@@ -218,9 +208,7 @@
       },
       {
         "label": "Annual Reviews",
-        "patterns": [
-          "^annual review of\\b"
-        ]
+        "patterns": ["^annual review of\\b"]
       },
       {
         "label": "Cambridge",
@@ -270,9 +258,7 @@
       },
       {
         "label": "PLOS",
-        "patterns": [
-          "^plos\\b"
-        ]
+        "patterns": ["^plos\\b"]
       },
       {
         "label": "Copernicus",
@@ -717,22 +703,13 @@
       ],
       "citations": 3,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:multimodal learning"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:multimodal learning"]
     },
     {
       "uid": "WOS:001621502900001",
       "title": "Organ3DNet: A deep network for segmenting organ semantics and instances from dense plant point clouds",
-      "authors": [
-        "Li, Dawei",
-        "Huang, Jiali",
-        "Zhao, Boyuan",
-        "Wen, Weiliang"
-      ],
+      "authors": ["Li, Dawei", "Huang, Jiali", "Zhao, Boyuan", "Wen, Weiliang"],
       "journal": "ARTIFICIAL INTELLIGENCE IN AGRICULTURE",
       "year": 2026,
       "volume": "16",
@@ -749,12 +726,8 @@
       ],
       "citations": 2,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"crop yield*\" AND \"deep learning\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"crop yield*\" AND \"deep learning\""]
     },
     {
       "uid": "WOS:001685404700001",
@@ -787,12 +760,8 @@
       ],
       "citations": 2,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"crop yield*\" AND \"deep learning\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"crop yield*\" AND \"deep learning\""]
     },
     {
       "uid": "WOS:001633464700001",
@@ -822,12 +791,8 @@
       ],
       "citations": 2,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:GeoAI"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:GeoAI"]
     },
     {
       "uid": "WOS:001693284300006",
@@ -854,12 +819,8 @@
       "keywords": [],
       "citations": 2,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:generative AI"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:generative AI"]
     },
     {
       "uid": "WOS:001672429700001",
@@ -886,9 +847,7 @@
       ],
       "citations": 1,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"remote sensing\" AND \"deep learning\" AND agriculture"
       ]
@@ -924,9 +883,7 @@
       ],
       "citations": 1,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"remote sensing\" AND \"deep learning\" AND agriculture",
         "topic:\"agriculture\" AND \"foundation model*\"",
@@ -959,9 +916,7 @@
       ],
       "citations": 1,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"remote sensing\" AND \"machine learning\" AND agriculture"
       ]
@@ -995,9 +950,7 @@
       ],
       "citations": 1,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"remote sensing\" AND \"transformer*\" AND agriculture"
       ]
@@ -1005,10 +958,7 @@
     {
       "uid": "WOS:001620445700001",
       "title": "Super-resolve satellite imagery to perform on par with UAV-borne hyperspectral imagery in predicting spring wheat physiological parameters using transformer models",
-      "authors": [
-        "Zhao, Jiangsan",
-        "Geipel, Jakob"
-      ],
+      "authors": ["Zhao, Jiangsan", "Geipel, Jakob"],
       "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
       "year": 2026,
       "volume": "240",
@@ -1026,9 +976,7 @@
       ],
       "citations": 1,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"remote sensing\" AND \"transformer*\" AND agriculture"
       ]
@@ -1036,11 +984,7 @@
     {
       "uid": "WOS:001679616600001",
       "title": "From identification to prevention: a kiwi disease diagnosis system integrating vision and large language models",
-      "authors": [
-        "Li, Xiaopeng",
-        "Yang, Shuo",
-        "Li, Shuqin"
-      ],
+      "authors": ["Li, Xiaopeng", "Yang, Shuo", "Li, Shuqin"],
       "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
       "year": 2026,
       "volume": "244",
@@ -1057,12 +1001,8 @@
       ],
       "citations": 1,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"agriculture\" AND \"large language model*\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"agriculture\" AND \"large language model*\""]
     },
     {
       "uid": "WOS:001630595200005",
@@ -1092,10 +1032,7 @@
       ],
       "citations": 1,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword"
-      ],
+      "sources": ["topic", "keyword"],
       "matched_queries": [
         "topic:\"agriculture\" AND \"large language model*\"",
         "keyword:multimodal learning"
@@ -1130,10 +1067,7 @@
       ],
       "citations": 1,
       "open_access": false,
-      "sources": [
-        "keyword",
-        "journal"
-      ],
+      "sources": ["keyword", "journal"],
       "matched_queries": [
         "keyword:remote sensing",
         "keyword:machine learning",
@@ -1143,11 +1077,7 @@
     {
       "uid": "WOS:001694425000001",
       "title": "Automation, AI, and GenAI-driven systems for animal drinking behaviour and water intake monitoring: Exploring technologies, applications, and emerging challenges",
-      "authors": [
-        "Ruchay, Alexey",
-        "Guo, Hao",
-        "Pezzuolo, Andrea"
-      ],
+      "authors": ["Ruchay, Alexey", "Guo, Hao", "Pezzuolo, Andrea"],
       "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
       "year": 2026,
       "volume": "245",
@@ -1164,12 +1094,8 @@
       ],
       "citations": 1,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:generative AI"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:generative AI"]
     },
     {
       "uid": "WOS:001716041500001",
@@ -1191,12 +1117,8 @@
       "keywords": [],
       "citations": 1,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:diffusion models"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:diffusion models"]
     },
     {
       "uid": "WOS:001718265700018",
@@ -1220,12 +1142,8 @@
       "keywords": [],
       "citations": 1,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:diffusion models"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:diffusion models"]
     },
     {
       "uid": "WOS:001617971700001",
@@ -1255,19 +1173,13 @@
       ],
       "citations": 1,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:multimodal learning"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:multimodal learning"]
     },
     {
       "uid": "WOS:001737667500001",
       "title": "Losses of ecological and social sustainability among small-scale fishers in Kenya's nearshore fisheries",
-      "authors": [
-        "McClanahan, T. R."
-      ],
+      "authors": ["McClanahan, T. R."],
       "journal": "NATURE FOOD",
       "year": 2026,
       "volume": "7",
@@ -1278,12 +1190,8 @@
       "keywords": [],
       "citations": 1,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE FOOD"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE FOOD"]
     },
     {
       "uid": "WOS:001755907800001",
@@ -1312,12 +1220,8 @@
       "keywords": [],
       "citations": 1,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE CLIMATE CHANGE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE CLIMATE CHANGE"]
     },
     {
       "uid": "WOS:001754121200001",
@@ -1341,12 +1245,8 @@
       "keywords": [],
       "citations": 1,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE CLIMATE CHANGE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE CLIMATE CHANGE"]
     },
     {
       "uid": "WOS:001730668900001",
@@ -1374,11 +1274,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword",
-        "journal"
-      ],
+      "sources": ["topic", "keyword", "journal"],
       "matched_queries": [
         "topic:\"crop model*\"",
         "keyword:large language models",
@@ -1411,11 +1307,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword",
-        "journal"
-      ],
+      "sources": ["topic", "keyword", "journal"],
       "matched_queries": [
         "topic:\"crop model*\"",
         "keyword:machine learning",
@@ -1459,14 +1351,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword"
-      ],
-      "matched_queries": [
-        "topic:\"crop model*\"",
-        "keyword:machine learning"
-      ]
+      "sources": ["topic", "keyword"],
+      "matched_queries": ["topic:\"crop model*\"", "keyword:machine learning"]
     },
     {
       "uid": "WOS:001737760900001",
@@ -1493,9 +1379,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"crop model*\"",
         "topic:\"climate change\" AND crop*"
@@ -1528,9 +1412,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"crop model*\"",
         "topic:\"food security\" AND crop*",
@@ -1568,13 +1450,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"crop model*\"",
-        "topic:\"crop yield*\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"crop model*\"", "topic:\"crop yield*\""]
     },
     {
       "uid": "WOS:001718087800001",
@@ -1603,13 +1480,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"crop model*\"",
-        "topic:\"crop yield*\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"crop model*\"", "topic:\"crop yield*\""]
     },
     {
       "uid": "WOS:001713673000001",
@@ -1638,12 +1510,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"crop model*\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"crop model*\""]
     },
     {
       "uid": "WOS:001739997100001",
@@ -1680,10 +1548,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "journal"
-      ],
+      "sources": ["topic", "journal"],
       "matched_queries": [
         "topic:\"crop model*\"",
         "journal:FIELD CROPS RESEARCH"
@@ -1722,9 +1587,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"crop model*\"",
         "topic:\"climate change\" AND crop*"
@@ -1760,10 +1623,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "journal"
-      ],
+      "sources": ["topic", "journal"],
       "matched_queries": [
         "topic:\"crop yield*\"",
         "journal:EUROPEAN JOURNAL OF AGRONOMY"
@@ -1800,11 +1660,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword",
-        "journal"
-      ],
+      "sources": ["topic", "keyword", "journal"],
       "matched_queries": [
         "topic:\"crop yield*\"",
         "topic:\"crop yield*\" AND \"deep learning\"",
@@ -1841,10 +1697,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword"
-      ],
+      "sources": ["topic", "keyword"],
       "matched_queries": [
         "topic:\"crop yield*\"",
         "topic:\"precision agriculture\"",
@@ -1884,10 +1737,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "journal"
-      ],
+      "sources": ["topic", "journal"],
       "matched_queries": [
         "topic:\"crop yield*\"",
         "topic:\"food security\" AND crop*",
@@ -1901,12 +1751,7 @@
     {
       "uid": "WOS:001732457900001",
       "title": "Effects of different water and nitrogen on nitrate distribution and leaching in soil, nitrogen uptake, utilization and translocation by winter wheat",
-      "authors": [
-        "Xu, Weina",
-        "Yang, Baoping",
-        "Jia, Zhikuan",
-        "Han, Wenting"
-      ],
+      "authors": ["Xu, Weina", "Yang, Baoping", "Jia, Zhikuan", "Han, Wenting"],
       "journal": "EUROPEAN JOURNAL OF AGRONOMY",
       "year": 2026,
       "volume": "177",
@@ -1922,10 +1767,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "journal"
-      ],
+      "sources": ["topic", "journal"],
       "matched_queries": [
         "topic:\"crop yield*\"",
         "journal:EUROPEAN JOURNAL OF AGRONOMY"
@@ -1961,12 +1803,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"crop yield*\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"crop yield*\""]
     },
     {
       "uid": "WOS:001724827700001",
@@ -1995,9 +1833,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"crop yield*\"",
         "topic:\"climate change\" AND crop*"
@@ -2031,9 +1867,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"crop yield*\"",
         "topic:\"food security\" AND crop*",
@@ -2070,10 +1904,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "journal"
-      ],
+      "sources": ["topic", "journal"],
       "matched_queries": [
         "topic:\"agricultural system*\"",
         "journal:COMPUTERS AND ELECTRONICS IN AGRICULTURE"
@@ -2082,11 +1913,7 @@
     {
       "uid": "WOS:001737572100001",
       "title": "Economic trade-offs of farmland conversion to Eucalyptus plantations in southern Ethiopia",
-      "authors": [
-        "Furo, Gemedo",
-        "Gong, Zhiwen",
-        "Huo, Ran"
-      ],
+      "authors": ["Furo, Gemedo", "Gong, Zhiwen", "Huo, Ran"],
       "journal": "AGRICULTURAL SYSTEMS",
       "year": 2026,
       "volume": "236",
@@ -2105,10 +1932,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "journal"
-      ],
+      "sources": ["topic", "journal"],
       "matched_queries": [
         "topic:\"agricultural system*\"",
         "topic:\"food security\" AND crop*",
@@ -2141,21 +1965,13 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"agricultural system*\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"agricultural system*\""]
     },
     {
       "uid": "WOS:001739917900001",
       "title": "Multi-decadal remote sensing observations evaluating the spatiotemporal patterns of seawater intrusion impact on a crop-rotation system☆",
-      "authors": [
-        "Ghirardelli, Aurora",
-        "Xue, Chenli",
-        "Tarolli, Paolo"
-      ],
+      "authors": ["Ghirardelli, Aurora", "Xue, Chenli", "Tarolli, Paolo"],
       "journal": "INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION",
       "year": 2026,
       "volume": "149",
@@ -2173,9 +1989,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"agricultural system*\"",
         "topic:\"agriculture\" AND \"machine learning\"",
@@ -2208,10 +2022,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "journal"
-      ],
+      "sources": ["topic", "journal"],
       "matched_queries": [
         "topic:\"agricultural system*\"",
         "topic:\"crop yield*\" AND \"machine learning\"",
@@ -2221,11 +2032,7 @@
     {
       "uid": "WOS:001727217600001",
       "title": "Soil health forecasting: Exploring pathways toward integration in digital agronomic advisory for sustainable soil management",
-      "authors": [
-        "Rasche, Frank",
-        "Mkuhlani, Siyabusa",
-        "Vanlauwe, Bernard"
-      ],
+      "authors": ["Rasche, Frank", "Mkuhlani, Siyabusa", "Vanlauwe, Bernard"],
       "journal": "AGRICULTURAL SYSTEMS",
       "year": 2026,
       "volume": "235",
@@ -2244,9 +2051,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"agricultural system*\"",
         "topic:\"agriculture\" AND \"machine learning\""
@@ -2255,11 +2060,7 @@
     {
       "uid": "WOS:001720961500001",
       "title": "Coordinating food security and ecological pressures in the North China Plain: A Doughnut framework approach",
-      "authors": [
-        "Dai, Yating",
-        "Yu, Le",
-        "Cao, Bowen"
-      ],
+      "authors": ["Dai, Yating", "Yu, Le", "Cao, Bowen"],
       "journal": "AGRICULTURAL SYSTEMS",
       "year": 2026,
       "volume": "235",
@@ -2275,12 +2076,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"agricultural system*\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"agricultural system*\""]
     },
     {
       "uid": "WOS:001719627200001",
@@ -2308,12 +2105,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"agricultural system*\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"agricultural system*\""]
     },
     {
       "uid": "WOS:001717743400001",
@@ -2339,12 +2132,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"agricultural system*\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"agricultural system*\""]
     },
     {
       "uid": "WOS:001705736800002",
@@ -2377,12 +2166,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"agricultural system*\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"agricultural system*\""]
     },
     {
       "uid": "WOS:001748278600001",
@@ -2416,11 +2201,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword",
-        "journal"
-      ],
+      "sources": ["topic", "keyword", "journal"],
       "matched_queries": [
         "topic:\"precision agriculture\"",
         "topic:\"agriculture\" AND \"deep learning\"",
@@ -2457,11 +2238,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword",
-        "journal"
-      ],
+      "sources": ["topic", "keyword", "journal"],
       "matched_queries": [
         "topic:\"precision agriculture\"",
         "topic:\"remote sensing\" AND \"transformer*\" AND agriculture",
@@ -2502,11 +2279,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword",
-        "journal"
-      ],
+      "sources": ["topic", "keyword", "journal"],
       "matched_queries": [
         "topic:\"precision agriculture\"",
         "keyword:remote sensing",
@@ -2518,12 +2291,7 @@
     {
       "uid": "WOS:001748200400001",
       "title": "AgriMAPO: A multimodal automatic prompt optimization approach for crop disease classification using large language models",
-      "authors": [
-        "Shuai, Luyu",
-        "Zhu, Linchao",
-        "Yang, Yi",
-        "Lin, Tao"
-      ],
+      "authors": ["Shuai, Luyu", "Zhu, Linchao", "Yang, Yi", "Lin, Tao"],
       "journal": "ARTIFICIAL INTELLIGENCE IN AGRICULTURE",
       "year": 2026,
       "volume": "16",
@@ -2540,11 +2308,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword",
-        "journal"
-      ],
+      "sources": ["topic", "keyword", "journal"],
       "matched_queries": [
         "topic:\"precision agriculture\"",
         "topic:\"agriculture\" AND \"deep learning\"",
@@ -2586,11 +2350,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword",
-        "journal"
-      ],
+      "sources": ["topic", "keyword", "journal"],
       "matched_queries": [
         "topic:\"precision agriculture\"",
         "keyword:remote sensing",
@@ -2626,10 +2386,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword"
-      ],
+      "sources": ["topic", "keyword"],
       "matched_queries": [
         "topic:\"precision agriculture\"",
         "topic:\"agriculture\" AND \"deep learning\"",
@@ -2664,10 +2421,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword"
-      ],
+      "sources": ["topic", "keyword"],
       "matched_queries": [
         "topic:\"precision agriculture\"",
         "topic:\"agriculture\" AND \"deep learning\"",
@@ -2678,10 +2432,7 @@
     {
       "uid": "WOS:001730684200001",
       "title": "Plant acoustic emission as early stress signals: Towards remote integrated monitoring for sustainable agriculture",
-      "authors": [
-        "Saha, Bedabrata",
-        "Rastogi, Anshu"
-      ],
+      "authors": ["Saha, Bedabrata", "Rastogi, Anshu"],
       "journal": "EUROPEAN JOURNAL OF AGRONOMY",
       "year": 2026,
       "volume": "177",
@@ -2697,10 +2448,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword"
-      ],
+      "sources": ["topic", "keyword"],
       "matched_queries": [
         "topic:\"precision agriculture\"",
         "topic:\"food security\" AND crop*",
@@ -2745,10 +2493,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword"
-      ],
+      "sources": ["topic", "keyword"],
       "matched_queries": [
         "topic:\"precision agriculture\"",
         "keyword:precision agriculture"
@@ -2779,11 +2524,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword",
-        "journal"
-      ],
+      "sources": ["topic", "keyword", "journal"],
       "matched_queries": [
         "topic:\"food security\" AND crop*",
         "topic:\"agriculture\" AND \"large language model*\"",
@@ -2795,11 +2536,7 @@
     {
       "uid": "WOS:001738350800001",
       "title": "Optimizing green manure application for achieving reduced greenhouse gas emissions and sustained crop yields",
-      "authors": [
-        "Liu, Dantong",
-        "Song, Changchun",
-        "Song, Yanyu"
-      ],
+      "authors": ["Liu, Dantong", "Song, Changchun", "Song, Yanyu"],
       "journal": "FIELD CROPS RESEARCH",
       "year": 2026,
       "volume": "342",
@@ -2816,10 +2553,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "journal"
-      ],
+      "sources": ["topic", "journal"],
       "matched_queries": [
         "topic:\"food security\" AND crop*",
         "journal:FIELD CROPS RESEARCH"
@@ -2858,10 +2592,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "journal"
-      ],
+      "sources": ["topic", "journal"],
       "matched_queries": [
         "topic:\"food security\" AND crop*",
         "journal:FIELD CROPS RESEARCH"
@@ -2898,12 +2629,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"food security\" AND crop*"
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"food security\" AND crop*"]
     },
     {
       "uid": "WOS:001710658500001",
@@ -2922,20 +2649,11 @@
       "pages": "Art. 115349",
       "doi": "10.1016/j.rse.2026.115349",
       "abstract": "",
-      "keywords": [
-        "Maize",
-        "Crop phenology",
-        "XGBoost",
-        "Real-time"
-      ],
+      "keywords": ["Maize", "Crop phenology", "XGBoost", "Real-time"],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"food security\" AND crop*"
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"food security\" AND crop*"]
     },
     {
       "uid": "WOS:001750846800001",
@@ -2967,10 +2685,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "journal"
-      ],
+      "sources": ["topic", "journal"],
       "matched_queries": [
         "topic:\"climate change\" AND crop*",
         "journal:AGRICULTURAL SYSTEMS"
@@ -3006,12 +2721,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"climate change\" AND crop*"
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"climate change\" AND crop*"]
     },
     {
       "uid": "WOS:001733485400001",
@@ -3040,12 +2751,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"climate change\" AND crop*"
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"climate change\" AND crop*"]
     },
     {
       "uid": "WOS:001729408100001",
@@ -3079,20 +2786,13 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"climate change\" AND crop*"
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"climate change\" AND crop*"]
     },
     {
       "uid": "WOS:001750792100001",
       "title": "Dual-stage parameter-efficient tuning for in-field plant disease few-shot classification",
-      "authors": [
-        "Khankalantary, Saeed",
-        "Eskandari, Mohammad Reza"
-      ],
+      "authors": ["Khankalantary, Saeed", "Eskandari, Mohammad Reza"],
       "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
       "year": 2026,
       "volume": "248",
@@ -3110,11 +2810,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword",
-        "journal"
-      ],
+      "sources": ["topic", "keyword", "journal"],
       "matched_queries": [
         "topic:\"agriculture\" AND \"deep learning\"",
         "keyword:deep learning",
@@ -3152,10 +2848,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword"
-      ],
+      "sources": ["topic", "keyword"],
       "matched_queries": [
         "topic:\"agriculture\" AND \"deep learning\"",
         "keyword:deep learning"
@@ -3192,12 +2885,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"agriculture\" AND \"deep learning\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"agriculture\" AND \"deep learning\""]
     },
     {
       "uid": "WOS:001718945800001",
@@ -3225,9 +2914,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"agriculture\" AND \"deep learning\"",
         "topic:\"agriculture\" AND \"machine learning\""
@@ -3236,11 +2923,7 @@
     {
       "uid": "WOS:001704031500002",
       "title": "Deep learning identifies optimal single spectral band for non-destructive fresh weight estimation in cabbage: A novel paradigm for postharvest management technology",
-      "authors": [
-        "Shin, Hyoung-sub",
-        "Go, Seung-hwan",
-        "Park, Jong-hwa"
-      ],
+      "authors": ["Shin, Hyoung-sub", "Go, Seung-hwan", "Park, Jong-hwa"],
       "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
       "year": 2026,
       "volume": "246",
@@ -3259,9 +2942,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"agriculture\" AND \"deep learning\"",
         "topic:\"crop yield*\" AND \"deep learning\""
@@ -3296,11 +2977,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword",
-        "journal"
-      ],
+      "sources": ["topic", "keyword", "journal"],
       "matched_queries": [
         "topic:\"agriculture\" AND \"machine learning\"",
         "keyword:machine learning",
@@ -3311,11 +2988,7 @@
     {
       "uid": "WOS:001728472400001",
       "title": "Decoding drought-yield relationships in the US Midwest: A multiscale analysis using climatic indicators and random forests",
-      "authors": [
-        "Islam, S. M. Samiul",
-        "Mount, Jerry",
-        "Demir, Ibrahim"
-      ],
+      "authors": ["Islam, S. M. Samiul", "Mount, Jerry", "Demir, Ibrahim"],
       "journal": "EUROPEAN JOURNAL OF AGRONOMY",
       "year": 2026,
       "volume": "177",
@@ -3334,11 +3007,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword",
-        "journal"
-      ],
+      "sources": ["topic", "keyword", "journal"],
       "matched_queries": [
         "topic:\"agriculture\" AND \"machine learning\"",
         "keyword:machine learning",
@@ -3376,12 +3045,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"agriculture\" AND \"machine learning\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"agriculture\" AND \"machine learning\""]
     },
     {
       "uid": "WOS:001724557400001",
@@ -3415,9 +3080,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"agriculture\" AND \"machine learning\"",
         "topic:\"remote sensing\" AND \"machine learning\" AND agriculture"
@@ -3455,9 +3118,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"agriculture\" AND \"machine learning\"",
         "topic:\"crop yield*\" AND \"machine learning\""
@@ -3494,12 +3155,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"crop yield*\" AND \"deep learning\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"crop yield*\" AND \"deep learning\""]
     },
     {
       "uid": "WOS:001757146100001",
@@ -3528,12 +3185,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"crop yield*\" AND \"deep learning\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"crop yield*\" AND \"deep learning\""]
     },
     {
       "uid": "WOS:001684619300001",
@@ -3564,20 +3217,13 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"crop yield*\" AND \"deep learning\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"crop yield*\" AND \"deep learning\""]
     },
     {
       "uid": "WOS:001692634700001",
       "title": "Artificial intelligence for pest identification and decision support in sustainable crop protection: A critical review",
-      "authors": [
-        "Amiri, Azam",
-        "Bandani, Ali R."
-      ],
+      "authors": ["Amiri, Azam", "Bandani, Ali R."],
       "journal": "EUROPEAN JOURNAL OF AGRONOMY",
       "year": 2026,
       "volume": "176",
@@ -3596,9 +3242,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"crop yield*\" AND \"deep learning\"",
         "topic:\"crop yield*\" AND \"machine learning\""
@@ -3633,12 +3277,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"crop yield*\" AND \"deep learning\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"crop yield*\" AND \"deep learning\""]
     },
     {
       "uid": "WOS:001755649600001",
@@ -3669,22 +3309,13 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"crop yield*\" AND \"machine learning\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"crop yield*\" AND \"machine learning\""]
     },
     {
       "uid": "WOS:001745643200001",
       "title": "Does plastic film mulching increase temporal yield stability in northern China?",
-      "authors": [
-        "Zhang, Kaiping",
-        "Li, Yufei",
-        "Zhang, Li",
-        "Xiao, Rui"
-      ],
+      "authors": ["Zhang, Kaiping", "Li, Yufei", "Zhang, Li", "Xiao, Rui"],
       "journal": "AGRICULTURAL SYSTEMS",
       "year": 2026,
       "volume": "236",
@@ -3700,12 +3331,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"crop yield*\" AND \"machine learning\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"crop yield*\" AND \"machine learning\""]
     },
     {
       "uid": "WOS:001740746300001",
@@ -3733,12 +3360,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"crop yield*\" AND \"machine learning\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"crop yield*\" AND \"machine learning\""]
     },
     {
       "uid": "WOS:001715144800001",
@@ -3767,9 +3390,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"crop yield*\" AND \"machine learning\"",
         "topic:\"remote sensing\" AND \"machine learning\" AND agriculture"
@@ -3778,11 +3399,7 @@
     {
       "uid": "WOS:001695046800001",
       "title": "Enhancing crop yield predictions through spectral-temporal integration across multiple agricultural fields",
-      "authors": [
-        "Fathololoumi, Solmaz",
-        "Gillespie, Adam",
-        "Biswas, Asim"
-      ],
+      "authors": ["Fathololoumi, Solmaz", "Gillespie, Adam", "Biswas, Asim"],
       "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
       "year": 2026,
       "volume": "245",
@@ -3800,12 +3417,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"crop yield*\" AND \"machine learning\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"crop yield*\" AND \"machine learning\""]
     },
     {
       "uid": "WOS:001753027600001",
@@ -3836,9 +3449,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"remote sensing\" AND \"deep learning\" AND agriculture"
       ]
@@ -3879,9 +3490,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"remote sensing\" AND \"deep learning\" AND agriculture",
         "topic:\"agriculture\" AND \"foundation model*\""
@@ -3913,9 +3522,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"remote sensing\" AND \"deep learning\" AND agriculture",
         "topic:\"agriculture\" AND \"foundation model*\"",
@@ -3947,9 +3554,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"remote sensing\" AND \"deep learning\" AND agriculture"
       ]
@@ -3986,9 +3591,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"remote sensing\" AND \"deep learning\" AND agriculture",
         "topic:\"agriculture\" AND \"foundation model*\"",
@@ -3998,11 +3601,7 @@
     {
       "uid": "WOS:001662584400001",
       "title": "Cross-platform super-resolution: A diffusion model approach for enhancing satellite imagery with aerial data",
-      "authors": [
-        "Wang, Zhe",
-        "Garcia, Carmen Galaz",
-        "Halpern, Benjamin S."
-      ],
+      "authors": ["Wang, Zhe", "Garcia, Carmen Galaz", "Halpern, Benjamin S."],
       "journal": "INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION",
       "year": 2026,
       "volume": "146",
@@ -4020,10 +3619,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword"
-      ],
+      "sources": ["topic", "keyword"],
       "matched_queries": [
         "topic:\"remote sensing\" AND \"deep learning\" AND agriculture",
         "topic:\"remote sensing\" AND \"diffusion model*\" AND agriculture",
@@ -4033,11 +3629,7 @@
     {
       "uid": "WOS:001702909400005",
       "title": "SpecSwin3D: Generating Hyperspectral Imagery From Multispectral Data via Transformer Networks and Curriculum-Based Cascade Training",
-      "authors": [
-        "Sui, Tang",
-        "Yang, Songxi",
-        "Huang, Qunying"
-      ],
+      "authors": ["Sui, Tang", "Yang, Songxi", "Huang, Qunying"],
       "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
       "year": 2026,
       "volume": "64",
@@ -4068,9 +3660,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"remote sensing\" AND \"deep learning\" AND agriculture",
         "topic:\"remote sensing\" AND \"transformer*\" AND agriculture"
@@ -4115,9 +3705,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"remote sensing\" AND \"deep learning\" AND agriculture"
       ]
@@ -4150,9 +3738,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"remote sensing\" AND \"machine learning\" AND agriculture"
       ]
@@ -4188,9 +3774,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"remote sensing\" AND \"machine learning\" AND agriculture"
       ]
@@ -4224,9 +3808,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"remote sensing\" AND \"machine learning\" AND agriculture",
         "topic:\"remote sensing\" AND \"transformer*\" AND agriculture"
@@ -4263,9 +3845,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"remote sensing\" AND \"machine learning\" AND agriculture"
       ]
@@ -4302,10 +3882,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword"
-      ],
+      "sources": ["topic", "keyword"],
       "matched_queries": [
         "topic:\"agriculture\" AND \"generative AI\"",
         "topic:\"agriculture\" AND \"large language model*\"",
@@ -4315,11 +3892,7 @@
     {
       "uid": "WOS:001680128000001",
       "title": "Generative data augmentation for AIoT-based smart pig farming: The PigTalk 2.0 system",
-      "authors": [
-        "Chen, Whai-En",
-        "Lin, Shih-Che",
-        "Cho, Hsin-Hung"
-      ],
+      "authors": ["Chen, Whai-En", "Lin, Shih-Che", "Cho, Hsin-Hung"],
       "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
       "year": 2026,
       "volume": "244",
@@ -4338,10 +3911,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword"
-      ],
+      "sources": ["topic", "keyword"],
       "matched_queries": [
         "topic:\"agriculture\" AND \"generative AI\"",
         "keyword:generative AI"
@@ -4350,10 +3920,7 @@
     {
       "uid": "WOS:001666441700001",
       "title": "A generative AI-enhanced multitask learning framework for weed detection and drivable area segmentation in smart agriculture",
-      "authors": [
-        "Chao, Xuewei",
-        "Yang, Shuo"
-      ],
+      "authors": ["Chao, Xuewei", "Yang, Shuo"],
       "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
       "year": 2026,
       "volume": "243",
@@ -4370,10 +3937,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword"
-      ],
+      "sources": ["topic", "keyword"],
       "matched_queries": [
         "topic:\"agriculture\" AND \"generative AI\"",
         "keyword:generative AI",
@@ -4410,12 +3974,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"agriculture\" AND \"generative model*\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"agriculture\" AND \"generative model*\""]
     },
     {
       "uid": "WOS:001732550700001",
@@ -4443,10 +4003,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword"
-      ],
+      "sources": ["topic", "keyword"],
       "matched_queries": [
         "topic:\"agriculture\" AND \"foundation model*\"",
         "keyword:foundation models"
@@ -4479,10 +4036,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword"
-      ],
+      "sources": ["topic", "keyword"],
       "matched_queries": [
         "topic:\"agriculture\" AND \"foundation model*\"",
         "keyword:foundation models",
@@ -4521,9 +4075,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"agriculture\" AND \"foundation model*\"",
         "topic:\"remote sensing\" AND \"transformer*\" AND agriculture"
@@ -4566,9 +4118,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
+      "sources": ["topic"],
       "matched_queries": [
         "topic:\"remote sensing\" AND \"transformer*\" AND agriculture"
       ]
@@ -4603,11 +4153,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword",
-        "journal"
-      ],
+      "sources": ["topic", "keyword", "journal"],
       "matched_queries": [
         "topic:\"agriculture\" AND \"large language model*\"",
         "keyword:agriculture",
@@ -4642,10 +4188,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic",
-        "keyword"
-      ],
+      "sources": ["topic", "keyword"],
       "matched_queries": [
         "topic:\"agriculture\" AND \"large language model*\"",
         "keyword:large language models"
@@ -4681,12 +4224,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"agriculture\" AND \"large language model*\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"agriculture\" AND \"large language model*\""]
     },
     {
       "uid": "WOS:001695059600001",
@@ -4714,12 +4253,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"agriculture\" AND \"large language model*\""
-      ]
+      "sources": ["topic"],
+      "matched_queries": ["topic:\"agriculture\" AND \"large language model*\""]
     },
     {
       "uid": "WOS:001748267300001",
@@ -4748,10 +4283,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword",
-        "journal"
-      ],
+      "sources": ["keyword", "journal"],
       "matched_queries": [
         "keyword:remote sensing",
         "keyword:deep learning",
@@ -4790,10 +4322,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword",
-        "journal"
-      ],
+      "sources": ["keyword", "journal"],
       "matched_queries": [
         "keyword:remote sensing",
         "keyword:machine learning",
@@ -4825,12 +4354,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:remote sensing"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:remote sensing"]
     },
     {
       "uid": "WOS:001739839900001",
@@ -4858,10 +4383,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword",
-        "journal"
-      ],
+      "sources": ["keyword", "journal"],
       "matched_queries": [
         "keyword:remote sensing",
         "journal:REMOTE SENSING OF ENVIRONMENT"
@@ -4898,13 +4420,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:remote sensing",
-        "keyword:machine learning"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:remote sensing", "keyword:machine learning"]
     },
     {
       "uid": "WOS:001731003300001",
@@ -4936,10 +4453,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword",
-        "journal"
-      ],
+      "sources": ["keyword", "journal"],
       "matched_queries": [
         "keyword:deep learning",
         "keyword:machine learning",
@@ -4975,10 +4489,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword",
-        "journal"
-      ],
+      "sources": ["keyword", "journal"],
       "matched_queries": [
         "keyword:deep learning",
         "journal:ARTIFICIAL INTELLIGENCE IN AGRICULTURE"
@@ -5011,10 +4522,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword",
-        "journal"
-      ],
+      "sources": ["keyword", "journal"],
       "matched_queries": [
         "keyword:deep learning",
         "keyword:computer vision",
@@ -5050,12 +4558,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:deep learning"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:deep learning"]
     },
     {
       "uid": "WOS:001740222000001",
@@ -5084,10 +4588,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword",
-        "journal"
-      ],
+      "sources": ["keyword", "journal"],
       "matched_queries": [
         "keyword:deep learning",
         "journal:ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING"
@@ -5125,10 +4626,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword",
-        "journal"
-      ],
+      "sources": ["keyword", "journal"],
       "matched_queries": [
         "keyword:machine learning",
         "journal:ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING"
@@ -5160,10 +4658,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword",
-        "journal"
-      ],
+      "sources": ["keyword", "journal"],
       "matched_queries": [
         "keyword:machine learning",
         "journal:ARTIFICIAL INTELLIGENCE IN AGRICULTURE"
@@ -5199,22 +4694,13 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:GeoAI"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:GeoAI"]
     },
     {
       "uid": "WOS:001745725600001",
       "title": "Progressive multi-task graph neural network with multi-dimensional spatial feature fusion for building age prediction",
-      "authors": [
-        "Lu, Keyu",
-        "Zhao, Xin",
-        "Li, Manchun",
-        "Zheng, Lipeng"
-      ],
+      "authors": ["Lu, Keyu", "Zhao, Xin", "Li, Manchun", "Zheng, Lipeng"],
       "journal": "INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION",
       "year": 2026,
       "volume": "149",
@@ -5231,20 +4717,13 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:GeoAI"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:GeoAI"]
     },
     {
       "uid": "WOS:001690102100001",
       "title": "High-Resolution GeoAI framework for automated rutting depth prediction on logging trails using TransRAUnet and LiDAR",
-      "authors": [
-        "Abdi, Omid",
-        "Uusitalo, Jori"
-      ],
+      "authors": ["Abdi, Omid", "Uusitalo, Jori"],
       "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
       "year": 2026,
       "volume": "245",
@@ -5261,12 +4740,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:GeoAI"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:GeoAI"]
     },
     {
       "uid": "WOS:001691630700002",
@@ -5296,12 +4771,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:GeoAI"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:GeoAI"]
     },
     {
       "uid": "WOS:001696982400014",
@@ -5325,21 +4796,13 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:GeoAI"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:GeoAI"]
     },
     {
       "uid": "WOS:001660595300002",
       "title": "Uncovering spatial process heterogeneity from graph-based deep spatial regression",
-      "authors": [
-        "Zhu, Di",
-        "Wang, Sheng",
-        "Luo, Peng"
-      ],
+      "authors": ["Zhu, Di", "Wang, Sheng", "Luo, Peng"],
       "journal": "ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING",
       "year": 2026,
       "volume": "232",
@@ -5356,12 +4819,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:GeoAI"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:GeoAI"]
     },
     {
       "uid": "WOS:001756841400039",
@@ -5399,10 +4858,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword",
-        "journal"
-      ],
+      "sources": ["keyword", "journal"],
       "matched_queries": [
         "keyword:GeoAI",
         "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
@@ -5447,21 +4903,13 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:GeoAI"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:GeoAI"]
     },
     {
       "uid": "WOS:001676316000009",
       "title": "Adapting Video Foundation Models for Spatiotemporal Wildfire Forecasting via Cross-Modal Progressive Fine-Tuning",
-      "authors": [
-        "Li, Wenwen",
-        "Hsu, Chia-Yu",
-        "Wang, Sizhe"
-      ],
+      "authors": ["Li, Wenwen", "Hsu, Chia-Yu", "Wang, Sizhe"],
       "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
       "year": 2026,
       "volume": "64",
@@ -5492,12 +4940,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:GeoAI"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:GeoAI"]
     },
     {
       "uid": "WOS:001622072700001",
@@ -5532,14 +4976,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword",
-        "journal"
-      ],
-      "matched_queries": [
-        "keyword:agriculture",
-        "journal:AGRICULTURAL SYSTEMS"
-      ]
+      "sources": ["keyword", "journal"],
+      "matched_queries": ["keyword:agriculture", "journal:AGRICULTURAL SYSTEMS"]
     },
     {
       "uid": "WOS:001749185800001",
@@ -5574,14 +5012,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword",
-        "journal"
-      ],
-      "matched_queries": [
-        "keyword:agriculture",
-        "journal:FIELD CROPS RESEARCH"
-      ]
+      "sources": ["keyword", "journal"],
+      "matched_queries": ["keyword:agriculture", "journal:FIELD CROPS RESEARCH"]
     },
     {
       "uid": "WOS:001750794400001",
@@ -5613,10 +5045,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword",
-        "journal"
-      ],
+      "sources": ["keyword", "journal"],
       "matched_queries": [
         "keyword:computer vision",
         "journal:COMPUTERS AND ELECTRONICS IN AGRICULTURE"
@@ -5649,21 +5078,13 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:computer vision"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:computer vision"]
     },
     {
       "uid": "WOS:001724631000001",
       "title": "MushroomSegDepth: A multitask model for segmentation and depth prediction of oyster mushrooms to support growth management",
-      "authors": [
-        "Wang, Meiqing",
-        "Nuwayhid, Sari",
-        "Argyropoulos, Dimitrios"
-      ],
+      "authors": ["Wang, Meiqing", "Nuwayhid, Sari", "Argyropoulos, Dimitrios"],
       "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
       "year": 2026,
       "volume": "247",
@@ -5680,12 +5101,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:computer vision"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:computer vision"]
     },
     {
       "uid": "WOS:001722324300001",
@@ -5710,12 +5127,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:computer vision"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:computer vision"]
     },
     {
       "uid": "WOS:001718361900001",
@@ -5746,21 +5159,13 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:computer vision"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:computer vision"]
     },
     {
       "uid": "WOS:001694465000001",
       "title": "What's next in agri-vision: A review of Vision Transformers and Vision Mamba in crop management☆",
-      "authors": [
-        "Han, Kangrui",
-        "Hua, Weiyun",
-        "He, Long"
-      ],
+      "authors": ["Han, Kangrui", "Hua, Weiyun", "He, Long"],
       "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
       "year": 2026,
       "volume": "245",
@@ -5777,13 +5182,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:computer vision",
-        "keyword:transformers"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:computer vision", "keyword:transformers"]
     },
     {
       "uid": "WOS:001757100900001",
@@ -5814,12 +5214,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:computer vision"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:computer vision"]
     },
     {
       "uid": "WOS:001757077400001",
@@ -5845,9 +5241,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
+      "sources": ["keyword"],
       "matched_queries": [
         "keyword:computer vision",
         "keyword:foundation models"
@@ -5856,12 +5250,7 @@
     {
       "uid": "WOS:001709774800001",
       "title": "Generative AI empowers agricultural spectroscopy: Enhancing subsurface nutrient prediction with AE-DDIM and TimeLLM☆",
-      "authors": [
-        "Hu, Yating",
-        "Zhang, Qi",
-        "Wang, Wei",
-        "Li, Peiwu"
-      ],
+      "authors": ["Hu, Yating", "Zhang, Qi", "Wang, Wei", "Li, Peiwu"],
       "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
       "year": 2026,
       "volume": "246",
@@ -5878,21 +5267,13 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:generative AI",
-        "keyword:generative models"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:generative AI", "keyword:generative models"]
     },
     {
       "uid": "WOS:001757109300001",
       "title": "A shuffle-normalized Pix2Pix GAN framework with Elastic ArcFace and YOLO for occlusion-free cattle identification",
-      "authors": [
-        "Kumar, Niraj",
-        "Singh, Sanjay Kumar"
-      ],
+      "authors": ["Kumar, Niraj", "Singh, Sanjay Kumar"],
       "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
       "year": 2026,
       "volume": "248",
@@ -5909,19 +5290,13 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:generative AI"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:generative AI"]
     },
     {
       "uid": "WOS:001676402700001",
       "title": "On the troubling rise of generative AI suspicion in academic publishing",
-      "authors": [
-        "Ciriello, Raffaele"
-      ],
+      "authors": ["Ciriello, Raffaele"],
       "journal": "NATURE MACHINE INTELLIGENCE",
       "year": 2026,
       "volume": "8",
@@ -5932,12 +5307,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:generative AI"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:generative AI"]
     },
     {
       "uid": "WOS:001680139200001",
@@ -5966,21 +5337,13 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:generative AI"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:generative AI"]
     },
     {
       "uid": "WOS:001679672100001",
       "title": "A generative AI-Driven framework integrating CNN-VLM-LLM for intelligent crop disease diagnosis and control strategy generation",
-      "authors": [
-        "Yang, Shuo",
-        "Guo, Junxian",
-        "Yu, Jiangtong"
-      ],
+      "authors": ["Yang, Shuo", "Guo, Junxian", "Yu, Jiangtong"],
       "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
       "year": 2026,
       "volume": "244",
@@ -5997,12 +5360,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:generative AI"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:generative AI"]
     },
     {
       "uid": "WOS:001742345000001",
@@ -6032,9 +5391,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
+      "sources": ["keyword"],
       "matched_queries": [
         "keyword:generative models",
         "keyword:foundation models",
@@ -6045,11 +5402,7 @@
     {
       "uid": "WOS:001736060700027",
       "title": "Transferable generative models bridge femtosecond to nanosecond time-step molecular dynamics",
-      "authors": [
-        "Diez, Juan Viguera",
-        "Schreiner, Mathias",
-        "Olsson, Simon"
-      ],
+      "authors": ["Diez, Juan Viguera", "Schreiner, Mathias", "Olsson, Simon"],
       "journal": "SCIENCE ADVANCES",
       "year": 2026,
       "volume": "12",
@@ -6060,20 +5413,13 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:generative models"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:generative models"]
     },
     {
       "uid": "WOS:001716581300010",
       "title": "Generalizable and scalable protein stability prediction with rewired protein generative models (vol 17, 891, 2026)",
-      "authors": [
-        "Li, Ziang",
-        "Luo, Yunan"
-      ],
+      "authors": ["Li, Ziang", "Luo, Yunan"],
       "journal": "NATURE COMMUNICATIONS",
       "year": 2026,
       "volume": "17",
@@ -6084,12 +5430,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:generative models"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:generative models"]
     },
     {
       "uid": "WOS:001746723500010",
@@ -6111,12 +5453,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:generative models"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:generative models"]
     },
     {
       "uid": "WOS:001714201200001",
@@ -6143,12 +5481,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:generative models"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:generative models"]
     },
     {
       "uid": "WOS:001696061400001",
@@ -6176,9 +5510,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
+      "sources": ["keyword"],
       "matched_queries": [
         "keyword:generative models",
         "keyword:diffusion models"
@@ -6205,21 +5537,13 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:generative models"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:generative models"]
     },
     {
       "uid": "WOS:001688716600001",
       "title": "Evaluating the logical and mathematical reasoning capabilities of language models in agricultural water management",
-      "authors": [
-        "Kpodo, Josue",
-        "Nejadhashemi, A. Pouyan",
-        "Eeswaran, Rasu"
-      ],
+      "authors": ["Kpodo, Josue", "Nejadhashemi, A. Pouyan", "Eeswaran, Rasu"],
       "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
       "year": 2026,
       "volume": "245",
@@ -6236,12 +5560,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:generative models"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:generative models"]
     },
     {
       "uid": "WOS:001688439000001",
@@ -6269,12 +5589,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:generative models"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:generative models"]
     },
     {
       "uid": "WOS:001730939000001",
@@ -6308,10 +5624,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword",
-        "journal"
-      ],
+      "sources": ["keyword", "journal"],
       "matched_queries": [
         "keyword:foundation models",
         "journal:ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING"
@@ -6343,12 +5656,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:foundation models"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:foundation models"]
     },
     {
       "uid": "WOS:001732880300001",
@@ -6380,9 +5689,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
+      "sources": ["keyword"],
       "matched_queries": [
         "keyword:foundation models",
         "keyword:large language models"
@@ -6415,22 +5722,13 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:foundation models"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:foundation models"]
     },
     {
       "uid": "WOS:001757059600001",
       "title": "MmSAM: multimodal meets SAM2 for efficient remote sensing semantic segmentation",
-      "authors": [
-        "Wang, Qingpeng",
-        "Huang, Zhou",
-        "Cheng, Ying",
-        "Bao, Yi"
-      ],
+      "authors": ["Wang, Qingpeng", "Huang, Zhou", "Cheng, Ying", "Bao, Yi"],
       "journal": "INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION",
       "year": 2026,
       "volume": "149",
@@ -6447,12 +5745,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:foundation models"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:foundation models"]
     },
     {
       "uid": "WOS:001701719400001",
@@ -6481,21 +5775,13 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:foundation models"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:foundation models"]
     },
     {
       "uid": "WOS:001746919500001",
       "title": "Algebraic language models for inverse design of metamaterials via diffusion transformers",
-      "authors": [
-        "Zheng, Li",
-        "Kumar, Siddhant",
-        "Kochmann, Dennis M."
-      ],
+      "authors": ["Zheng, Li", "Kumar, Siddhant", "Kochmann, Dennis M."],
       "journal": "NATURE MACHINE INTELLIGENCE",
       "year": 2026,
       "volume": "8",
@@ -6506,10 +5792,7 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword",
-        "journal"
-      ],
+      "sources": ["keyword", "journal"],
       "matched_queries": [
         "keyword:diffusion models",
         "keyword:transformers",
@@ -6536,12 +5819,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:diffusion models"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:diffusion models"]
     },
     {
       "uid": "WOS:001744126100001",
@@ -6571,12 +5850,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:diffusion models"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:diffusion models"]
     },
     {
       "uid": "WOS:001720827800001",
@@ -6608,10 +5883,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword",
-        "arxiv"
-      ],
+      "sources": ["keyword", "arxiv"],
       "matched_queries": [
         "keyword:diffusion models",
         "arxiv:Diffusion models + remote sensing"
@@ -6643,12 +5915,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:transformers"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:transformers"]
     },
     {
       "uid": "WOS:001724180100001",
@@ -6677,12 +5945,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:transformers"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:transformers"]
     },
     {
       "uid": "WOS:001719543400001",
@@ -6711,20 +5975,13 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:transformers"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:transformers"]
     },
     {
       "uid": "WOS:001755158000001",
       "title": "Satellite based lithological Mapping: A review of Sensors, Methods, and emerging Machine-Learning approaches",
-      "authors": [
-        "El-Omairi, Mohamed Ali",
-        "El Garouani, Abdelkader"
-      ],
+      "authors": ["El-Omairi, Mohamed Ali", "El Garouani, Abdelkader"],
       "journal": "INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION",
       "year": 2026,
       "volume": "149",
@@ -6742,12 +5999,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:transformers"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:transformers"]
     },
     {
       "uid": "WOS:001754676500001",
@@ -6775,12 +6028,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:transformers"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:transformers"]
     },
     {
       "uid": "WOS:001751925700001",
@@ -6810,10 +6059,7 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword",
-        "journal"
-      ],
+      "sources": ["keyword", "journal"],
       "matched_queries": [
         "keyword:large language models",
         "journal:NATURE MACHINE INTELLIGENCE"
@@ -6848,12 +6094,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:large language models"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:large language models"]
     },
     {
       "uid": "WOS:001745917900001",
@@ -6881,12 +6123,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:large language models"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:large language models"]
     },
     {
       "uid": "WOS:001743426700002",
@@ -6925,12 +6163,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:large language models"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:large language models"]
     },
     {
       "uid": "WOS:001744297200001",
@@ -6960,12 +6194,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:multimodal learning"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:multimodal learning"]
     },
     {
       "uid": "WOS:001677559700001",
@@ -6991,12 +6221,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:multimodal learning"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:multimodal learning"]
     },
     {
       "uid": "WOS:001717553500030",
@@ -7033,12 +6259,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:multimodal learning"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:multimodal learning"]
     },
     {
       "uid": "WOS:001673766000001",
@@ -7078,12 +6300,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:multimodal learning"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:multimodal learning"]
     },
     {
       "uid": "WOS:001629707500002",
@@ -7110,12 +6328,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:multimodal learning"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:multimodal learning"]
     },
     {
       "uid": "WOS:001615326900003",
@@ -7143,12 +6357,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:multimodal learning"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:multimodal learning"]
     },
     {
       "uid": "WOS:001613849000007",
@@ -7175,12 +6385,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:multimodal learning"
-      ]
+      "sources": ["keyword"],
+      "matched_queries": ["keyword:multimodal learning"]
     },
     {
       "uid": "WOS:001756900700001",
@@ -7200,12 +6406,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE FOOD"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE FOOD"]
     },
     {
       "uid": "WOS:001754128200001",
@@ -7231,19 +6433,13 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE FOOD"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE FOOD"]
     },
     {
       "uid": "WOS:001752590600001",
       "title": "The next decade of alternative proteins",
-      "authors": [
-        "Abo, Arie"
-      ],
+      "authors": ["Abo, Arie"],
       "journal": "NATURE FOOD",
       "year": 2026,
       "volume": "",
@@ -7254,19 +6450,13 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE FOOD"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE FOOD"]
     },
     {
       "uid": "WOS:001743274800001",
       "title": "Climate impact Climate change and crop-feeding herbivores",
-      "authors": [
-        "Guo, Yufang"
-      ],
+      "authors": ["Guo, Yufang"],
       "journal": "NATURE FOOD",
       "year": 2026,
       "volume": "7",
@@ -7277,20 +6467,13 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE FOOD"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE FOOD"]
     },
     {
       "uid": "WOS:001743274200001",
       "title": "Global food security rests on the Strait of Hormuz",
-      "authors": [
-        "Zamani, Omid",
-        "Farzanegan, Mohammad Reza"
-      ],
+      "authors": ["Zamani, Omid", "Farzanegan, Mohammad Reza"],
       "journal": "NATURE FOOD",
       "year": 2026,
       "volume": "7",
@@ -7301,20 +6484,13 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE FOOD"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE FOOD"]
     },
     {
       "uid": "WOS:001740052600001",
       "title": "A dual sustainability crisis for Kenya's small-scale fisheries",
-      "authors": [
-        "Schuhbauer, Anna",
-        "Teh, Louise"
-      ],
+      "authors": ["Schuhbauer, Anna", "Teh, Louise"],
       "journal": "NATURE FOOD",
       "year": 2026,
       "volume": "7",
@@ -7325,12 +6501,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE FOOD"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE FOOD"]
     },
     {
       "uid": "WOS:001736440300001",
@@ -7357,19 +6529,13 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE FOOD"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE FOOD"]
     },
     {
       "uid": "WOS:001736461900001",
       "title": "Climate change will likely increase the need for heat stress mitigation in apple production",
-      "authors": [
-        "Giguere, Laurent"
-      ],
+      "authors": ["Giguere, Laurent"],
       "journal": "NATURE FOOD",
       "year": 2026,
       "volume": "7",
@@ -7380,12 +6546,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE FOOD"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE FOOD"]
     },
     {
       "uid": "WOS:001736440000001",
@@ -7407,19 +6569,13 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE FOOD"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE FOOD"]
     },
     {
       "uid": "WOS:001757775800001",
       "title": "The importance of recognizing opportunities in climate change impacts",
-      "authors": [
-        "Carter, Timothy R."
-      ],
+      "authors": ["Carter, Timothy R."],
       "journal": "NATURE CLIMATE CHANGE",
       "year": 2026,
       "volume": "",
@@ -7430,19 +6586,13 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE CLIMATE CHANGE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE CLIMATE CHANGE"]
     },
     {
       "uid": "WOS:001755909300001",
       "title": "Small plastics with large warming potential",
-      "authors": [
-        "Binda, Gilberto"
-      ],
+      "authors": ["Binda, Gilberto"],
       "journal": "NATURE CLIMATE CHANGE",
       "year": 2026,
       "volume": "",
@@ -7453,19 +6603,13 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE CLIMATE CHANGE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE CLIMATE CHANGE"]
     },
     {
       "uid": "WOS:001755102300001",
       "title": "Non-CO<sub>2</sub> mitigation: Inequity arises from multi-gas mitigation",
-      "authors": [
-        "Nong, Duy"
-      ],
+      "authors": ["Nong, Duy"],
       "journal": "NATURE CLIMATE CHANGE",
       "year": 2026,
       "volume": "",
@@ -7476,19 +6620,13 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE CLIMATE CHANGE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE CLIMATE CHANGE"]
     },
     {
       "uid": "WOS:001753597700001",
       "title": "From yield impacts to just transformation of food systems",
-      "authors": [
-        "Lipper, Leslie"
-      ],
+      "authors": ["Lipper, Leslie"],
       "journal": "NATURE CLIMATE CHANGE",
       "year": 2026,
       "volume": "",
@@ -7499,19 +6637,13 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE CLIMATE CHANGE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE CLIMATE CHANGE"]
     },
     {
       "uid": "WOS:001753609200001",
       "title": "Tropical cyclones relieve drought",
-      "authors": [
-        "Maxwell, Justin T."
-      ],
+      "authors": ["Maxwell, Justin T."],
       "journal": "NATURE CLIMATE CHANGE",
       "year": 2026,
       "volume": "",
@@ -7522,12 +6654,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE CLIMATE CHANGE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE CLIMATE CHANGE"]
     },
     {
       "uid": "WOS:001752583100001",
@@ -7556,20 +6684,13 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE CLIMATE CHANGE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE CLIMATE CHANGE"]
     },
     {
       "uid": "WOS:001748609800001",
       "title": "Large coastal cities are losing sea-land breeze",
-      "authors": [
-        "Zhu, Jialei",
-        "Xiao, Yunting"
-      ],
+      "authors": ["Zhu, Jialei", "Xiao, Yunting"],
       "journal": "NATURE CLIMATE CHANGE",
       "year": 2026,
       "volume": "",
@@ -7580,12 +6701,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE CLIMATE CHANGE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE CLIMATE CHANGE"]
     },
     {
       "uid": "WOS:001745932900001",
@@ -7626,12 +6743,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE CLIMATE CHANGE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE CLIMATE CHANGE"]
     },
     {
       "uid": "WOS:001757830500006",
@@ -7662,12 +6775,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE COMMUNICATIONS"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE COMMUNICATIONS"]
     },
     {
       "uid": "WOS:001757830500010",
@@ -7689,12 +6798,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE COMMUNICATIONS"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE COMMUNICATIONS"]
     },
     {
       "uid": "WOS:001757830500013",
@@ -7721,12 +6826,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE COMMUNICATIONS"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE COMMUNICATIONS"]
     },
     {
       "uid": "WOS:001757830500003",
@@ -7766,12 +6867,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE COMMUNICATIONS"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE COMMUNICATIONS"]
     },
     {
       "uid": "WOS:001757830500011",
@@ -7793,12 +6890,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE COMMUNICATIONS"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE COMMUNICATIONS"]
     },
     {
       "uid": "WOS:001757830500009",
@@ -7822,12 +6915,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE COMMUNICATIONS"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE COMMUNICATIONS"]
     },
     {
       "uid": "WOS:001757830500007",
@@ -7861,12 +6950,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE COMMUNICATIONS"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE COMMUNICATIONS"]
     },
     {
       "uid": "WOS:001757830500001",
@@ -7913,21 +6998,13 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE COMMUNICATIONS"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE COMMUNICATIONS"]
     },
     {
       "uid": "WOS:001757830500015",
       "title": "Behavioural individuality in clonal fish arises despite near-identical rearing conditions (vol 8, 15361 , 2017 )",
-      "authors": [
-        "Bierbach, David",
-        "Laskowski, Kate L.",
-        "Wolf, Max"
-      ],
+      "authors": ["Bierbach, David", "Laskowski, Kate L.", "Wolf, Max"],
       "journal": "NATURE COMMUNICATIONS",
       "year": 2026,
       "volume": "17",
@@ -7938,12 +7015,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE COMMUNICATIONS"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE COMMUNICATIONS"]
     },
     {
       "uid": "WOS:001757830500002",
@@ -7977,12 +7050,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE COMMUNICATIONS"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE COMMUNICATIONS"]
     },
     {
       "uid": "WOS:001757653700001",
@@ -8013,12 +7082,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE SUSTAINABILITY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE SUSTAINABILITY"]
     },
     {
       "uid": "WOS:001757663000001",
@@ -8045,12 +7110,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE SUSTAINABILITY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE SUSTAINABILITY"]
     },
     {
       "uid": "WOS:001757660600001",
@@ -8076,12 +7137,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE SUSTAINABILITY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE SUSTAINABILITY"]
     },
     {
       "uid": "WOS:001755395200001",
@@ -8103,12 +7160,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE SUSTAINABILITY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE SUSTAINABILITY"]
     },
     {
       "uid": "WOS:001754124700001",
@@ -8134,21 +7187,13 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE SUSTAINABILITY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE SUSTAINABILITY"]
     },
     {
       "uid": "WOS:001753620700001",
       "title": "Solar-spectral electrochromic glazing using suspended clusters in an organogel",
-      "authors": [
-        "Wang, Hongzhi",
-        "Li, Kerui",
-        "Li, Hao"
-      ],
+      "authors": ["Wang, Hongzhi", "Li, Kerui", "Li, Hao"],
       "journal": "NATURE SUSTAINABILITY",
       "year": 2026,
       "volume": "",
@@ -8159,12 +7204,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE SUSTAINABILITY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE SUSTAINABILITY"]
     },
     {
       "uid": "WOS:001751934700001",
@@ -8186,19 +7227,13 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE SUSTAINABILITY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE SUSTAINABILITY"]
     },
     {
       "uid": "WOS:001750843700001",
       "title": "Positive tipping points for nature",
-      "authors": [
-        "Lenton, Timothy M."
-      ],
+      "authors": ["Lenton, Timothy M."],
       "journal": "NATURE SUSTAINABILITY",
       "year": 2026,
       "volume": "",
@@ -8209,12 +7244,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE SUSTAINABILITY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE SUSTAINABILITY"]
     },
     {
       "uid": "WOS:001750893000001",
@@ -8236,12 +7267,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE SUSTAINABILITY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE SUSTAINABILITY"]
     },
     {
       "uid": "WOS:001747314100001",
@@ -8268,21 +7295,13 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE SUSTAINABILITY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE SUSTAINABILITY"]
     },
     {
       "uid": "WOS:001757689500001",
       "title": "Reusability report: Meta-learning for antigen-specific T cell receptor binder identification",
-      "authors": [
-        "He, Fei",
-        "Wang, Xianyu",
-        "Xu, Dong"
-      ],
+      "authors": ["He, Fei", "Wang, Xianyu", "Xu, Dong"],
       "journal": "NATURE MACHINE INTELLIGENCE",
       "year": 2026,
       "volume": "",
@@ -8293,12 +7312,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE MACHINE INTELLIGENCE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE MACHINE INTELLIGENCE"]
     },
     {
       "uid": "WOS:001756619300001",
@@ -8321,12 +7336,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE MACHINE INTELLIGENCE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE MACHINE INTELLIGENCE"]
     },
     {
       "uid": "WOS:001755470300001",
@@ -8346,12 +7357,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE MACHINE INTELLIGENCE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE MACHINE INTELLIGENCE"]
     },
     {
       "uid": "WOS:001752929600001",
@@ -8379,12 +7386,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE MACHINE INTELLIGENCE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE MACHINE INTELLIGENCE"]
     },
     {
       "uid": "WOS:001751948600001",
@@ -8411,12 +7414,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE MACHINE INTELLIGENCE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE MACHINE INTELLIGENCE"]
     },
     {
       "uid": "WOS:001747832900001",
@@ -8437,12 +7436,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE MACHINE INTELLIGENCE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE MACHINE INTELLIGENCE"]
     },
     {
       "uid": "WOS:001746912600001",
@@ -8468,21 +7463,13 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE MACHINE INTELLIGENCE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE MACHINE INTELLIGENCE"]
     },
     {
       "uid": "WOS:001745915800001",
       "title": "Molecular deep learning at the edge of chemical space",
-      "authors": [
-        "van Tilborg, Derek",
-        "Rossen, Luke",
-        "Grisoni, Francesca"
-      ],
+      "authors": ["van Tilborg, Derek", "Rossen, Luke", "Grisoni, Francesca"],
       "journal": "NATURE MACHINE INTELLIGENCE",
       "year": 2026,
       "volume": "8",
@@ -8493,12 +7480,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE MACHINE INTELLIGENCE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:NATURE MACHINE INTELLIGENCE"]
     },
     {
       "uid": "WOS:001757536300001",
@@ -8525,12 +7508,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:SCIENCE ADVANCES"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:SCIENCE ADVANCES"]
     },
     {
       "uid": "WOS:001757536200001",
@@ -8558,12 +7537,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:SCIENCE ADVANCES"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:SCIENCE ADVANCES"]
     },
     {
       "uid": "WOS:001748412600022",
@@ -8586,12 +7561,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:SCIENCE ADVANCES"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:SCIENCE ADVANCES"]
     },
     {
       "uid": "WOS:001748412600011",
@@ -8617,12 +7588,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:SCIENCE ADVANCES"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:SCIENCE ADVANCES"]
     },
     {
       "uid": "WOS:001748412600004",
@@ -8649,12 +7616,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:SCIENCE ADVANCES"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:SCIENCE ADVANCES"]
     },
     {
       "uid": "WOS:001748412600019",
@@ -8682,12 +7645,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:SCIENCE ADVANCES"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:SCIENCE ADVANCES"]
     },
     {
       "uid": "WOS:001748412600006",
@@ -8720,12 +7679,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:SCIENCE ADVANCES"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:SCIENCE ADVANCES"]
     },
     {
       "uid": "WOS:001748405700001",
@@ -8753,12 +7708,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:SCIENCE ADVANCES"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:SCIENCE ADVANCES"]
     },
     {
       "uid": "WOS:001748412600009",
@@ -8788,12 +7739,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:SCIENCE ADVANCES"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:SCIENCE ADVANCES"]
     },
     {
       "uid": "WOS:001748412600008",
@@ -8816,21 +7763,13 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:SCIENCE ADVANCES"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:SCIENCE ADVANCES"]
     },
     {
       "uid": "WOS:001750727000001",
       "title": "Intercalibration of the newest Microwave Radiation Imagers onboard the Chinese Fengyun-3 satellites",
-      "authors": [
-        "Tang, Wenbin",
-        "Zhou, Ji",
-        "Wang, Ziwei"
-      ],
+      "authors": ["Tang, Wenbin", "Zhou, Ji", "Wang, Ziwei"],
       "journal": "REMOTE SENSING OF ENVIRONMENT",
       "year": 2026,
       "volume": "340",
@@ -8847,12 +7786,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:REMOTE SENSING OF ENVIRONMENT"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:REMOTE SENSING OF ENVIRONMENT"]
     },
     {
       "uid": "WOS:001746814300001",
@@ -8882,12 +7817,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:REMOTE SENSING OF ENVIRONMENT"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:REMOTE SENSING OF ENVIRONMENT"]
     },
     {
       "uid": "WOS:001747171000001",
@@ -8909,12 +7840,8 @@
       "keywords": [],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:REMOTE SENSING OF ENVIRONMENT"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:REMOTE SENSING OF ENVIRONMENT"]
     },
     {
       "uid": "WOS:001738345500001",
@@ -8945,12 +7872,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:REMOTE SENSING OF ENVIRONMENT"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:REMOTE SENSING OF ENVIRONMENT"]
     },
     {
       "uid": "WOS:001737954500001",
@@ -8982,12 +7905,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:REMOTE SENSING OF ENVIRONMENT"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:REMOTE SENSING OF ENVIRONMENT"]
     },
     {
       "uid": "WOS:001737893800001",
@@ -9019,20 +7938,13 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:REMOTE SENSING OF ENVIRONMENT"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:REMOTE SENSING OF ENVIRONMENT"]
     },
     {
       "uid": "WOS:001734351500001",
       "title": "Sentinel-1 for offshore wind energy application☆",
-      "authors": [
-        "Hasager, C.B",
-        "Dimitriadou, K."
-      ],
+      "authors": ["Hasager, C.B", "Dimitriadou, K."],
       "journal": "REMOTE SENSING OF ENVIRONMENT",
       "year": 2026,
       "volume": "339",
@@ -9049,12 +7961,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:REMOTE SENSING OF ENVIRONMENT"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:REMOTE SENSING OF ENVIRONMENT"]
     },
     {
       "uid": "WOS:001733749700001",
@@ -9073,29 +7981,16 @@
       "pages": "Art. 115390",
       "doi": "10.1016/j.rse.2026.115390",
       "abstract": "",
-      "keywords": [
-        "Tibetan Plateau",
-        "Lake",
-        "ICESat-2",
-        "Water depth"
-      ],
+      "keywords": ["Tibetan Plateau", "Lake", "ICESat-2", "Water depth"],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:REMOTE SENSING OF ENVIRONMENT"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:REMOTE SENSING OF ENVIRONMENT"]
     },
     {
       "uid": "WOS:001750518400001",
       "title": "Heuristic quality coefficients for interferometric phase linking",
-      "authors": [
-        "Heimpel, Magnus",
-        "Hajnsek, Irena",
-        "Frey, Othmar"
-      ],
+      "authors": ["Heimpel, Magnus", "Hajnsek, Irena", "Frey, Othmar"],
       "journal": "ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING",
       "year": 2026,
       "volume": "237",
@@ -9113,9 +8008,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING"
       ]
@@ -9147,9 +8040,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING"
       ]
@@ -9157,11 +8048,7 @@
     {
       "uid": "WOS:001735823100001",
       "title": "RepVIS-GAN: A reparameterized GAN-based network for visible image retrieval from geostationary satellite infrared observations",
-      "authors": [
-        "Si, Jianwei",
-        "Li, Chuanxin",
-        "Han, Lei"
-      ],
+      "authors": ["Si, Jianwei", "Li, Chuanxin", "Han, Lei"],
       "journal": "ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING",
       "year": 2026,
       "volume": "236",
@@ -9176,9 +8063,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING"
       ]
@@ -9210,9 +8095,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING"
       ]
@@ -9243,9 +8126,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING"
       ]
@@ -9280,9 +8161,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING"
       ]
@@ -9314,9 +8193,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION"
       ]
@@ -9349,9 +8226,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION"
       ]
@@ -9385,9 +8260,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION"
       ]
@@ -9421,9 +8294,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION"
       ]
@@ -9458,9 +8329,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION"
       ]
@@ -9491,9 +8360,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION"
       ]
@@ -9524,9 +8391,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION"
       ]
@@ -9534,11 +8399,7 @@
     {
       "uid": "WOS:001754663700001",
       "title": "Insignificant North American autumn phenology trends explained by counteracting climatic drivers",
-      "authors": [
-        "Sun, Xupeng",
-        "Lu, Ning",
-        "Qin, Jun"
-      ],
+      "authors": ["Sun, Xupeng", "Lu, Ning", "Qin, Jun"],
       "journal": "INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION",
       "year": 2026,
       "volume": "149",
@@ -9555,9 +8416,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION"
       ]
@@ -9589,9 +8448,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION"
       ]
@@ -9624,9 +8481,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION"
       ]
@@ -9668,9 +8523,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
       ]
@@ -9710,9 +8563,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
       ]
@@ -9754,9 +8605,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
       ]
@@ -9798,9 +8647,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
       ]
@@ -9839,9 +8686,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
       ]
@@ -9885,9 +8730,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
       ]
@@ -9927,9 +8770,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
       ]
@@ -9974,9 +8815,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
       ]
@@ -10020,9 +8859,7 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
+      "sources": ["journal"],
       "matched_queries": [
         "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
       ]
@@ -10056,12 +8893,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:COMPUTERS AND ELECTRONICS IN AGRICULTURE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:COMPUTERS AND ELECTRONICS IN AGRICULTURE"]
     },
     {
       "uid": "WOS:001750794800001",
@@ -10092,12 +8925,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:COMPUTERS AND ELECTRONICS IN AGRICULTURE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:COMPUTERS AND ELECTRONICS IN AGRICULTURE"]
     },
     {
       "uid": "WOS:001736048400001",
@@ -10126,12 +8955,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:COMPUTERS AND ELECTRONICS IN AGRICULTURE"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:COMPUTERS AND ELECTRONICS IN AGRICULTURE"]
     },
     {
       "uid": "WOS:001756690300001",
@@ -10161,12 +8986,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:AGRICULTURAL AND FOREST METEOROLOGY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:AGRICULTURAL AND FOREST METEOROLOGY"]
     },
     {
       "uid": "WOS:001749026600001",
@@ -10194,12 +9015,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:AGRICULTURAL AND FOREST METEOROLOGY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:AGRICULTURAL AND FOREST METEOROLOGY"]
     },
     {
       "uid": "WOS:001750169200001",
@@ -10229,12 +9046,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:AGRICULTURAL AND FOREST METEOROLOGY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:AGRICULTURAL AND FOREST METEOROLOGY"]
     },
     {
       "uid": "WOS:001748977700001",
@@ -10268,12 +9081,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:AGRICULTURAL AND FOREST METEOROLOGY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:AGRICULTURAL AND FOREST METEOROLOGY"]
     },
     {
       "uid": "WOS:001745703500001",
@@ -10305,12 +9114,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:AGRICULTURAL AND FOREST METEOROLOGY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:AGRICULTURAL AND FOREST METEOROLOGY"]
     },
     {
       "uid": "WOS:001745567400001",
@@ -10340,12 +9145,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:AGRICULTURAL AND FOREST METEOROLOGY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:AGRICULTURAL AND FOREST METEOROLOGY"]
     },
     {
       "uid": "WOS:001744616800001",
@@ -10372,12 +9173,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:AGRICULTURAL AND FOREST METEOROLOGY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:AGRICULTURAL AND FOREST METEOROLOGY"]
     },
     {
       "uid": "WOS:001738965100001",
@@ -10408,12 +9205,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:AGRICULTURAL AND FOREST METEOROLOGY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:AGRICULTURAL AND FOREST METEOROLOGY"]
     },
     {
       "uid": "WOS:001755787400001",
@@ -10444,12 +9237,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:FIELD CROPS RESEARCH"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:FIELD CROPS RESEARCH"]
     },
     {
       "uid": "WOS:001749182800001",
@@ -10483,12 +9272,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:FIELD CROPS RESEARCH"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:FIELD CROPS RESEARCH"]
     },
     {
       "uid": "WOS:001749169500001",
@@ -10522,12 +9307,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:FIELD CROPS RESEARCH"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:FIELD CROPS RESEARCH"]
     },
     {
       "uid": "WOS:001746800000001",
@@ -10556,12 +9337,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:FIELD CROPS RESEARCH"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:FIELD CROPS RESEARCH"]
     },
     {
       "uid": "WOS:001739762600001",
@@ -10593,12 +9370,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:FIELD CROPS RESEARCH"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:FIELD CROPS RESEARCH"]
     },
     {
       "uid": "WOS:001736127600001",
@@ -10631,12 +9404,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:FIELD CROPS RESEARCH"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:FIELD CROPS RESEARCH"]
     },
     {
       "uid": "WOS:001751147800001",
@@ -10665,12 +9434,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:EUROPEAN JOURNAL OF AGRONOMY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:EUROPEAN JOURNAL OF AGRONOMY"]
     },
     {
       "uid": "WOS:001739712500001",
@@ -10700,12 +9465,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:EUROPEAN JOURNAL OF AGRONOMY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:EUROPEAN JOURNAL OF AGRONOMY"]
     },
     {
       "uid": "WOS:001737263400001",
@@ -10734,12 +9495,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:EUROPEAN JOURNAL OF AGRONOMY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:EUROPEAN JOURNAL OF AGRONOMY"]
     },
     {
       "uid": "WOS:001735302400001",
@@ -10770,19 +9527,13 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:EUROPEAN JOURNAL OF AGRONOMY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:EUROPEAN JOURNAL OF AGRONOMY"]
     },
     {
       "uid": "WOS:001734465600001",
       "title": "Recent advances in biodegradable hydrogels for sustainable agriculture: From water retention to nutrient delivery",
-      "authors": [
-        "Kirtil, Emrah"
-      ],
+      "authors": ["Kirtil, Emrah"],
       "journal": "EUROPEAN JOURNAL OF AGRONOMY",
       "year": 2026,
       "volume": "177",
@@ -10800,12 +9551,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:EUROPEAN JOURNAL OF AGRONOMY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:EUROPEAN JOURNAL OF AGRONOMY"]
     },
     {
       "uid": "WOS:001734806700001",
@@ -10837,12 +9584,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:EUROPEAN JOURNAL OF AGRONOMY"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:EUROPEAN JOURNAL OF AGRONOMY"]
     },
     {
       "uid": "WOS:001749023000001",
@@ -10872,12 +9615,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:AGRICULTURAL SYSTEMS"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:AGRICULTURAL SYSTEMS"]
     },
     {
       "uid": "WOS:001749022900001",
@@ -10906,12 +9645,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:AGRICULTURAL SYSTEMS"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:AGRICULTURAL SYSTEMS"]
     },
     {
       "uid": "WOS:001738015100001",
@@ -10938,12 +9673,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:AGRICULTURAL SYSTEMS"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:AGRICULTURAL SYSTEMS"]
     },
     {
       "uid": "WOS:001729677200001",
@@ -10971,12 +9702,8 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:AGRICULTURAL SYSTEMS"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:AGRICULTURAL SYSTEMS"]
     },
     {
       "uid": "WOS:001733583300001",
@@ -11006,21 +9733,13 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:AGRICULTURAL SYSTEMS"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:AGRICULTURAL SYSTEMS"]
     },
     {
       "uid": "WOS:001731208200001",
       "title": "Assessment of carbon emission and sink in Chinese farming systems: An accounting system based on management practice classification",
-      "authors": [
-        "Dong, Xiaocui",
-        "Liu, Hongguang",
-        "Guo, Jie"
-      ],
+      "authors": ["Dong, Xiaocui", "Liu, Hongguang", "Guo, Jie"],
       "journal": "AGRICULTURAL SYSTEMS",
       "year": 2026,
       "volume": "235",
@@ -11037,21 +9756,13 @@
       ],
       "citations": 0,
       "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:AGRICULTURAL SYSTEMS"
-      ]
+      "sources": ["journal"],
+      "matched_queries": ["journal:AGRICULTURAL SYSTEMS"]
     },
     {
       "uid": "arxiv:2605.04744",
       "title": "MixINN: Accelerating Plant Breeding by Combining Mixed Models and Deep Learning for Interaction Prediction",
-      "authors": [
-        "Aike Potze",
-        "Fred van Eeuwijk",
-        "Ioannis N. Athanasiadis"
-      ],
+      "authors": ["Aike Potze", "Fred van Eeuwijk", "Ioannis N. Athanasiadis"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -11059,25 +9770,16 @@
       "pages": "arXiv:2605.04744",
       "doi": "10.48550/arXiv.2605.04744",
       "abstract": "",
-      "keywords": [
-        "cs.LG"
-      ],
+      "keywords": ["cs.LG"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Crop yield + DL"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Crop yield + DL"]
     },
     {
       "uid": "arxiv:2604.19217",
       "title": "Attention-based Multi-modal Deep Learning Model of Spatio-temporal Crop Yield Prediction with Satellite, Soil and Climate Data",
-      "authors": [
-        "Gopal Krishna Shyam",
-        "Ila Chandrakar"
-      ],
+      "authors": ["Gopal Krishna Shyam", "Ila Chandrakar"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -11085,18 +9787,11 @@
       "pages": "arXiv:2604.19217",
       "doi": "10.48550/arXiv.2604.19217",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.AI"
-      ],
+      "keywords": ["cs.CV", "cs.AI"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Crop yield + DL"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Crop yield + DL"]
     },
     {
       "uid": "arxiv:2604.00940",
@@ -11123,17 +9818,11 @@
       "pages": "arXiv:2604.00940",
       "doi": "10.48550/arXiv.2604.00940",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Crop yield + DL"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Crop yield + DL"]
     },
     {
       "uid": "arxiv:2603.23779",
@@ -11151,15 +9840,10 @@
       "pages": "arXiv:2603.23779",
       "doi": "10.48550/arXiv.2603.23779",
       "abstract": "",
-      "keywords": [
-        "eess.IV",
-        "physics.geo-ph"
-      ],
+      "keywords": ["eess.IV", "physics.geo-ph"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
+      "sources": ["arxiv"],
       "matched_queries": [
         "arxiv:Crop yield + DL",
         "arxiv:Sentinel-2 + agriculture",
@@ -11184,18 +9868,11 @@
       "pages": "arXiv:2603.15411",
       "doi": "10.48550/arXiv.2603.15411",
       "abstract": "",
-      "keywords": [
-        "cs.AI",
-        "cs.LG"
-      ],
+      "keywords": ["cs.AI", "cs.LG"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Crop yield + DL"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Crop yield + DL"]
     },
     {
       "uid": "arxiv:2603.07305",
@@ -11215,17 +9892,11 @@
       "pages": "arXiv:2603.07305",
       "doi": "10.48550/arXiv.2603.07305",
       "abstract": "",
-      "keywords": [
-        "cs.LG"
-      ],
+      "keywords": ["cs.LG"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Crop yield + DL"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Crop yield + DL"]
     },
     {
       "uid": "arxiv:2602.10967",
@@ -11245,27 +9916,16 @@
       "pages": "arXiv:2602.10967",
       "doi": "10.48550/arXiv.2602.10967",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.AI",
-        "cs.LG"
-      ],
+      "keywords": ["cs.CV", "cs.AI", "cs.LG"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Crop yield + DL"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Crop yield + DL"]
     },
     {
       "uid": "arxiv:2601.03124",
       "title": "LeafLife: An Explainable Deep Learning Framework with Robustness for Grape Leaf Disease Recognition",
-      "authors": [
-        "B. M. Shahria Alam",
-        "Md. Nasim Ahmed"
-      ],
+      "authors": ["B. M. Shahria Alam", "Md. Nasim Ahmed"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -11273,27 +9933,16 @@
       "pages": "arXiv:2601.03124",
       "doi": "10.48550/arXiv.2601.03124",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.AI",
-        "cs.LG"
-      ],
+      "keywords": ["cs.CV", "cs.AI", "cs.LG"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Crop yield + DL"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Crop yield + DL"]
     },
     {
       "uid": "arxiv:2601.01655",
       "title": "UniCrop: A Universal, Multi-Source Data Engineering Pipeline for Scalable Crop Yield Prediction",
-      "authors": [
-        "Emiliya Khidirova",
-        "Oktay Karakuş"
-      ],
+      "authors": ["Emiliya Khidirova", "Oktay Karakuş"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -11301,19 +9950,11 @@
       "pages": "arXiv:2601.01655",
       "doi": "10.48550/arXiv.2601.01655",
       "abstract": "",
-      "keywords": [
-        "eess.IV",
-        "cs.AI",
-        "cs.LG"
-      ],
+      "keywords": ["eess.IV", "cs.AI", "cs.LG"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Crop yield + DL"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Crop yield + DL"]
     },
     {
       "uid": "arxiv:2605.00310",
@@ -11336,19 +9977,11 @@
       "pages": "arXiv:2605.00310",
       "doi": "10.48550/arXiv.2605.00310",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.AI",
-        "cs.LG"
-      ],
+      "keywords": ["cs.CV", "cs.AI", "cs.LG"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Remote sensing for agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Remote sensing for agriculture"]
     },
     {
       "uid": "arxiv:2604.24575",
@@ -11373,14 +10006,10 @@
       "pages": "arXiv:2604.24575",
       "doi": "10.48550/arXiv.2604.24575",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
+      "sources": ["arxiv"],
       "matched_queries": [
         "arxiv:Remote sensing for agriculture",
         "arxiv:Diffusion models + remote sensing"
@@ -11408,18 +10037,11 @@
       "pages": "arXiv:2604.12315",
       "doi": "10.48550/arXiv.2604.12315",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.MM"
-      ],
+      "keywords": ["cs.CV", "cs.MM"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Remote sensing for agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Remote sensing for agriculture"]
     },
     {
       "uid": "arxiv:2603.24552",
@@ -11440,14 +10062,10 @@
       "pages": "arXiv:2603.24552",
       "doi": "10.48550/arXiv.2603.24552",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
+      "sources": ["arxiv"],
       "matched_queries": [
         "arxiv:Remote sensing for agriculture",
         "arxiv:Sentinel-2 + agriculture"
@@ -11456,10 +10074,7 @@
     {
       "uid": "arxiv:2603.14309",
       "title": "In-Field 3D Wheat Head Instance Segmentation From TLS Point Clouds Using Deep Learning Without Manual Labels",
-      "authors": [
-        "Tomislav Medic",
-        "Liangliang Nan"
-      ],
+      "authors": ["Tomislav Medic", "Liangliang Nan"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -11467,17 +10082,11 @@
       "pages": "arXiv:2603.14309",
       "doi": "10.48550/arXiv.2603.14309",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Remote sensing for agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Remote sensing for agriculture"]
     },
     {
       "uid": "arxiv:2603.08930",
@@ -11498,18 +10107,11 @@
       "pages": "arXiv:2603.08930",
       "doi": "10.48550/arXiv.2603.08930",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.AI"
-      ],
+      "keywords": ["cs.CV", "cs.AI"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Remote sensing for agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Remote sensing for agriculture"]
     },
     {
       "uid": "arxiv:2603.01932",
@@ -11528,17 +10130,11 @@
       "pages": "arXiv:2603.01932",
       "doi": "10.48550/arXiv.2603.01932",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Remote sensing for agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Remote sensing for agriculture"]
     },
     {
       "uid": "arxiv:2603.00139",
@@ -11557,17 +10153,11 @@
       "pages": "arXiv:2603.00139",
       "doi": "10.48550/arXiv.2603.00139",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Remote sensing for agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Remote sensing for agriculture"]
     },
     {
       "uid": "arxiv:2602.10799",
@@ -11588,15 +10178,10 @@
       "pages": "arXiv:2602.10799",
       "doi": "10.48550/arXiv.2602.10799",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.AI"
-      ],
+      "keywords": ["cs.CV", "cs.AI"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
+      "sources": ["arxiv"],
       "matched_queries": [
         "arxiv:Remote sensing for agriculture",
         "arxiv:LLMs in agriculture"
@@ -11618,17 +10203,11 @@
       "pages": "arXiv:2602.08168",
       "doi": "10.48550/arXiv.2602.08168",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Remote sensing for agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Remote sensing for agriculture"]
     },
     {
       "uid": "arxiv:2605.04239",
@@ -11646,14 +10225,10 @@
       "pages": "arXiv:2605.04239",
       "doi": "10.48550/arXiv.2605.04239",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
+      "sources": ["arxiv"],
       "matched_queries": [
         "arxiv:Sentinel-2 + agriculture",
         "arxiv:Generative AI for agriculture"
@@ -11662,9 +10237,7 @@
     {
       "uid": "arxiv:2604.03768",
       "title": "RL-Driven Sustainable Land-Use Allocation for the Lake Malawi Basin",
-      "authors": [
-        "Ying Yao"
-      ],
+      "authors": ["Ying Yao"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -11672,18 +10245,11 @@
       "pages": "arXiv:2604.03768",
       "doi": "10.48550/arXiv.2604.03768",
       "abstract": "",
-      "keywords": [
-        "cs.AI",
-        "cs.LG"
-      ],
+      "keywords": ["cs.AI", "cs.LG"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Sentinel-2 + agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Sentinel-2 + agriculture"]
     },
     {
       "uid": "arxiv:2602.18083",
@@ -11704,18 +10270,11 @@
       "pages": "arXiv:2602.18083",
       "doi": "10.48550/arXiv.2602.18083",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.LG"
-      ],
+      "keywords": ["cs.CV", "cs.LG"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Sentinel-2 + agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Sentinel-2 + agriculture"]
     },
     {
       "uid": "arxiv:2602.17372",
@@ -11738,17 +10297,11 @@
       "pages": "arXiv:2602.17372",
       "doi": "10.48550/arXiv.2602.17372",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Sentinel-2 + agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Sentinel-2 + agriculture"]
     },
     {
       "uid": "arxiv:2601.03884",
@@ -11766,18 +10319,11 @@
       "pages": "arXiv:2601.03884",
       "doi": "10.48550/arXiv.2601.03884",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.AI"
-      ],
+      "keywords": ["cs.CV", "cs.AI"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Sentinel-2 + agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Sentinel-2 + agriculture"]
     },
     {
       "uid": "arxiv:2605.03784",
@@ -11796,26 +10342,16 @@
       "pages": "arXiv:2605.03784",
       "doi": "10.48550/arXiv.2605.03784",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Precision agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Precision agriculture"]
     },
     {
       "uid": "arxiv:2604.28038",
       "title": "Early Detection of Water Stress by Plant Electrophysiology: Machine Learning for Irrigation Management",
-      "authors": [
-        "Eduard Buss",
-        "Till Aust",
-        "Heiko Hamann"
-      ],
+      "authors": ["Eduard Buss", "Till Aust", "Heiko Hamann"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -11823,17 +10359,11 @@
       "pages": "arXiv:2604.28038",
       "doi": "10.48550/arXiv.2604.28038",
       "abstract": "",
-      "keywords": [
-        "cs.LG"
-      ],
+      "keywords": ["cs.LG"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Precision agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Precision agriculture"]
     },
     {
       "uid": "arxiv:2604.27178",
@@ -11855,17 +10385,11 @@
       "pages": "arXiv:2604.27178",
       "doi": "10.48550/arXiv.2604.27178",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Precision agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Precision agriculture"]
     },
     {
       "uid": "arxiv:2605.00908",
@@ -11884,17 +10408,11 @@
       "pages": "arXiv:2605.00908",
       "doi": "10.48550/arXiv.2605.00908",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Precision agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Precision agriculture"]
     },
     {
       "uid": "arxiv:2604.18632",
@@ -11913,26 +10431,16 @@
       "pages": "arXiv:2604.18632",
       "doi": "10.48550/arXiv.2604.18632",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "stat.AP"
-      ],
+      "keywords": ["cs.CV", "stat.AP"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Precision agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Precision agriculture"]
     },
     {
       "uid": "arxiv:2604.10823",
       "title": "Uncertainty-Guided Attention and Entropy-Weighted Loss for Precise Plant Seedling Segmentation",
-      "authors": [
-        "Mohamed Ehab",
-        "Ali Hamdi"
-      ],
+      "authors": ["Mohamed Ehab", "Ali Hamdi"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -11940,18 +10448,11 @@
       "pages": "arXiv:2604.10823",
       "doi": "10.48550/arXiv.2604.10823",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.LG"
-      ],
+      "keywords": ["cs.CV", "cs.LG"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Precision agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Precision agriculture"]
     },
     {
       "uid": "arxiv:2604.05415",
@@ -11971,26 +10472,16 @@
       "pages": "arXiv:2604.05415",
       "doi": "10.48550/arXiv.2604.05415",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Precision agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Precision agriculture"]
     },
     {
       "uid": "arxiv:2603.21183",
       "title": "Architecture for Multi-Unmanned Aerial Vehicles based Autonomous Precision Agriculture Systems",
-      "authors": [
-        "Ebasa Temesgen",
-        "Nathnael Minyelshowa",
-        "Lebsework Negash"
-      ],
+      "authors": ["Ebasa Temesgen", "Nathnael Minyelshowa", "Lebsework Negash"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -11998,27 +10489,16 @@
       "pages": "arXiv:2603.21183",
       "doi": "10.48550/arXiv.2603.21183",
       "abstract": "",
-      "keywords": [
-        "cs.RO",
-        "cs.LG",
-        "cs.MA"
-      ],
+      "keywords": ["cs.RO", "cs.LG", "cs.MA"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Precision agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Precision agriculture"]
     },
     {
       "uid": "arxiv:2603.15085",
       "title": "Affordable Precision Agriculture: A Deployment-Oriented Review of Low-Cost, Low-Power Edge AI and TinyML for Resource-Constrained Farming Systems",
-      "authors": [
-        "Riya Samanta",
-        "Bidyut Saha"
-      ],
+      "authors": ["Riya Samanta", "Bidyut Saha"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -12026,26 +10506,16 @@
       "pages": "arXiv:2603.15085",
       "doi": "10.48550/arXiv.2603.15085",
       "abstract": "",
-      "keywords": [
-        "cs.ET",
-        "cs.LG"
-      ],
+      "keywords": ["cs.ET", "cs.LG"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Precision agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Precision agriculture"]
     },
     {
       "uid": "arxiv:2604.26051",
       "title": "Evaluating the Alignment Between GeoAI Explanations and Domain Knowledge in Satellite-Based Flood Mapping",
-      "authors": [
-        "Hyunho Lee",
-        "Wenwen Li"
-      ],
+      "authors": ["Hyunho Lee", "Wenwen Li"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -12053,18 +10523,11 @@
       "pages": "arXiv:2604.26051",
       "doi": "10.48550/arXiv.2604.26051",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.AI"
-      ],
+      "keywords": ["cs.CV", "cs.AI"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:GeoAI"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:GeoAI"]
     },
     {
       "uid": "arxiv:2604.21356",
@@ -12085,17 +10548,11 @@
       "pages": "arXiv:2604.21356",
       "doi": "10.48550/arXiv.2604.21356",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:GeoAI"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:GeoAI"]
     },
     {
       "uid": "arxiv:2604.07675",
@@ -12114,26 +10571,16 @@
       "pages": "arXiv:2604.07675",
       "doi": "10.48550/arXiv.2604.07675",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:GeoAI"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:GeoAI"]
     },
     {
       "uid": "arxiv:2604.04339",
       "title": "Thermodynamic-Inspired Explainable GeoAI: Uncovering Regime-Dependent Mechanisms in Heterogeneous Spatial Systems",
-      "authors": [
-        "Sooyoung Lim",
-        "Zhenlong Li",
-        "Zi-Kui Liu"
-      ],
+      "authors": ["Sooyoung Lim", "Zhenlong Li", "Zi-Kui Liu"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -12141,18 +10588,11 @@
       "pages": "arXiv:2604.04339",
       "doi": "10.48550/arXiv.2604.04339",
       "abstract": "",
-      "keywords": [
-        "cs.AI",
-        "cs.LG"
-      ],
+      "keywords": ["cs.AI", "cs.LG"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:GeoAI"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:GeoAI"]
     },
     {
       "uid": "arxiv:2604.02627",
@@ -12173,19 +10613,11 @@
       "pages": "arXiv:2604.02627",
       "doi": "10.48550/arXiv.2604.02627",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.AI",
-        "cs.MM"
-      ],
+      "keywords": ["cs.CV", "cs.AI", "cs.MM"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:GeoAI"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:GeoAI"]
     },
     {
       "uid": "arxiv:2604.01869",
@@ -12207,17 +10639,11 @@
       "pages": "arXiv:2604.01869",
       "doi": "10.48550/arXiv.2604.01869",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:GeoAI"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:GeoAI"]
     },
     {
       "uid": "arxiv:2603.27101",
@@ -12244,18 +10670,11 @@
       "pages": "arXiv:2603.27101",
       "doi": "10.48550/arXiv.2603.27101",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.LG"
-      ],
+      "keywords": ["cs.CV", "cs.LG"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:GeoAI"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:GeoAI"]
     },
     {
       "uid": "arxiv:2603.22420",
@@ -12273,25 +10692,16 @@
       "pages": "arXiv:2603.22420",
       "doi": "10.48550/arXiv.2603.22420",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:GeoAI"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:GeoAI"]
     },
     {
       "uid": "arxiv:2603.20305",
       "title": "The Global-Local loop: what is missing in bridging the gap between geospatial data from numerous communities?",
-      "authors": [
-        "Clément Mallet",
-        "Ana-Maria Raimond"
-      ],
+      "authors": ["Clément Mallet", "Ana-Maria Raimond"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -12299,26 +10709,16 @@
       "pages": "arXiv:2603.20305",
       "doi": "10.48550/arXiv.2603.20305",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:GeoAI"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:GeoAI"]
     },
     {
       "uid": "arxiv:2603.13589",
       "title": "Assessing the Utility of Volumetric Motion Fields for Radar-based Precipitation Nowcasting with Physics-informed Deep Learning",
-      "authors": [
-        "Peter Pavlík",
-        "Anna Bou Ezzeddine",
-        "Viera Rozinajová"
-      ],
+      "authors": ["Peter Pavlík", "Anna Bou Ezzeddine", "Viera Rozinajová"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -12326,28 +10726,16 @@
       "pages": "arXiv:2603.13589",
       "doi": "10.48550/arXiv.2603.13589",
       "abstract": "",
-      "keywords": [
-        "cs.LG",
-        "cs.AI",
-        "cs.CV"
-      ],
+      "keywords": ["cs.LG", "cs.AI", "cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:GeoAI"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:GeoAI"]
     },
     {
       "uid": "arxiv:2604.20707",
       "title": "Generative Flow Networks for Model Adaptation in Digital Twins of Natural Systems",
-      "authors": [
-        "Pascal Archambault",
-        "Houari Sahraoui",
-        "Eugene Syriani"
-      ],
+      "authors": ["Pascal Archambault", "Houari Sahraoui", "Eugene Syriani"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -12355,27 +10743,16 @@
       "pages": "arXiv:2604.20707",
       "doi": "10.48550/arXiv.2604.20707",
       "abstract": "",
-      "keywords": [
-        "cs.LG",
-        "eess.SY"
-      ],
+      "keywords": ["cs.LG", "eess.SY"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Generative AI for agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Generative AI for agriculture"]
     },
     {
       "uid": "arxiv:2603.16934",
       "title": "AgriChat: A Multimodal Large Language Model for Agriculture Image Understanding",
-      "authors": [
-        "Abderrahmene Boudiaf",
-        "Irfan Hussain",
-        "Sajid Javed"
-      ],
+      "authors": ["Abderrahmene Boudiaf", "Irfan Hussain", "Sajid Javed"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -12383,15 +10760,10 @@
       "pages": "arXiv:2603.16934",
       "doi": "10.48550/arXiv.2603.16934",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.AI"
-      ],
+      "keywords": ["cs.CV", "cs.AI"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
+      "sources": ["arxiv"],
       "matched_queries": [
         "arxiv:Generative AI for agriculture",
         "arxiv:LLMs in agriculture"
@@ -12400,11 +10772,7 @@
     {
       "uid": "arxiv:2605.04557",
       "title": "Efficient Geometry-Controlled High-Resolution Satellite Image Synthesis",
-      "authors": [
-        "Vlad Vasilescu",
-        "Daniela Faur",
-        "Teodor Costachioiu"
-      ],
+      "authors": ["Vlad Vasilescu", "Daniela Faur", "Teodor Costachioiu"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -12412,27 +10780,16 @@
       "pages": "arXiv:2605.04557",
       "doi": "10.48550/arXiv.2605.04557",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.AI"
-      ],
+      "keywords": ["cs.CV", "cs.AI"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Diffusion models + remote sensing"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Diffusion models + remote sensing"]
     },
     {
       "uid": "arxiv:2605.02198",
       "title": "SlimDiffSR: Toward Lightweight and Efficient Remote Sensing Image Super-Resolution via Diffusion Model Distillation",
-      "authors": [
-        "Ce Wang",
-        "Zhenyu Hu",
-        "Wanjie Sun"
-      ],
+      "authors": ["Ce Wang", "Zhenyu Hu", "Wanjie Sun"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -12440,26 +10797,16 @@
       "pages": "arXiv:2605.02198",
       "doi": "10.48550/arXiv.2605.02198",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Diffusion models + remote sensing"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Diffusion models + remote sensing"]
     },
     {
       "uid": "arxiv:2604.27889",
       "title": "Noise2Map: End-to-End Diffusion Model for Semantic Segmentation and Change Detection",
-      "authors": [
-        "Ali Shibli",
-        "Andrea Nascetti",
-        "Yifang Ban"
-      ],
+      "authors": ["Ali Shibli", "Andrea Nascetti", "Yifang Ban"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -12467,25 +10814,16 @@
       "pages": "arXiv:2604.27889",
       "doi": "10.1109/TGRS.2026.3687393",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Diffusion models + remote sensing"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Diffusion models + remote sensing"]
     },
     {
       "uid": "arxiv:2604.25319",
       "title": "Edge-Cloud Collaborative Reconstruction via Structure-Aware Latent Diffusion for Downstream Remote Sensing Perception",
-      "authors": [
-        "Yun Li",
-        "Xianju Li"
-      ],
+      "authors": ["Yun Li", "Xianju Li"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -12493,17 +10831,11 @@
       "pages": "arXiv:2604.25319",
       "doi": "10.48550/arXiv.2604.25319",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Diffusion models + remote sensing"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Diffusion models + remote sensing"]
     },
     {
       "uid": "arxiv:2604.23709",
@@ -12522,18 +10854,11 @@
       "pages": "arXiv:2604.23709",
       "doi": "10.48550/arXiv.2604.23709",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "eess.IV"
-      ],
+      "keywords": ["cs.CV", "eess.IV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Diffusion models + remote sensing"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Diffusion models + remote sensing"]
     },
     {
       "uid": "arxiv:2604.18201",
@@ -12551,28 +10876,16 @@
       "pages": "arXiv:2604.18201",
       "doi": "10.48550/arXiv.2604.18201",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.LG"
-      ],
+      "keywords": ["cs.CV", "cs.LG"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Diffusion models + remote sensing"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Diffusion models + remote sensing"]
     },
     {
       "uid": "arxiv:2603.27645",
       "title": "OpenDPR: Open-Vocabulary Change Detection via Vision-Centric Diffusion-Guided Prototype Retrieval for Remote Sensing Imagery",
-      "authors": [
-        "Qi Guo",
-        "Jue Wang",
-        "Yinhe Liu",
-        "Yanfei Zhong"
-      ],
+      "authors": ["Qi Guo", "Jue Wang", "Yinhe Liu", "Yanfei Zhong"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -12580,17 +10893,11 @@
       "pages": "arXiv:2603.27645",
       "doi": "10.48550/arXiv.2603.27645",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Diffusion models + remote sensing"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Diffusion models + remote sensing"]
     },
     {
       "uid": "arxiv:2603.16362",
@@ -12612,25 +10919,16 @@
       "pages": "arXiv:2603.16362",
       "doi": "10.48550/arXiv.2603.16362",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.AI"
-      ],
+      "keywords": ["cs.CV", "cs.AI"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Diffusion models + remote sensing"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Diffusion models + remote sensing"]
     },
     {
       "uid": "arxiv:2605.05547",
       "title": "Characterizing Brazilian Atlantic Forest Restoration Outcomes with Geospatial AlphaEarth Embeddings",
-      "authors": [
-        "Alice Heiman"
-      ],
+      "authors": ["Alice Heiman"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -12638,17 +10936,11 @@
       "pages": "arXiv:2605.05547",
       "doi": "10.48550/arXiv.2605.05547",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Foundation models for Earth observation"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Foundation models for Earth observation"]
     },
     {
       "uid": "arxiv:2605.05405",
@@ -12666,26 +10958,16 @@
       "pages": "arXiv:2605.05405",
       "doi": "10.56272/a2c9ee39",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Foundation models for Earth observation"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Foundation models for Earth observation"]
     },
     {
       "uid": "arxiv:2605.04989",
       "title": "Low-Rank Adaptation of Geospatial Foundation Models for Wildfire Mapping Using Sentinel-2 Data",
-      "authors": [
-        "Ali Shibli",
-        "Andrea Nascetti",
-        "Yifang Ban"
-      ],
+      "authors": ["Ali Shibli", "Andrea Nascetti", "Yifang Ban"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -12693,25 +10975,16 @@
       "pages": "arXiv:2605.04989",
       "doi": "10.48550/arXiv.2605.04989",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Foundation models for Earth observation"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Foundation models for Earth observation"]
     },
     {
       "uid": "arxiv:2605.03175",
       "title": "DINO Soars: DINOv3 for Open-Vocabulary Semantic Segmentation of Remote Sensing Imagery",
-      "authors": [
-        "Ryan Faulkenberry",
-        "Saurabh Prasad"
-      ],
+      "authors": ["Ryan Faulkenberry", "Saurabh Prasad"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -12719,26 +10992,16 @@
       "pages": "arXiv:2605.03175",
       "doi": "10.48550/arXiv.2605.03175",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Foundation models for Earth observation"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Foundation models for Earth observation"]
     },
     {
       "uid": "arxiv:2605.02283",
       "title": "Rethinking Electro-Optical Vision Foundation Models for Remote Sensing Retrieval: A Controlled Comparison with Generalist VFM",
-      "authors": [
-        "Hyobin Park",
-        "Minseok Seo",
-        "Dong-Geol Choi"
-      ],
+      "authors": ["Hyobin Park", "Minseok Seo", "Dong-Geol Choi"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -12746,26 +11009,16 @@
       "pages": "arXiv:2605.02283",
       "doi": "10.48550/arXiv.2605.02283",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.AI"
-      ],
+      "keywords": ["cs.CV", "cs.AI"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Foundation models for Earth observation"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Foundation models for Earth observation"]
     },
     {
       "uid": "arxiv:2605.00678",
       "title": "Foundation AI Models for Aerosol Optical Depth Estimation from PACE Satellite Data",
-      "authors": [
-        "Zahid Hassan Tushar",
-        "Sanjay Purushotham"
-      ],
+      "authors": ["Zahid Hassan Tushar", "Sanjay Purushotham"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -12773,17 +11026,11 @@
       "pages": "arXiv:2605.00678",
       "doi": "10.48550/arXiv.2605.00678",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Foundation models for Earth observation"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Foundation models for Earth observation"]
     },
     {
       "uid": "arxiv:2604.27704",
@@ -12804,17 +11051,11 @@
       "pages": "arXiv:2604.27704",
       "doi": "10.48550/arXiv.2604.27704",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Foundation models for Earth observation"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Foundation models for Earth observation"]
     },
     {
       "uid": "arxiv:2604.26774",
@@ -12835,26 +11076,16 @@
       "pages": "arXiv:2604.26774",
       "doi": "10.48550/arXiv.2604.26774",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.AI"
-      ],
+      "keywords": ["cs.CV", "cs.AI"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Foundation models for Earth observation"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Foundation models for Earth observation"]
     },
     {
       "uid": "arxiv:2604.26478",
       "title": "Cross-Domain Transfer of Hyperspectral Foundation Models",
-      "authors": [
-        "Nick Theisen",
-        "Peer Neubert"
-      ],
+      "authors": ["Nick Theisen", "Peer Neubert"],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
@@ -12862,17 +11093,11 @@
       "pages": "arXiv:2604.26478",
       "doi": "10.48550/arXiv.2604.26478",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Foundation models for Earth observation"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Foundation models for Earth observation"]
     },
     {
       "uid": "arxiv:2604.24919",
@@ -12894,17 +11119,11 @@
       "pages": "arXiv:2604.24919",
       "doi": "10.48550/arXiv.2604.24919",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Foundation models for Earth observation"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:Foundation models for Earth observation"]
     },
     {
       "uid": "arxiv:2605.06121",
@@ -12927,17 +11146,11 @@
       "pages": "arXiv:2605.06121",
       "doi": "10.48550/arXiv.2605.06121",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:LLMs in agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:LLMs in agriculture"]
     },
     {
       "uid": "arxiv:2604.23701",
@@ -12960,19 +11173,11 @@
       "pages": "arXiv:2604.23701",
       "doi": "10.48550/arXiv.2604.23701",
       "abstract": "",
-      "keywords": [
-        "cs.CL",
-        "cs.AI",
-        "cs.CV"
-      ],
+      "keywords": ["cs.CL", "cs.AI", "cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:LLMs in agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:LLMs in agriculture"]
     },
     {
       "uid": "arxiv:2604.17278",
@@ -12994,17 +11199,11 @@
       "pages": "arXiv:2604.17278",
       "doi": "10.48550/arXiv.2604.17278",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:LLMs in agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:LLMs in agriculture"]
     },
     {
       "uid": "arxiv:2604.09920",
@@ -13025,17 +11224,11 @@
       "pages": "arXiv:2604.09920",
       "doi": "10.48550/arXiv.2604.09920",
       "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
+      "keywords": ["cs.CV"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:LLMs in agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:LLMs in agriculture"]
     },
     {
       "uid": "arxiv:2604.06227",
@@ -13059,18 +11252,11 @@
       "pages": "arXiv:2604.06227",
       "doi": "10.48550/arXiv.2604.06227",
       "abstract": "",
-      "keywords": [
-        "cs.LG",
-        "econ.EM"
-      ],
+      "keywords": ["cs.LG", "econ.EM"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:LLMs in agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:LLMs in agriculture"]
     },
     {
       "uid": "arxiv:2603.14342",
@@ -13095,18 +11281,11 @@
       "pages": "arXiv:2603.14342",
       "doi": "10.48550/arXiv.2603.14342",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.AI"
-      ],
+      "keywords": ["cs.CV", "cs.AI"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:LLMs in agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:LLMs in agriculture"]
     },
     {
       "uid": "arxiv:2602.14017",
@@ -13132,17 +11311,11 @@
       "pages": "arXiv:2602.14017",
       "doi": "10.48550/arXiv.2602.14017",
       "abstract": "",
-      "keywords": [
-        "cs.LG"
-      ],
+      "keywords": ["cs.LG"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:LLMs in agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:LLMs in agriculture"]
     },
     {
       "uid": "arxiv:2602.11706",
@@ -13161,19 +11334,11 @@
       "pages": "arXiv:2602.11706",
       "doi": "10.48550/arXiv.2602.11706",
       "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.AI",
-        "cs.RO"
-      ],
+      "keywords": ["cs.CV", "cs.AI", "cs.RO"],
       "citations": 0,
       "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:LLMs in agriculture"
-      ]
+      "sources": ["arxiv"],
+      "matched_queries": ["arxiv:LLMs in agriculture"]
     }
   ]
 }

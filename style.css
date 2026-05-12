@@ -494,6 +494,62 @@ button {
   color: #0d1322;
 }
 
+/* ─── Conference venue sub-filter ─────────────────────────── */
+
+.venue-subfilter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0 0.65rem;
+  margin-bottom: 0.15rem;
+  border-bottom: 1px dashed var(--border);
+}
+
+.venue-subfilter[hidden] {
+  display: none;
+}
+
+.venue-chip {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 0.3rem 0.65rem;
+  background: var(--surface);
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 140ms ease;
+}
+
+.venue-chip:hover {
+  color: var(--text);
+  border-color: var(--border-hi);
+}
+
+.venue-chip.is-active {
+  background: var(--accent-soft);
+  color: var(--accent-hi);
+  border-color: var(--accent);
+}
+
+.venue-chip .venue-count {
+  font-size: 0.66rem;
+  color: var(--text-mute);
+  background: var(--surface-2);
+  padding: 0.04rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+}
+
+.venue-chip.is-active .venue-count {
+  color: var(--accent-hi);
+  border-color: var(--accent);
+  background: transparent;
+}
+
 /* ─── Grid ───────────────────────────────────────────────── */
 
 .publications-grid {
@@ -646,6 +702,26 @@ button {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.08em;
+}
+
+/* Conference venue badge — distinct accent tint so conference cards read
+   differently from journal cards at a glance. */
+.pub-venue {
+  padding: 0.18rem 0.6rem;
+  border-radius: 6px;
+  background: var(--accent-soft);
+  color: var(--accent-hi);
+  border: 1px solid var(--accent);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.pub-link {
+  color: var(--accent-hi);
+}
+.pub-link:hover {
+  color: var(--text);
 }
 
 .pub-title {
