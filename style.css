@@ -717,6 +717,32 @@ button {
   text-transform: uppercase;
 }
 
+/* "New" badge — flags papers added since the previous fetch. Solid accent
+   fill (brand green) with a small leading dot acts as a quiet "unread"
+   indicator. Sits first in the card header so the eye lands on it before
+   the publisher / citation chips. */
+.pub-new {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.18rem 0.6rem 0.18rem 0.5rem;
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--bg);
+  border: 1px solid var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.pub-new::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.85;
+}
+
 .pub-link {
   color: var(--accent-hi);
 }
@@ -1002,6 +1028,7 @@ button {
   .pub-publisher,
   .pub-citations,
   .pub-source,
+  .pub-new,
   .pub-year {
     padding: 0.15rem 0.45rem;
     font-size: 0.65rem;

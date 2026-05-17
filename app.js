@@ -293,21 +293,25 @@
       .replace(/'/g, "&#39;");
   }
 
-  // Render scientific text safely: HTML-escape everything, then re-enable
-  // ONLY <sub>/<sup> (case-insensitive, no attributes). WoS returns these
-  // as literal markup inside titles, abstracts and keywords (e.g. "CO<sub>2</sub>").
+  // Render scientific text safely: HTML-escape everything, then re-enable a
+  // tiny allow-list of inline formatting tags (no attributes). WoS returns
+  // these as literal markup inside titles, abstracts and keywords — e.g.
+  // "CO<sub>2</sub>" for subscripts and "<i>Triticum aestivum</i>" for
+  // species names.
+  const SCI_TAG_RE = /<\/?(?:sub|sup|i|em|b|strong)>/gi;
   function renderSciText(str) {
     return escapeHtml(str).replace(
-      /&lt;(\/?)(sub|sup)&gt;/gi,
+      /&lt;(\/?)(sub|sup|i|em|b|strong)&gt;/gi,
       (_, slash, tag) => `<${slash}${tag.toLowerCase()}>`,
     );
   }
 
-  // Strip <sub>/<sup> markers from a value before using it as a search /
-  // sort key, so typing "CO2" matches "CO<sub>2</sub>".
+  // Strip the same markers from a value before using it as a search / sort
+  // key, so typing "CO2" matches "CO<sub>2</sub>" and "Triticum" matches
+  // "<i>Triticum</i> aestivum".
   function stripSciTags(str) {
     if (str === null || str === undefined) return "";
-    return String(str).replace(/<\/?(?:sub|sup)>/gi, "");
+    return String(str).replace(SCI_TAG_RE, "");
   }
 
   function formatDate(iso) {
@@ -556,6 +560,7 @@
           (p.keywords || []).map(stripSciTags).join(" "),
           p.journal,
           String(p.year || ""),
+          p.is_new === true ? "new" : "",
         ]
           .join(" ")
           .toLowerCase();
@@ -631,6 +636,11 @@
       : `<span class="pub-doi" style="color: var(--text-mute); border:none">—</span>`;
 
     const badges = [];
+    if (p.is_new === true) {
+      badges.push(
+        `<span class="pub-new" title="Added since the previous update">New</span>`,
+      );
+    }
     const publisher = publisherFor(p.journal);
     if (publisher && publisher !== "Other") {
       badges.push(

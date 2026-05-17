@@ -79,6 +79,31 @@ def load_config(path: str) -> dict:
         return yaml.safe_load(f)
 
 
+def load_previous_keys(path: str) -> set | None:
+    """Return the set of (uid OR doi) strings from the previous publications.json,
+    used to flag freshly added records with `is_new: true`. Returns None when no
+    prior file exists (first run) so the script can avoid marking *every* record
+    as new on the very first build."""
+    if not os.path.isfile(path):
+        return None
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            prev = json.load(f)
+    except (OSError, json.JSONDecodeError) as e:
+        print(f"WARNING: could not read {path} for diff ({e}); "
+              "treating this run as a first build.", file=sys.stderr)
+        return None
+    keys = set()
+    for p in prev.get("publications", []) or []:
+        uid = (p.get("uid") or "").strip()
+        doi = (p.get("doi") or "").strip().lower()
+        if uid:
+            keys.add(uid)
+        if doi:
+            keys.add(doi)
+    return keys
+
+
 def load_publishers(path: str) -> dict | None:
     """Load publishers_config.yml; validate every regex compiles. Returns a
     dict {"groups": [...], "overrides": {...}} ready to embed in JSON, or
@@ -544,6 +569,7 @@ def main():
     load_dotenv()
     cfg = load_config(CONFIG_PATH)
     publishers = load_publishers(PUBLISHERS_CONFIG_PATH)
+    previous_keys = load_previous_keys(OUT_PATH)
 
     journals = cfg.get("journals_of_interest") or []
     so_clause = journal_clause(journals)
@@ -665,6 +691,20 @@ def main():
             file=sys.stderr,
         )
         raise SystemExit(1)
+
+    # Flag papers that weren't in the previous publications.json. Skipped on
+    # the first run (previous_keys is None) so we don't mark the whole archive
+    # as new.
+    if previous_keys is not None:
+        new_count = 0
+        for p in pubs:
+            uid = (p.get("uid") or "").strip()
+            doi = (p.get("doi") or "").strip().lower()
+            if (uid and uid in previous_keys) or (doi and doi in previous_keys):
+                continue
+            p["is_new"] = True
+            new_count += 1
+        print(f"\n{new_count} new publication(s) since previous run.")
 
     pubs.sort(
         key=lambda p: (
