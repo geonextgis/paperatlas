@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-06T07:41:01Z",
-  "total": 384,
+  "updated_at": "2026-07-13T09:29:31Z",
+  "total": 394,
   "site": {
     "title": "Krishnagopal Halder — Research Feed",
     "subtitle": "A weekly updated personalized research feed."
@@ -356,7 +356,7 @@
         "label": "\"crop yield*\" AND \"deep learning\"",
         "query": "TS=((\"crop yield*\" AND \"deep learning\")) AND SO=(\"NATURE FOOD\" OR \"NATURE CLIMATE CHANGE\" OR \"NATURE COMMUNICATIONS\" OR \"NATURE SUSTAINABILITY\" OR \"NATURE MACHINE INTELLIGENCE\" OR \"SCIENCE ADVANCES\" OR \"REMOTE SENSING OF ENVIRONMENT\" OR \"ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING\" OR \"INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION\" OR \"IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING\" OR \"COMPUTERS AND ELECTRONICS IN AGRICULTURE\" OR \"ARTIFICIAL INTELLIGENCE IN AGRICULTURE\" OR \"AGRICULTURAL AND FOREST METEOROLOGY\" OR \"FIELD CROPS RESEARCH\" OR \"EUROPEAN JOURNAL OF AGRONOMY\" OR \"AGRICULTURAL SYSTEMS\") AND PY=(2026-2026)",
         "hits": 10,
-        "new": 8
+        "new": 7
       },
       {
         "label": "\"crop yield*\" AND \"machine learning\"",
@@ -368,7 +368,7 @@
         "label": "\"remote sensing\" AND \"deep learning\" AND agriculture",
         "query": "TS=((\"remote sensing\" AND \"deep learning\" AND agriculture)) AND SO=(\"NATURE FOOD\" OR \"NATURE CLIMATE CHANGE\" OR \"NATURE COMMUNICATIONS\" OR \"NATURE SUSTAINABILITY\" OR \"NATURE MACHINE INTELLIGENCE\" OR \"SCIENCE ADVANCES\" OR \"REMOTE SENSING OF ENVIRONMENT\" OR \"ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING\" OR \"INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION\" OR \"IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING\" OR \"COMPUTERS AND ELECTRONICS IN AGRICULTURE\" OR \"ARTIFICIAL INTELLIGENCE IN AGRICULTURE\" OR \"AGRICULTURAL AND FOREST METEOROLOGY\" OR \"FIELD CROPS RESEARCH\" OR \"EUROPEAN JOURNAL OF AGRONOMY\" OR \"AGRICULTURAL SYSTEMS\") AND PY=(2026-2026)",
         "hits": 10,
-        "new": 7
+        "new": 8
       },
       {
         "label": "\"remote sensing\" AND \"machine learning\" AND agriculture",
@@ -427,8 +427,8 @@
       {
         "label": "\"precision agriculture\" AND \"foundation model*\"",
         "query": "TS=((\"precision agriculture\" AND \"foundation model*\")) AND SO=(\"NATURE FOOD\" OR \"NATURE CLIMATE CHANGE\" OR \"NATURE COMMUNICATIONS\" OR \"NATURE SUSTAINABILITY\" OR \"NATURE MACHINE INTELLIGENCE\" OR \"SCIENCE ADVANCES\" OR \"REMOTE SENSING OF ENVIRONMENT\" OR \"ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING\" OR \"INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION\" OR \"IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING\" OR \"COMPUTERS AND ELECTRONICS IN AGRICULTURE\" OR \"ARTIFICIAL INTELLIGENCE IN AGRICULTURE\" OR \"AGRICULTURAL AND FOREST METEOROLOGY\" OR \"FIELD CROPS RESEARCH\" OR \"EUROPEAN JOURNAL OF AGRONOMY\" OR \"AGRICULTURAL SYSTEMS\") AND PY=(2026-2026)",
-        "hits": 5,
-        "new": 0
+        "hits": 6,
+        "new": 1
       }
     ],
     "keyword": [
@@ -472,7 +472,7 @@
         "label": "computer vision",
         "query": "TS=(\"computer vision\") AND SO=(\"NATURE FOOD\" OR \"NATURE CLIMATE CHANGE\" OR \"NATURE COMMUNICATIONS\" OR \"NATURE SUSTAINABILITY\" OR \"NATURE MACHINE INTELLIGENCE\" OR \"SCIENCE ADVANCES\" OR \"REMOTE SENSING OF ENVIRONMENT\" OR \"ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING\" OR \"INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION\" OR \"IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING\" OR \"COMPUTERS AND ELECTRONICS IN AGRICULTURE\" OR \"ARTIFICIAL INTELLIGENCE IN AGRICULTURE\" OR \"AGRICULTURAL AND FOREST METEOROLOGY\" OR \"FIELD CROPS RESEARCH\" OR \"EUROPEAN JOURNAL OF AGRONOMY\" OR \"AGRICULTURAL SYSTEMS\") AND PY=(2026-2026)",
         "hits": 10,
-        "new": 7
+        "new": 8
       },
       {
         "label": "generative AI",
@@ -496,19 +496,19 @@
         "label": "diffusion models",
         "query": "TS=(\"diffusion models\") AND SO=(\"NATURE FOOD\" OR \"NATURE CLIMATE CHANGE\" OR \"NATURE COMMUNICATIONS\" OR \"NATURE SUSTAINABILITY\" OR \"NATURE MACHINE INTELLIGENCE\" OR \"SCIENCE ADVANCES\" OR \"REMOTE SENSING OF ENVIRONMENT\" OR \"ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING\" OR \"INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION\" OR \"IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING\" OR \"COMPUTERS AND ELECTRONICS IN AGRICULTURE\" OR \"ARTIFICIAL INTELLIGENCE IN AGRICULTURE\" OR \"AGRICULTURAL AND FOREST METEOROLOGY\" OR \"FIELD CROPS RESEARCH\" OR \"EUROPEAN JOURNAL OF AGRONOMY\" OR \"AGRICULTURAL SYSTEMS\") AND PY=(2026-2026)",
         "hits": 10,
-        "new": 7
+        "new": 6
       },
       {
         "label": "transformers",
         "query": "TS=(\"transformers\") AND SO=(\"NATURE FOOD\" OR \"NATURE CLIMATE CHANGE\" OR \"NATURE COMMUNICATIONS\" OR \"NATURE SUSTAINABILITY\" OR \"NATURE MACHINE INTELLIGENCE\" OR \"SCIENCE ADVANCES\" OR \"REMOTE SENSING OF ENVIRONMENT\" OR \"ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING\" OR \"INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION\" OR \"IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING\" OR \"COMPUTERS AND ELECTRONICS IN AGRICULTURE\" OR \"ARTIFICIAL INTELLIGENCE IN AGRICULTURE\" OR \"AGRICULTURAL AND FOREST METEOROLOGY\" OR \"FIELD CROPS RESEARCH\" OR \"EUROPEAN JOURNAL OF AGRONOMY\" OR \"AGRICULTURAL SYSTEMS\") AND PY=(2026-2026)",
         "hits": 10,
-        "new": 9
+        "new": 10
       },
       {
         "label": "large language models",
         "query": "TS=(\"large language models\") AND SO=(\"NATURE FOOD\" OR \"NATURE CLIMATE CHANGE\" OR \"NATURE COMMUNICATIONS\" OR \"NATURE SUSTAINABILITY\" OR \"NATURE MACHINE INTELLIGENCE\" OR \"SCIENCE ADVANCES\" OR \"REMOTE SENSING OF ENVIRONMENT\" OR \"ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING\" OR \"INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION\" OR \"IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING\" OR \"COMPUTERS AND ELECTRONICS IN AGRICULTURE\" OR \"ARTIFICIAL INTELLIGENCE IN AGRICULTURE\" OR \"AGRICULTURAL AND FOREST METEOROLOGY\" OR \"FIELD CROPS RESEARCH\" OR \"EUROPEAN JOURNAL OF AGRONOMY\" OR \"AGRICULTURAL SYSTEMS\") AND PY=(2026-2026)",
         "hits": 10,
-        "new": 4
+        "new": 7
       },
       {
         "label": "multimodal learning",
@@ -522,7 +522,7 @@
         "label": "NATURE FOOD",
         "query": "SO=(\"NATURE FOOD\")",
         "hits": 10,
-        "new": 10
+        "new": 9
       },
       {
         "label": "NATURE CLIMATE CHANGE",
@@ -540,19 +540,19 @@
         "label": "NATURE SUSTAINABILITY",
         "query": "SO=(\"NATURE SUSTAINABILITY\")",
         "hits": 10,
-        "new": 9
+        "new": 10
       },
       {
         "label": "NATURE MACHINE INTELLIGENCE",
         "query": "SO=(\"NATURE MACHINE INTELLIGENCE\")",
         "hits": 10,
-        "new": 6
+        "new": 4
       },
       {
         "label": "SCIENCE ADVANCES",
         "query": "SO=(\"SCIENCE ADVANCES\")",
         "hits": 10,
-        "new": 9
+        "new": 10
       },
       {
         "label": "REMOTE SENSING OF ENVIRONMENT",
@@ -582,13 +582,13 @@
         "label": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
         "query": "SO=(\"COMPUTERS AND ELECTRONICS IN AGRICULTURE\")",
         "hits": 10,
-        "new": 8
+        "new": 9
       },
       {
         "label": "ARTIFICIAL INTELLIGENCE IN AGRICULTURE",
         "query": "SO=(\"ARTIFICIAL INTELLIGENCE IN AGRICULTURE\")",
         "hits": 10,
-        "new": 7
+        "new": 9
       },
       {
         "label": "AGRICULTURAL AND FOREST METEOROLOGY",
@@ -663,13 +663,13 @@
         "label": "Diffusion models + remote sensing",
         "query": "(all:\"remote sensing\" AND all:\"diffusion model\") AND (cat:cs.LG OR cat:cs.CV OR cat:stat.ML OR cat:eess.IV)",
         "hits": 10,
-        "new": 9
+        "new": 10
       },
       {
         "label": "Foundation models for Earth observation",
         "query": "((all:\"foundation model\" OR all:\"foundation models\") AND (all:\"remote sensing\" OR all:\"Earth observation\")) AND (cat:cs.LG OR cat:cs.CV OR cat:stat.ML OR cat:eess.IV)",
         "hits": 10,
-        "new": 7
+        "new": 9
       },
       {
         "label": "LLMs in agriculture",
@@ -709,7 +709,7 @@
         "Remote sensing",
         "Deep learning"
       ],
-      "citations": 11,
+      "citations": 12,
       "open_access": false,
       "sources": [
         "topic"
@@ -743,7 +743,7 @@
         "Precision agriculture",
         "Field robotics"
       ],
-      "citations": 8,
+      "citations": 10,
       "open_access": false,
       "sources": [
         "topic"
@@ -830,45 +830,6 @@
       ]
     },
     {
-      "uid": "WOS:001748278600001",
-      "title": "PII-CNN-LSTM: A multi-modal deep learning framework integrating novel pollination importance index for predicting optimal apple pollination windows",
-      "authors": [
-        "Manzoor, Shahram Hamza",
-        "Zhang, Zhao",
-        "Li, Hongwen",
-        "Zhang, Qu",
-        "Ahmed, Arshed",
-        "Yu, Shinning",
-        "Abid, Fazeel",
-        "Tahir, Naveed",
-        "Ye, Dapeng",
-        "Abdelhamid, Mahmoud A."
-      ],
-      "journal": "ARTIFICIAL INTELLIGENCE IN AGRICULTURE",
-      "year": 2026,
-      "volume": "16",
-      "issue": "2",
-      "pages": "725-752",
-      "doi": "10.1016/j.aiia.2026.03.001",
-      "abstract": "",
-      "keywords": [
-        "Pollination importance index (PII)",
-        "Apple flower pollination",
-        "Multi-task learning",
-        "PII-CNN-LSTM",
-        "Precision agriculture",
-        "Drone deployment"
-      ],
-      "citations": 2,
-      "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"agriculture\" AND \"deep learning\""
-      ]
-    },
-    {
       "uid": "WOS:001739672800001",
       "title": "Developing AI-powered microclimate models and yield forecasting tools for climate-smart agroforestry in Germany",
       "authors": [
@@ -904,6 +865,77 @@
       ],
       "matched_queries": [
         "topic:\"crop yield*\" AND \"deep learning\""
+      ]
+    },
+    {
+      "uid": "WOS:001761002100001",
+      "title": "Rapid 10 m winter wheat yield mapping with machine learning and APSIM-Wheat crop model",
+      "authors": [
+        "Xiao, Guilong",
+        "Niu, Quandi",
+        "Du, Kaiqi",
+        "Huang, Hai",
+        "Guan, Haixiang",
+        "Li, Xuecao",
+        "Huang, Jianxi"
+      ],
+      "journal": "FIELD CROPS RESEARCH",
+      "year": 2026,
+      "volume": "343",
+      "issue": "",
+      "pages": "Art. 110521",
+      "doi": "10.1016/j.fcr.2026.110521",
+      "abstract": "",
+      "keywords": [
+        "Winter wheat",
+        "SCYM",
+        "APSIM",
+        "Machine learning",
+        "Yield estimation"
+      ],
+      "citations": 2,
+      "open_access": false,
+      "sources": [
+        "topic"
+      ],
+      "matched_queries": [
+        "topic:\"crop yield*\" AND \"machine learning\""
+      ]
+    },
+    {
+      "uid": "WOS:001650172200001",
+      "title": "SPVD-DETR: A novel real-time end-to-end object detector of sweetpotato virus disease from unmanned aerial vehicle ortho imagery",
+      "authors": [
+        "Zeng, Fanguo",
+        "Ding, Ziyu",
+        "Chen, Junzhi",
+        "Lan, Yubin",
+        "Huang, Lifei",
+        "Liu, Yongxin",
+        "Yue, Xuejun",
+        "Yuan, Lin"
+      ],
+      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
+      "year": 2026,
+      "volume": "242",
+      "issue": "",
+      "pages": "Art. 111322",
+      "doi": "10.1016/j.compag.2025.111322",
+      "abstract": "",
+      "keywords": [
+        "Sweetpotato virus disease",
+        "High-throughput phenotyping",
+        "Unmanned aerial vehicle",
+        "Remote sensing",
+        "Object detection"
+      ],
+      "citations": 2,
+      "open_access": false,
+      "sources": [
+        "topic"
+      ],
+      "matched_queries": [
+        "topic:\"remote sensing\" AND \"transformer*\" AND agriculture"
       ]
     },
     {
@@ -1064,29 +1096,78 @@
       ]
     },
     {
-      "uid": "WOS:001761002100001",
-      "title": "Rapid 10 m winter wheat yield mapping with machine learning and APSIM-Wheat crop model",
+      "uid": "WOS:001798299800001",
+      "title": "A comprehensive survey on segmentation-enabled precision agriculture: Methodologies, applications, and the road to agriculture 5.0",
       "authors": [
-        "Xiao, Guilong",
-        "Niu, Quandi",
-        "Du, Kaiqi",
-        "Huang, Hai",
-        "Guan, Haixiang",
-        "Li, Xuecao",
-        "Huang, Jianxi"
+        "Wang, Chenxin",
+        "Ge, Xingyu",
+        "Zhao, Yongkang",
+        "Cai, Jijing",
+        "Xia, Yuchao",
+        "Wen, Zhihao",
+        "Feng, Hailin",
+        "Fang, Kai",
+        "Gadekallu, Thippa Reddy"
       ],
-      "journal": "FIELD CROPS RESEARCH",
+      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
       "year": 2026,
-      "volume": "343",
+      "volume": "251",
       "issue": "",
-      "pages": "Art. 110521",
-      "doi": "10.1016/j.fcr.2026.110521",
+      "pages": "Art. 111986",
+      "doi": "10.1016/j.compag.2026.111986",
       "abstract": "",
       "keywords": [
-        "Winter wheat",
-        "SCYM",
-        "APSIM",
-        "Machine learning",
+        "Segmentation-enabled precision agriculture",
+        "Farmland boundary delineation",
+        "Agricultural foundation models",
+        "Vision-Language Models",
+        "Physics-Informed Explainable AI",
+        "Federated learning",
+        "Remote sensing"
+      ],
+      "citations": 1,
+      "open_access": false,
+      "sources": [
+        "topic"
+      ],
+      "matched_queries": [
+        "topic:\"remote sensing\" AND \"deep learning\" AND agriculture",
+        "topic:\"agriculture\" AND \"foundation model*\"",
+        "topic:\"precision agriculture\" AND \"foundation model*\""
+      ]
+    },
+    {
+      "uid": "WOS:001728108200001",
+      "title": "A semi-supervised deep learning framework based on multi-source data for wheat: from counting to yield estimation",
+      "authors": [
+        "Geng, Qing",
+        "Xu, Xin",
+        "Ma, Xinming",
+        "Xu, Fan",
+        "Yu, Jiayue",
+        "Yang, Xiaoqiang",
+        "Deng, Yupeng",
+        "Liu, Diyou",
+        "Li, Li",
+        "Gao, Bingbo",
+        "Meng, Yu",
+        "Yang, Jianyu",
+        "Huang, Jianxi",
+        "Yao, Xiaochuang"
+      ],
+      "journal": "ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING",
+      "year": 2026,
+      "volume": "235",
+      "issue": "",
+      "pages": "445-469",
+      "doi": "10.1016/j.isprsjprs.2026.03.026",
+      "abstract": "",
+      "keywords": [
+        "Wheat phenotyping",
+        "UAV",
+        "Wheat-SAM",
+        "Semi-supervised learning",
+        "Segmentation and counting",
         "Yield estimation"
       ],
       "citations": 1,
@@ -1095,7 +1176,8 @@
         "topic"
       ],
       "matched_queries": [
-        "topic:\"crop yield*\" AND \"machine learning\""
+        "topic:\"remote sensing\" AND \"deep learning\" AND agriculture",
+        "topic:\"agriculture\" AND \"foundation model*\""
       ]
     },
     {
@@ -1217,6 +1299,68 @@
       ]
     },
     {
+      "uid": "WOS:001666441700001",
+      "title": "A generative AI-enhanced multitask learning framework for weed detection and drivable area segmentation in smart agriculture",
+      "authors": [
+        "Chao, Xuewei",
+        "Yang, Shuo"
+      ],
+      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
+      "year": 2026,
+      "volume": "243",
+      "issue": "",
+      "pages": "Art. 111411",
+      "doi": "10.1016/j.compag.2026.111411",
+      "abstract": "",
+      "keywords": [
+        "GenAI",
+        "Multi-task learning",
+        "Stable diffusion model",
+        "Weed detection",
+        "Drivable areas segmentation"
+      ],
+      "citations": 1,
+      "open_access": false,
+      "sources": [
+        "topic"
+      ],
+      "matched_queries": [
+        "topic:\"agriculture\" AND \"generative AI\""
+      ]
+    },
+    {
+      "uid": "WOS:001662584400001",
+      "title": "Cross-platform super-resolution: A diffusion model approach for enhancing satellite imagery with aerial data",
+      "authors": [
+        "Wang, Zhe",
+        "Garcia, Carmen Galaz",
+        "Halpern, Benjamin S."
+      ],
+      "journal": "INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION",
+      "year": 2026,
+      "volume": "146",
+      "issue": "",
+      "pages": "Art. 105046",
+      "doi": "10.1016/j.jag.2025.105046",
+      "abstract": "",
+      "keywords": [
+        "Super resolution",
+        "Diffusion model",
+        "Transfer learning",
+        "Remote sensing",
+        "NAIP",
+        "PlanetScope"
+      ],
+      "citations": 1,
+      "open_access": false,
+      "sources": [
+        "topic"
+      ],
+      "matched_queries": [
+        "topic:\"remote sensing\" AND \"diffusion model*\" AND agriculture"
+      ]
+    },
+    {
       "uid": "WOS:001748275200001",
       "title": "Multimodal remote sensing combination for maize LAI estimation: Stacking model development and phenology-specific feature sensitivity analysis",
       "authors": [
@@ -1286,42 +1430,6 @@
         "high-resolution imagery",
         "remote sensing (RS)",
         "semantic segmentation"
-      ],
-      "citations": 1,
-      "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"remote sensing\" AND \"transformer*\" AND agriculture"
-      ]
-    },
-    {
-      "uid": "WOS:001650172200001",
-      "title": "SPVD-DETR: A novel real-time end-to-end object detector of sweetpotato virus disease from unmanned aerial vehicle ortho imagery",
-      "authors": [
-        "Zeng, Fanguo",
-        "Ding, Ziyu",
-        "Chen, Junzhi",
-        "Lan, Yubin",
-        "Huang, Lifei",
-        "Liu, Yongxin",
-        "Yue, Xuejun",
-        "Yuan, Lin"
-      ],
-      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
-      "year": 2026,
-      "volume": "242",
-      "issue": "",
-      "pages": "Art. 111322",
-      "doi": "10.1016/j.compag.2025.111322",
-      "abstract": "",
-      "keywords": [
-        "Sweetpotato virus disease",
-        "High-throughput phenotyping",
-        "Unmanned aerial vehicle",
-        "Remote sensing",
-        "Object detection"
       ],
       "citations": 1,
       "open_access": false,
@@ -1590,22 +1698,19 @@
       ]
     },
     {
-      "uid": "WOS:001718265700010",
-      "title": "Interpretable and generative deep learning models explicate phase separating intrinsically disordered motifs",
+      "uid": "WOS:001746919500001",
+      "title": "Algebraic language models for inverse design of metamaterials via diffusion transformers",
       "authors": [
-        "Yang, Hongzhining",
-        "You, Kaiqiang",
-        "Ma, Liwei",
-        "Wang, Xinxin",
-        "Pei, Gaofeng",
-        "Li, Tingting"
+        "Zheng, Li",
+        "Kumar, Siddhant",
+        "Kochmann, Dennis M."
       ],
-      "journal": "NATURE COMMUNICATIONS",
+      "journal": "NATURE MACHINE INTELLIGENCE",
       "year": 2026,
-      "volume": "17",
-      "issue": "1",
-      "pages": "Art. 2571",
-      "doi": "10.1038/s41467-026-69252-z",
+      "volume": "8",
+      "issue": "4",
+      "pages": "",
+      "doi": "10.1038/s42256-026-01218-8",
       "abstract": "",
       "keywords": [],
       "citations": 1,
@@ -1614,25 +1719,37 @@
         "keyword"
       ],
       "matched_queries": [
-        "keyword:generative models"
+        "keyword:diffusion models"
       ]
     },
     {
-      "uid": "WOS:001795307500001",
-      "title": "Cropland edge management enhances the adaptability of cropland productivity to extremely dry events",
+      "uid": "WOS:001810650200001",
+      "title": "Artificial intelligence for food innovation",
       "authors": [
-        "Liu, Wanying",
-        "Duan, Jiakun",
-        "Min, Xinru",
-        "Dong, Liang",
-        "Zhang, Xiaoling"
+        "Datta, Bianca",
+        "Buehler, Markus J.",
+        "Chow, Yvonne",
+        "Gligoric, Kristina",
+        "Jurafsky, Dan",
+        "Kaplan, David L.",
+        "Ledesma-Amaro, Rodrigo",
+        "Del Missier, Giorgia",
+        "Neidhardt, Lisa",
+        "Pichara, Karim",
+        "Sanchez-Lengeling, Benjamin",
+        "Schlangen, Miek",
+        "St. Pierre, Skyler R.",
+        "Tagkopoulos, Ilias",
+        "Thomas, Anna",
+        "Watson, Nik",
+        "Kuhl, Ellen"
       ],
       "journal": "NATURE FOOD",
       "year": 2026,
-      "volume": "7",
-      "issue": "6",
+      "volume": "",
+      "issue": "",
       "pages": "",
-      "doi": "10.1038/s43016-026-01366-5",
+      "doi": "10.1038/s43016-026-01380-7",
       "abstract": "",
       "keywords": [],
       "citations": 1,
@@ -1642,37 +1759,8 @@
       ],
       "matched_queries": [
         "journal:NATURE FOOD"
-      ]
-    },
-    {
-      "uid": "WOS:001798870600001",
-      "title": "Demand-side factors as dominant drivers of resource efficiency in the concrete aggregates cycle",
-      "authors": [
-        "Cao, Zhi",
-        "Liu, Jia",
-        "Su, Xiaoke",
-        "Song, Jingyang",
-        "Zhong, Xiaoyang",
-        "Watari, Takuma",
-        "Behrens, Paul",
-        "Zhang, Tong"
       ],
-      "journal": "NATURE SUSTAINABILITY",
-      "year": 2026,
-      "volume": "",
-      "issue": "",
-      "pages": "",
-      "doi": "10.1038/s41893-026-01860-5",
-      "abstract": "",
-      "keywords": [],
-      "citations": 1,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE SUSTAINABILITY"
-      ]
+      "is_new": true
     },
     {
       "uid": "WOS:001796954500001",
@@ -1707,13 +1795,11 @@
       "open_access": false,
       "sources": [
         "topic",
-        "keyword",
-        "journal"
+        "keyword"
       ],
       "matched_queries": [
         "topic:\"crop model*\"",
-        "keyword:remote sensing",
-        "journal:COMPUTERS AND ELECTRONICS IN AGRICULTURE"
+        "keyword:remote sensing"
       ]
     },
     {
@@ -1971,6 +2057,40 @@
       ]
     },
     {
+      "uid": "WOS:001812966600001",
+      "title": "A review of remote sensing-crop model data assimilation: Addressing challenges in data-scarce and spatially heterogeneous regions",
+      "authors": [
+        "Ye, Fankai",
+        "Yu, Chao",
+        "Rafael, Rogerio Borguete A.",
+        "Shuai, Yanmin"
+      ],
+      "journal": "EUROPEAN JOURNAL OF AGRONOMY",
+      "year": 2026,
+      "volume": "180",
+      "issue": "",
+      "pages": "Art. 128236",
+      "doi": "10.1016/j.eja.2026.128236",
+      "abstract": "",
+      "keywords": [
+        "Data assimilation",
+        "Crop growth models",
+        "Data scarcity",
+        "Smallholder farming systems",
+        "Multi-source data fusion",
+        "Yield gap diagnosis"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "topic"
+      ],
+      "matched_queries": [
+        "topic:\"crop model*\""
+      ],
+      "is_new": true
+    },
+    {
       "uid": "WOS:001730668900001",
       "title": "Closing the gap between crop simulation and practical decision-making",
       "authors": [
@@ -2004,43 +2124,6 @@
         "topic:\"crop model*\"",
         "keyword:large language models"
       ]
-    },
-    {
-      "uid": "WOS:001804997700001",
-      "title": "Multi-objective optimization of wheat-maize management for climate-smart agriculture in China",
-      "authors": [
-        "Yin, Lichang",
-        "Tao, Fulu",
-        "Li, Yibo",
-        "Chen, Yi",
-        "Wang, Xiaofeng",
-        "Hoogenboom, Gerrit",
-        "Zhang, Zhao"
-      ],
-      "journal": "AGRICULTURAL SYSTEMS",
-      "year": 2026,
-      "volume": "238",
-      "issue": "",
-      "pages": "Art. 104876",
-      "doi": "10.1016/j.agsy.2026.104876",
-      "abstract": "",
-      "keywords": [
-        "Environmental cost",
-        "Irrigation",
-        "Nitrogen",
-        "GHG mitigation",
-        "Multi-objective optimization",
-        "Resource use efficiency"
-      ],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"crop model*\""
-      ],
-      "is_new": true
     },
     {
       "uid": "WOS:001798108800001",
@@ -2577,6 +2660,34 @@
       ]
     },
     {
+      "uid": "WOS:001811719200001",
+      "title": "Smart breeding for diversified agricultural systems",
+      "authors": [
+        "Eyshi Rezaei, Ehsan",
+        "Brinch-Pedersen, Henrik",
+        "Ewert, Frank"
+      ],
+      "journal": "NATURE FOOD",
+      "year": 2026,
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.1038/s43016-026-01393-2",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "topic",
+        "journal"
+      ],
+      "matched_queries": [
+        "topic:\"agricultural system*\"",
+        "journal:NATURE FOOD"
+      ],
+      "is_new": true
+    },
+    {
       "uid": "WOS:001792211500001",
       "title": "Climatic influence on yield stability in durum wheat genotypes grown under minimum tillage and no tillage management",
       "authors": [
@@ -2656,69 +2767,25 @@
       ]
     },
     {
-      "uid": "WOS:001736710800001",
-      "title": "A two-layer intelligent decision-making framework for optimizing irrigation and fertilization scheduling in irrigated farmland systems",
+      "uid": "WOS:001811050500001",
+      "title": "Scaling through friction: Learning, trust, and institutional alignment in global AgTech",
       "authors": [
-        "Li, Yue",
-        "Hu, Min",
-        "Chen, Zhijun",
-        "Han, Yufei",
-        "Ren, Dongyang",
-        "Xu, Xu",
-        "Xiong, Yunwu",
-        "Huang, Quanzhong",
-        "Huang, Guanhua"
-      ],
-      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
-      "year": 2026,
-      "volume": "247",
-      "issue": "",
-      "pages": "Art. 111721",
-      "doi": "10.1016/j.compag.2026.111721",
-      "abstract": "",
-      "keywords": [
-        "AI Agent",
-        "Intelligent decision-making method",
-        "Irrigated farmlands",
-        "Sustainability index",
-        "Irrigation and fertilization times"
-      ],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"agricultural system*\""
-      ]
-    },
-    {
-      "uid": "WOS:001800597500001",
-      "title": "The Daisy model: A tool for simulating agricultural systems - Recent (2012-2025) developments, calibrations and validations",
-      "authors": [
-        "Holbak, Maja",
-        "Abrahamsen, Per",
-        "GrOnning, Celine R.",
-        "Kloffel, Tobias",
-        "Schwartzkopff, Magdalena V.",
-        "Styczen, Merete E.",
-        "Svane, Simon F.",
-        "Diamantopoulos, Efstathios"
+        "Fernandez-Vidal, Jorge"
       ],
       "journal": "AGRICULTURAL SYSTEMS",
       "year": 2026,
       "volume": "238",
       "issue": "",
-      "pages": "Art. 104846",
-      "doi": "10.1016/j.agsy.2026.104846",
+      "pages": "Art. 104878",
+      "doi": "10.1016/j.agsy.2026.104878",
       "abstract": "",
       "keywords": [
-        "Agroecosystem modelling",
-        "Agriculture",
-        "Agrohydrology",
-        "Nitrogen dynamics",
-        "Carbon balance",
-        "Crop growth"
+        "Responsible innovation",
+        "Agri-food systems",
+        "AgTech",
+        "transformation",
+        "Impact",
+        "Scaling"
       ],
       "citations": 0,
       "open_access": false,
@@ -3283,40 +3350,35 @@
       ]
     },
     {
-      "uid": "WOS:001804792500001",
-      "title": "Greater losses from heat exposure experienced by female smallholders in sub-Saharan Africa",
+      "uid": "WOS:001812308800001",
+      "title": "Uncovering the potential of cover cropping for regenerative horticulture",
       "authors": [
-        "Wu, Lan",
-        "Zhang, Yingnan",
-        "Long, Hualou",
-        "Bao, Wenkai",
-        "Xiao, Wu",
-        "Gong, Binlei",
-        "Chigbu, Uchendu Eugene",
-        "Ma, Li",
-        "Peng, Liqing",
-        "Li, Wenbo",
-        "Gao, Xuwen",
-        "Zhu, Yuanli",
-        "Rao, Fujie"
+        "Smee, Matthew",
+        "Girkin, Nicholas T.",
+        "Simmons, Robert",
+        "Falagan, Natalia"
       ],
-      "journal": "NATURE SUSTAINABILITY",
+      "journal": "EUROPEAN JOURNAL OF AGRONOMY",
       "year": 2026,
-      "volume": "",
+      "volume": "180",
       "issue": "",
-      "pages": "",
-      "doi": "10.1038/s41893-026-01881-0",
+      "pages": "Art. 128243",
+      "doi": "10.1016/j.eja.2026.128243",
       "abstract": "",
-      "keywords": [],
+      "keywords": [
+        "Climate change",
+        "Greenhouse gas emissions",
+        "Soil health",
+        "Nutrient cycling",
+        "Soil erosion"
+      ],
       "citations": 0,
       "open_access": false,
       "sources": [
-        "topic",
-        "journal"
+        "topic"
       ],
       "matched_queries": [
-        "topic:\"climate change\" AND crop*",
-        "journal:NATURE SUSTAINABILITY"
+        "topic:\"climate change\" AND crop*"
       ],
       "is_new": true
     },
@@ -3393,78 +3455,32 @@
       ]
     },
     {
-      "uid": "WOS:001798299800001",
-      "title": "A comprehensive survey on segmentation-enabled precision agriculture: Methodologies, applications, and the road to agriculture 5.0",
+      "uid": "WOS:001813142000001",
+      "title": "Maximizing economic and environmental benefits in China's rice farming with an adaptive deep learning framework",
       "authors": [
-        "Wang, Chenxin",
-        "Ge, Xingyu",
-        "Zhao, Yongkang",
-        "Cai, Jijing",
-        "Xia, Yuchao",
-        "Wen, Zhihao",
-        "Feng, Hailin",
-        "Fang, Kai",
-        "Gadekallu, Thippa Reddy"
+        "Xu, He",
+        "Zhao, Xinge",
+        "Yang, Xin",
+        "Liu, Zihan",
+        "Che, Zhixuan",
+        "Shen, Jinrong",
+        "Huang, Zelin",
+        "Xia, Dan",
+        "Xia, Yongqiu"
       ],
-      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
+      "journal": "FIELD CROPS RESEARCH",
       "year": 2026,
-      "volume": "251",
+      "volume": "346",
       "issue": "",
-      "pages": "Art. 111986",
-      "doi": "10.1016/j.compag.2026.111986",
+      "pages": "Art. 110610",
+      "doi": "10.1016/j.fcr.2026.110610",
       "abstract": "",
       "keywords": [
-        "Segmentation-enabled precision agriculture",
-        "Farmland boundary delineation",
-        "Agricultural foundation models",
-        "Vision-Language Models",
-        "Physics-Informed Explainable AI",
-        "Federated learning",
-        "Remote sensing"
-      ],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "topic",
-        "keyword"
-      ],
-      "matched_queries": [
-        "topic:\"agriculture\" AND \"deep learning\"",
-        "topic:\"remote sensing\" AND \"deep learning\" AND agriculture",
-        "topic:\"agriculture\" AND \"foundation model*\"",
-        "topic:\"precision agriculture\" AND \"foundation model*\"",
-        "keyword:foundation models"
-      ]
-    },
-    {
-      "uid": "WOS:001787841600001",
-      "title": "Development and application of a deep learning (SF-TPP)-based intelligent detection system for granular fertilizer deposition distribution patterns",
-      "authors": [
-        "Xu, Langtao",
-        "Wang, Xiaochan",
-        "Shi, Yinyan",
-        "Wang, Lei",
-        "Zhang, Xiaolei",
-        "Zheng, Enlai",
-        "Sun, Guoxiang",
-        "Zhang, Yongnian",
-        "Liu, Hui",
-        "Huang, Xuekai",
-        "Xia, Chuang"
-      ],
-      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
-      "year": 2026,
-      "volume": "250",
-      "issue": "",
-      "pages": "Art. 111912",
-      "doi": "10.1016/j.compag.2026.111912",
-      "abstract": "",
-      "keywords": [
-        "Granular fertilizer",
-        "Deposition distribution",
-        "Network model",
-        "Intelligent detection",
-        "Deep learning"
+        "Optimal Nitrogen Rate",
+        "Deep Neural Network",
+        "Net Ecosystem Economic Benefit",
+        "Sustainable Agriculture",
+        "Precision Fertilization"
       ],
       "citations": 0,
       "open_access": false,
@@ -3473,7 +3489,80 @@
       ],
       "matched_queries": [
         "topic:\"agriculture\" AND \"deep learning\""
-      ]
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001812144400001",
+      "title": "MoeBi-ViT: Non-destructive shoot-stage phenotyping of lettuce in plant factory via dual-branch mixture-of-experts network and enhanced segmentation",
+      "authors": [
+        "Jia, Xiaoze",
+        "Yao, Xinfeng",
+        "Li, Yiyang",
+        "Sun, Yue",
+        "Zheng, Xiuguo",
+        "Qian, Tingting",
+        "Lu, Shenglian"
+      ],
+      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
+      "year": 2026,
+      "volume": "252",
+      "issue": "",
+      "pages": "Art. 112094",
+      "doi": "10.1016/j.compag.2026.112094",
+      "abstract": "",
+      "keywords": [
+        "Phenotypic estimation",
+        "Segmentation model",
+        "Vision transformer",
+        "Smart agriculture",
+        "Plant factories"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "topic"
+      ],
+      "matched_queries": [
+        "topic:\"agriculture\" AND \"deep learning\"",
+        "topic:\"crop yield*\" AND \"deep learning\""
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001808386700001",
+      "title": "DeepGrass: A transformer-based approach for enhanced grassland management through Sentinel-2 time series spectral signature and vegetation indices forecasting",
+      "authors": [
+        "Farbo, A.",
+        "Parsons, D.",
+        "Borgogno-Mondino, E.",
+        "Oliveira, J."
+      ],
+      "journal": "REMOTE SENSING OF ENVIRONMENT",
+      "year": 2026,
+      "volume": "344",
+      "issue": "",
+      "pages": "Art. 115545",
+      "doi": "10.1016/j.rse.2026.115545",
+      "abstract": "",
+      "keywords": [
+        "Vegetation indices forecasting",
+        "Reflectance forecasting",
+        "Irregular time series",
+        "Deep learning",
+        "Grassland management",
+        "Precision agriculture",
+        "Transfer learning"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "topic"
+      ],
+      "matched_queries": [
+        "topic:\"agriculture\" AND \"deep learning\""
+      ],
+      "is_new": true
     },
     {
       "uid": "WOS:001799307300001",
@@ -3583,6 +3672,78 @@
       ]
     },
     {
+      "uid": "WOS:001808208300001",
+      "title": "Machine learning-based decision support for harvest optimization in commercial microalgae photobioreactors: A field validation study",
+      "authors": [
+        "Kadosh, Efrat",
+        "Eisenstadt, Doron",
+        "Gamliel, Ohad",
+        "Levy, Alon",
+        "Sasson, Amit",
+        "Bogin, Yaron",
+        "Einbinder, Shai",
+        "Tchernov, Dan",
+        "Morick, Danny"
+      ],
+      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
+      "year": 2026,
+      "volume": "252",
+      "issue": "",
+      "pages": "Art. 112040",
+      "doi": "10.1016/j.compag.2026.112040",
+      "abstract": "",
+      "keywords": [
+        "Microalgae cultivation",
+        "Machine learning",
+        "Decision support systems",
+        "Photobioreactors",
+        "Precision aquaculture",
+        "Digital agriculture"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "topic"
+      ],
+      "matched_queries": [
+        "topic:\"agriculture\" AND \"machine learning\""
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001805342300001",
+      "title": "Climate risk assessment of rubber tree powdery mildew in China",
+      "authors": [
+        "Bai, Rui",
+        "Wang, Jing",
+        "Li, Ning",
+        "Chen, Renwei"
+      ],
+      "journal": "EUROPEAN JOURNAL OF AGRONOMY",
+      "year": 2026,
+      "volume": "180",
+      "issue": "",
+      "pages": "Art. 128229",
+      "doi": "10.1016/j.eja.2026.128229",
+      "abstract": "",
+      "keywords": [
+        "Agro-meteorological prediction",
+        "Machine learning",
+        "Yield loss",
+        "Risk assessment",
+        "Climate change"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "topic"
+      ],
+      "matched_queries": [
+        "topic:\"agriculture\" AND \"machine learning\""
+      ],
+      "is_new": true
+    },
+    {
       "uid": "WOS:001801483300001",
       "title": "An improved slime mould algorithm applied to hyperspectral feature selection in soil fertility indicators",
       "authors": [
@@ -3615,78 +3776,7 @@
       ],
       "matched_queries": [
         "topic:\"agriculture\" AND \"machine learning\""
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "WOS:001801212000001",
-      "title": "Advancing digital agri-food systems through integrated AI, robotics, IoT, and blockchain with a bibliometric analysis",
-      "authors": [
-        "Afrifa, Stephen",
-        "Khanal, Kapalik",
-        "Khatiwada, Biswash",
-        "Bahadur, Ramesh"
-      ],
-      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
-      "year": 2026,
-      "volume": "251",
-      "issue": "",
-      "pages": "Art. 112044",
-      "doi": "10.1016/j.compag.2026.112044",
-      "abstract": "",
-      "keywords": [
-        "Agricultural informatics",
-        "Artificial intelligence",
-        "Bibliometric analysis",
-        "Machine learning",
-        "Precision agriculture"
-      ],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"agriculture\" AND \"machine learning\""
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "WOS:001800229500001",
-      "title": "Planar array radar-capacitive multi-sensor fusion for powdery organic fertilizer flow rate monitoring",
-      "authors": [
-        "Zhou, Yihan",
-        "Chen, Xiongfei",
-        "Liu, Muhua",
-        "Fang, Peng",
-        "Liu, Junan",
-        "Liu, Zhaopeng",
-        "Xu, Peng",
-        "Wang, Zhiyin"
-      ],
-      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
-      "year": 2026,
-      "volume": "251",
-      "issue": "",
-      "pages": "Art. 112037",
-      "doi": "10.1016/j.compag.2026.112037",
-      "abstract": "",
-      "keywords": [
-        "Powdery materials",
-        "Organic fertilizer",
-        "MachineLearning",
-        "Flow rate monitoring",
-        "Data fusion"
-      ],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"agriculture\" AND \"machine learning\""
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "WOS:001796296700001",
@@ -3825,40 +3915,6 @@
         "Integrated gradients",
         "Interpretability",
         "Cross-regional generalization"
-      ],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"crop yield*\" AND \"deep learning\""
-      ]
-    },
-    {
-      "uid": "WOS:001757146100001",
-      "title": "Improving wheat yield prediction in breeding under climate change via a new method of correcting and reconstructing meteorological data and weighing multiple crop model outputs",
-      "authors": [
-        "Yang, Guofeng",
-        "He, Yong",
-        "Ye, Lingzhen",
-        "Luo, Yiqi",
-        "Kim, Hyung-sub",
-        "Feng, Xuping"
-      ],
-      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
-      "year": 2026,
-      "volume": "248",
-      "issue": "",
-      "pages": "Art. 111734",
-      "doi": "10.1016/j.compag.2026.111734",
-      "abstract": "",
-      "keywords": [
-        "Climate change",
-        "Crop model",
-        "Deep learning",
-        "Crop breeding",
-        "Yield prediction"
       ],
       "citations": 0,
       "open_access": false,
@@ -4157,50 +4213,6 @@
       ],
       "matched_queries": [
         "topic:\"remote sensing\" AND \"deep learning\" AND agriculture"
-      ]
-    },
-    {
-      "uid": "WOS:001728108200001",
-      "title": "A semi-supervised deep learning framework based on multi-source data for wheat: from counting to yield estimation",
-      "authors": [
-        "Geng, Qing",
-        "Xu, Xin",
-        "Ma, Xinming",
-        "Xu, Fan",
-        "Yu, Jiayue",
-        "Yang, Xiaoqiang",
-        "Deng, Yupeng",
-        "Liu, Diyou",
-        "Li, Li",
-        "Gao, Bingbo",
-        "Meng, Yu",
-        "Yang, Jianyu",
-        "Huang, Jianxi",
-        "Yao, Xiaochuang"
-      ],
-      "journal": "ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING",
-      "year": 2026,
-      "volume": "235",
-      "issue": "",
-      "pages": "445-469",
-      "doi": "10.1016/j.isprsjprs.2026.03.026",
-      "abstract": "",
-      "keywords": [
-        "Wheat phenotyping",
-        "UAV",
-        "Wheat-SAM",
-        "Semi-supervised learning",
-        "Segmentation and counting",
-        "Yield estimation"
-      ],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"remote sensing\" AND \"deep learning\" AND agriculture",
-        "topic:\"agriculture\" AND \"foundation model*\""
       ]
     },
     {
@@ -4547,36 +4559,6 @@
       ]
     },
     {
-      "uid": "WOS:001666441700001",
-      "title": "A generative AI-enhanced multitask learning framework for weed detection and drivable area segmentation in smart agriculture",
-      "authors": [
-        "Chao, Xuewei",
-        "Yang, Shuo"
-      ],
-      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
-      "year": 2026,
-      "volume": "243",
-      "issue": "",
-      "pages": "Art. 111411",
-      "doi": "10.1016/j.compag.2026.111411",
-      "abstract": "",
-      "keywords": [
-        "GenAI",
-        "Multi-task learning",
-        "Stable diffusion model",
-        "Weed detection",
-        "Drivable areas segmentation"
-      ],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"agriculture\" AND \"generative AI\""
-      ]
-    },
-    {
       "uid": "WOS:001759942500001",
       "title": "Latent diffusion meets semi-supervised learning: Enhancing plant disease detection with minimal labels",
       "authors": [
@@ -4655,6 +4637,42 @@
       ]
     },
     {
+      "uid": "WOS:001812146000001",
+      "title": "Visual-language-guided task planning for horticultural robots",
+      "authors": [
+        "Cuaran, Jose",
+        "Koe, Kendall",
+        "Potnis, Aditya",
+        "Uppalapati, Naveen K.",
+        "Chowdhary, Girish"
+      ],
+      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
+      "year": 2026,
+      "volume": "252",
+      "issue": "",
+      "pages": "Art. 112058",
+      "doi": "10.1016/j.compag.2026.112058",
+      "abstract": "",
+      "keywords": [
+        "Task planning",
+        "Foundation models",
+        "Vision-language models",
+        "Agricultural robots"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "topic",
+        "keyword"
+      ],
+      "matched_queries": [
+        "topic:\"agriculture\" AND \"foundation model*\"",
+        "topic:\"precision agriculture\" AND \"foundation model*\"",
+        "keyword:foundation models"
+      ],
+      "is_new": true
+    },
+    {
       "uid": "WOS:001778496900001",
       "title": "SMART: Structured multimodal agricultural retrieval-augmented transformer for plant disease diagnosis",
       "authors": [
@@ -4718,85 +4736,6 @@
       ],
       "matched_queries": [
         "topic:\"agriculture\" AND \"foundation model*\""
-      ]
-    },
-    {
-      "uid": "WOS:001797700000035",
-      "title": "TORA: Parameter-Efficient Token-Driven Residual Adaptation of Remote Sensing Foundation Models for Multiscale Agricultural Vision",
-      "authors": [
-        "Li, Haocheng",
-        "Zheng, Juepeng",
-        "Miao, Shuangxi",
-        "Du, Kaiqi",
-        "Xiao, Guilong",
-        "Zhang, Zhiwei",
-        "Zhao, Lingyuan",
-        "Fu, Haohuan",
-        "Huang, Jianxi"
-      ],
-      "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
-      "year": 2026,
-      "volume": "64",
-      "issue": "",
-      "pages": "Art. 5626216",
-      "doi": "10.1109/TGRS.2026.3699401",
-      "abstract": "",
-      "keywords": [
-        "Modeling",
-        "Tuning",
-        "Remote sensing",
-        "Prototypes",
-        "Training",
-        "Head",
-        "Signal detection",
-        "Foundation models",
-        "LoRa",
-        "Semantic segmentation",
-        "Agricultural vision",
-        "parameter-efficient fine-tuning (PEFT)",
-        "precision agriculture",
-        "remote sensing foundation models (RSFMs)"
-      ],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"agriculture\" AND \"foundation model*\"",
-        "topic:\"precision agriculture\" AND \"foundation model*\""
-      ]
-    },
-    {
-      "uid": "WOS:001662584400001",
-      "title": "Cross-platform super-resolution: A diffusion model approach for enhancing satellite imagery with aerial data",
-      "authors": [
-        "Wang, Zhe",
-        "Garcia, Carmen Galaz",
-        "Halpern, Benjamin S."
-      ],
-      "journal": "INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION",
-      "year": 2026,
-      "volume": "146",
-      "issue": "",
-      "pages": "Art. 105046",
-      "doi": "10.1016/j.jag.2025.105046",
-      "abstract": "",
-      "keywords": [
-        "Super resolution",
-        "Diffusion model",
-        "Transfer learning",
-        "Remote sensing",
-        "NAIP",
-        "PlanetScope"
-      ],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "topic"
-      ],
-      "matched_queries": [
-        "topic:\"remote sensing\" AND \"diffusion model*\" AND agriculture"
       ]
     },
     {
@@ -4909,13 +4848,10 @@
       "citations": 0,
       "open_access": false,
       "sources": [
-        "topic",
-        "keyword"
+        "topic"
       ],
       "matched_queries": [
-        "topic:\"agriculture\" AND \"large language model*\"",
-        "keyword:computer vision",
-        "keyword:large language models"
+        "topic:\"agriculture\" AND \"large language model*\""
       ]
     },
     {
@@ -5092,6 +5028,52 @@
       ]
     },
     {
+      "uid": "WOS:001797700000035",
+      "title": "TORA: Parameter-Efficient Token-Driven Residual Adaptation of Remote Sensing Foundation Models for Multiscale Agricultural Vision",
+      "authors": [
+        "Li, Haocheng",
+        "Zheng, Juepeng",
+        "Miao, Shuangxi",
+        "Du, Kaiqi",
+        "Xiao, Guilong",
+        "Zhang, Zhiwei",
+        "Zhao, Lingyuan",
+        "Fu, Haohuan",
+        "Huang, Jianxi"
+      ],
+      "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
+      "year": 2026,
+      "volume": "64",
+      "issue": "",
+      "pages": "Art. 5626216",
+      "doi": "10.1109/TGRS.2026.3699401",
+      "abstract": "",
+      "keywords": [
+        "Modeling",
+        "Tuning",
+        "Remote sensing",
+        "Prototypes",
+        "Training",
+        "Head",
+        "Signal detection",
+        "Foundation models",
+        "LoRa",
+        "Semantic segmentation",
+        "Agricultural vision",
+        "parameter-efficient fine-tuning (PEFT)",
+        "precision agriculture",
+        "remote sensing foundation models (RSFMs)"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "topic"
+      ],
+      "matched_queries": [
+        "topic:\"precision agriculture\" AND \"foundation model*\""
+      ]
+    },
+    {
       "uid": "WOS:001796217700001",
       "title": "Thermodynamically constrained surface energy balance using medium-resolution remote sensing for efficient evapotranspiration mapping",
       "authors": [
@@ -5201,8 +5183,7 @@
         "keyword:remote sensing",
         "keyword:deep learning",
         "journal:ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING"
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "WOS:001799079600001",
@@ -5504,8 +5485,7 @@
       "matched_queries": [
         "keyword:machine learning",
         "journal:EUROPEAN JOURNAL OF AGRONOMY"
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "WOS:001787184000001",
@@ -5621,8 +5601,7 @@
       "matched_queries": [
         "keyword:machine learning",
         "journal:FIELD CROPS RESEARCH"
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "WOS:001799972100001",
@@ -6107,6 +6086,38 @@
       ]
     },
     {
+      "uid": "WOS:001810626200001",
+      "title": "Principled approaches for extending neural architectures to function spaces for operator learning",
+      "authors": [
+        "Berner, Julius",
+        "Liu-Schiaffini, Miguel",
+        "Kossaifi, Jean",
+        "Duruisseaux, Valentin",
+        "Bonev, Boris",
+        "Azizzadenesheli, Kamyar",
+        "Anandkumar, Anima"
+      ],
+      "journal": "NATURE MACHINE INTELLIGENCE",
+      "year": 2026,
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.1038/s42256-026-01267-z",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "keyword",
+        "journal"
+      ],
+      "matched_queries": [
+        "keyword:computer vision",
+        "journal:NATURE MACHINE INTELLIGENCE"
+      ],
+      "is_new": true
+    },
+    {
       "uid": "WOS:001750794400001",
       "title": "Automated computer vision monitoring of black soldier fly larval growth using metaheuristic optimization for waste-to-feed bioconversion",
       "authors": [
@@ -6144,6 +6155,112 @@
       ]
     },
     {
+      "uid": "WOS:001811213600001",
+      "title": "A frequency-aware and multi-scale feature enhancement network for maize seedling grading",
+      "authors": [
+        "Zhao, Yongjie",
+        "Pu, Liuru",
+        "Yang, Bingpeng",
+        "Kang, Haoyu",
+        "Liu, Tianhe",
+        "Wang, Hongbing",
+        "Jiang, Bo",
+        "Song, Huaibo"
+      ],
+      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
+      "year": 2026,
+      "volume": "252",
+      "issue": "",
+      "pages": "Art. 112045",
+      "doi": "10.1016/j.compag.2026.112045",
+      "abstract": "",
+      "keywords": [
+        "Maize ( Zeamays L.)",
+        "Seedling grading",
+        "Frequency-aware enhancement",
+        "Feature fusion",
+        "Smart breeding"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "keyword"
+      ],
+      "matched_queries": [
+        "keyword:computer vision"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001808212400003",
+      "title": "TP-Duck: A cage-reared duck behavior recognition model with lightweight interaction mechanism and text prompts",
+      "authors": [
+        "Zhang, Gen",
+        "Wang, Chuntao",
+        "Xiao, Deqin"
+      ],
+      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
+      "year": 2026,
+      "volume": "252",
+      "issue": "",
+      "pages": "Art. 112083",
+      "doi": "10.1016/j.compag.2026.112083",
+      "abstract": "",
+      "keywords": [
+        "Cage-reared duck",
+        "Behavior recognition",
+        "Computer vision",
+        "Text prompt",
+        "Intelligent farming"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "keyword"
+      ],
+      "matched_queries": [
+        "keyword:computer vision"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001807144100001",
+      "title": "A computer vision driven ecosystem for cattle monitoring: Multi-disease classification with severity grading, multi-view individual identification, and weight estimation",
+      "authors": [
+        "Raj, Aabu Yousuf",
+        "Hasan, Md. Rakibul",
+        "Arafat, Abdur Rahman",
+        "Rahman, S. M. Sadman",
+        "Bin Jalal, Md. Roman",
+        "Noor, Jannatun"
+      ],
+      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
+      "year": 2026,
+      "volume": "252",
+      "issue": "",
+      "pages": "Art. 112050",
+      "doi": "10.1016/j.compag.2026.112050",
+      "abstract": "",
+      "keywords": [
+        "Computer vision",
+        "Cattle disease classification",
+        "Severity grading",
+        "Multi-view identification",
+        "Weight estimation",
+        "Deep learning",
+        "Precision livestock farming"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "keyword"
+      ],
+      "matched_queries": [
+        "keyword:computer vision"
+      ],
+      "is_new": true
+    },
+    {
       "uid": "WOS:001803839400001",
       "title": "Fusion of keypoint detection and posture-aware correction for body measurement of dairy cattle",
       "authors": [
@@ -6175,105 +6292,6 @@
       ],
       "matched_queries": [
         "keyword:computer vision"
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "WOS:001800426400001",
-      "title": "Global wheat disease identification via AI technologies: An in-depth survey with sustainability and future projections",
-      "authors": [
-        "Mhamed, Mustafa",
-        "Zhang, Zhao",
-        "Zhang, Man"
-      ],
-      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
-      "year": 2026,
-      "volume": "251",
-      "issue": "",
-      "pages": "Art. 112042",
-      "doi": "10.1016/j.compag.2026.112042",
-      "abstract": "",
-      "keywords": [
-        "Wheat diseases",
-        "Artificial intelligence",
-        "Vision system",
-        "Robotic",
-        "Sustainable development goals"
-      ],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:computer vision"
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "WOS:001787893000001",
-      "title": "Graphs that know who started it: Role recognition in Pigs' interactions",
-      "authors": [
-        "Parmiggiani, Andrea",
-        "Liu, Dong",
-        "Norton, Tomas"
-      ],
-      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
-      "year": 2026,
-      "volume": "250",
-      "issue": "",
-      "pages": "Art. 111949",
-      "doi": "10.1016/j.compag.2026.111949",
-      "abstract": "",
-      "keywords": [
-        "Graph neural networks",
-        "Behavior recognition",
-        "Role recognition",
-        "Spatiotemporal graph",
-        "Movement features"
-      ],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:computer vision"
-      ]
-    },
-    {
-      "uid": "WOS:001748273200001",
-      "title": "Evaluation of Multi-Object Detection models for automated goat behavior identification in intensive farming facilities",
-      "authors": [
-        "Mendez, Daniel Alexander",
-        "Viloria, Blanca Fajardo",
-        "Vidal, Eliseo Gil",
-        "Calvet, Salvador",
-        "Costantino, Andrea"
-      ],
-      "journal": "ARTIFICIAL INTELLIGENCE IN AGRICULTURE",
-      "year": 2026,
-      "volume": "16",
-      "issue": "2",
-      "pages": "820-836",
-      "doi": "10.1016/j.aiia.2026.03.006",
-      "abstract": "",
-      "keywords": [
-        "Artificial intelligence",
-        "Computer vision",
-        "Convolutional neural networks",
-        "Deep learning",
-        "Precision livestock farming",
-        "Transformers"
-      ],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:computer vision",
-        "keyword:transformers"
       ]
     },
     {
@@ -6337,8 +6355,7 @@
       "matched_queries": [
         "keyword:generative AI",
         "journal:NATURE MACHINE INTELLIGENCE"
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "WOS:001790847100001",
@@ -6436,6 +6453,34 @@
       "matched_queries": [
         "keyword:generative AI"
       ]
+    },
+    {
+      "uid": "WOS:001812067400001",
+      "title": "Guiding generative models to uncover diverse and novel crystals via reinforcement learning",
+      "authors": [
+        "Park, Hyunsoo",
+        "Walsh, Aron"
+      ],
+      "journal": "NATURE MACHINE INTELLIGENCE",
+      "year": 2026,
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.1038/s42256-026-01262-4",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "keyword",
+        "journal"
+      ],
+      "matched_queries": [
+        "keyword:generative models",
+        "keyword:diffusion models",
+        "journal:NATURE MACHINE INTELLIGENCE"
+      ],
+      "is_new": true
     },
     {
       "uid": "WOS:001742345000001",
@@ -6630,28 +6675,43 @@
       ]
     },
     {
-      "uid": "WOS:001792386200008",
-      "title": "Towards robust foundation models for digital pathology",
+      "uid": "WOS:001810432000004",
+      "title": "A deep learning framework for efficient pathology image analysis",
       "authors": [
-        "Komen, Jonah",
-        "de Jong, Edwin D.",
-        "Hense, Julius",
-        "Marienwald, Hannah",
-        "Dippel, Jonas",
-        "Naumann, Philip",
-        "Marcus, Eric",
-        "Ruff, Lukas",
-        "Alber, Maximilian",
-        "Teuwen, Jonas",
-        "Klauschen, Frederick",
-        "Muller, Klaus-Robert"
+        "Neidlinger, Peter",
+        "Lenz, Tim",
+        "Foersch, Sebastian",
+        "Loeffler, Chiara M. L.",
+        "Clusmann, Jan",
+        "Gustav, Marco",
+        "Shaktah, Lawrence A.",
+        "Langer, Rupert",
+        "Dislich, Bastian",
+        "Boardman, Lisa A.",
+        "French, Amy J.",
+        "Goode, Ellen L.",
+        "Gsur, Andrea",
+        "Brezina, Stefanie",
+        "Gunter, Marc J.",
+        "Steinfelder, Robert",
+        "Behrens, Hans-Michael",
+        "Rocken, Christoph",
+        "Harrison, Tabitha",
+        "Peters, Ulrike",
+        "Phipps, Amanda I.",
+        "Curigliano, Giuseppe",
+        "Fusco, Nicola",
+        "Marra, Antonio",
+        "Hoffmeister, Michael",
+        "Brenner, Hermann",
+        "Kather, Jakob Nikolas"
       ],
       "journal": "NATURE COMMUNICATIONS",
       "year": 2026,
       "volume": "17",
       "issue": "1",
-      "pages": "Art. 5218",
-      "doi": "10.1038/s41467-026-73923-2",
+      "pages": "Art. 5740",
+      "doi": "10.1038/s41467-026-74918-9",
       "abstract": "",
       "keywords": [],
       "citations": 0,
@@ -6661,35 +6721,34 @@
       ],
       "matched_queries": [
         "keyword:foundation models"
-      ]
+      ],
+      "is_new": true
     },
     {
-      "uid": "WOS:001793222700001",
-      "title": "FreqChange: Frequency-aware spatiotemporal learning with prior guidance for semantic change detection in remote sensing images",
+      "uid": "WOS:001813780000001",
+      "title": "SyneFloor: Synergizing zero-shot geometric priors and active learning for weakly supervised floorplan reconstruction",
       "authors": [
-        "Huang, Haiyan",
-        "Shao, Zhenfeng",
-        "Zhu, Duowang",
-        "Huang, Xiao",
-        "Zhang, Ruiqian",
-        "Cheng, Qimin",
-        "Zhang, Jindou",
-        "Duan, Yueming",
-        "Li, Deren"
+        "Wang, Xuzhe",
+        "Geng, Chen",
+        "Yu, Hao",
+        "Ping, Zhiyan",
+        "Yang, Juntao",
+        "Wang, Lunche",
+        "Xiao, Wen"
       ],
       "journal": "ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING",
       "year": 2026,
       "volume": "239",
       "issue": "",
-      "pages": "124-146",
-      "doi": "10.1016/j.isprsjprs.2026.05.042",
+      "pages": "808-830",
+      "doi": "10.1016/j.isprsjprs.2026.06.020",
       "abstract": "",
       "keywords": [
-        "Semantic change detection",
-        "Remote sensing images",
-        "Spatiotemporal learning",
-        "Frequency-aware learning",
-        "Semantic consistency representation"
+        "Floorplan reconstruction",
+        "Weakly supervised learning",
+        "Active learning",
+        "Point clouds",
+        "Vision foundation models"
       ],
       "citations": 0,
       "open_access": false,
@@ -6698,64 +6757,34 @@
       ],
       "matched_queries": [
         "keyword:foundation models"
-      ]
+      ],
+      "is_new": true
     },
     {
-      "uid": "WOS:001784159500001",
-      "title": "Explicit dynamic cross-strand interactions for DNA sequence language modelling",
+      "uid": "WOS:001812785300001",
+      "title": "XylemVision: A Knowledge-Distilled deep learning framework for High-Throughput quantification of root anatomy in peanut",
       "authors": [
-        "Yang, Cheng",
-        "Liu, Yuansheng",
-        "Ling, Lei",
-        "Liu, Yang",
-        "Li, Fengxin",
-        "Chen, Changjian",
-        "Wang, Long",
-        "Yu, Feng",
-        "Qiao, Liang",
-        "Zeng, Xiangxiang",
-        "Li, Kenli",
-        "Schonhuth, Alexander",
-        "Luo, Xiao"
+        "Rahman, Hasibur",
+        "Hanif, Sajid",
+        "Rafi, Mohtasim Hadi",
+        "Sanz-Saez, Alvaro",
+        "Rehman, Tanzeel U."
       ],
-      "journal": "NATURE MACHINE INTELLIGENCE",
+      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
       "year": 2026,
-      "volume": "8",
-      "issue": "6",
-      "pages": "",
-      "doi": "10.1038/s42256-026-01249-1",
+      "volume": "252",
+      "issue": "",
+      "pages": "Art. 112105",
+      "doi": "10.1016/j.compag.2026.112105",
       "abstract": "",
-      "keywords": [],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "keyword",
-        "journal"
+      "keywords": [
+        "Foundation Models",
+        "Knowledge Distillation",
+        "Segment Anything",
+        "DinoV2",
+        "Root Anatomy",
+        "Data-Efficient Learning"
       ],
-      "matched_queries": [
-        "keyword:foundation models",
-        "keyword:large language models",
-        "journal:NATURE MACHINE INTELLIGENCE"
-      ]
-    },
-    {
-      "uid": "WOS:001780840800001",
-      "title": "Conditional Monge Gap enables generalizable single-cell perturbation modelling",
-      "authors": [
-        "Driessen, Alice",
-        "Rajwade, Dhruva Abhijit",
-        "Harsanyi, Benedek",
-        "Rapsomaniki, Marianna",
-        "Born, Jannis"
-      ],
-      "journal": "NATURE MACHINE INTELLIGENCE",
-      "year": 2026,
-      "volume": "8",
-      "issue": "6",
-      "pages": "",
-      "doi": "10.1038/s42256-026-01242-8",
-      "abstract": "",
-      "keywords": [],
       "citations": 0,
       "open_access": false,
       "sources": [
@@ -6763,88 +6792,114 @@
       ],
       "matched_queries": [
         "keyword:foundation models"
-      ]
+      ],
+      "is_new": true
     },
     {
-      "uid": "WOS:001773537800001",
-      "title": "Seed imaging omics: A bridge from perception to cognition for the future of seed phenotyping",
+      "uid": "WOS:001812460200001",
+      "title": "SpectralX: Parameter-efficient domain generalization for spectral Remote Sensing Foundation Models",
       "authors": [
-        "Song, Anran",
-        "Wang, Baiyan",
-        "Guo, Xinyu",
-        "Wen, Weiliang",
-        "Li, Yuankun",
-        "Zhang, Ying",
-        "Wang, Chuanyu",
-        "Chen, Xiaoqian",
-        "Zhao, Chunjiang"
+        "Zhang, Yuxiang",
+        "Li, Wei",
+        "Zhang, Mengmeng",
+        "Han, Jiawei",
+        "Tao, Ran",
+        "Liang, Shunlin"
       ],
-      "journal": "ARTIFICIAL INTELLIGENCE IN AGRICULTURE",
+      "journal": "ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING",
       "year": 2026,
-      "volume": "16",
-      "issue": "2",
-      "pages": "1164-1180",
-      "doi": "10.1016/j.aiia.2026.04.006",
+      "volume": "239",
+      "issue": "",
+      "pages": "774-792",
+      "doi": "10.1016/j.isprsjprs.2026.06.008",
       "abstract": "",
       "keywords": [
-        "Seed",
-        "Phenomics",
-        "Seed imaging omics",
-        "Deep learning",
-        "Multimodal fusion",
+        "Multispectral image",
+        "Hyperspectral image",
+        "Domain generalization",
+        "Parameter-efficient fine-tuning",
         "Foundation model"
       ],
       "citations": 0,
       "open_access": false,
       "sources": [
-        "keyword",
-        "journal"
+        "keyword"
       ],
       "matched_queries": [
-        "keyword:foundation models",
-        "journal:ARTIFICIAL INTELLIGENCE IN AGRICULTURE"
-      ]
+        "keyword:foundation models"
+      ],
+      "is_new": true
     },
     {
-      "uid": "WOS:001773536400001",
-      "title": "How large-scale foundation models benefit precision livestock farming: A survey",
+      "uid": "WOS:001811220900001",
+      "title": "Unsupervised keypoint detection for automated livestock phenotyping: A multi-species approach based on pre-trained foundation models",
       "authors": [
+        "Wei, Bingxue",
         "Tian, Mengxiao",
-        "Guo, Hao",
-        "Long, Chengjiang",
-        "Zhu, Jun",
-        "Zhao, Wenwen",
-        "Li, Hongxi",
-        "Ruchay, Alexey",
+        "Li, Bin",
+        "Wang, Yiwei",
         "Pezzuolo, Andrea",
-        "Li, Bin"
+        "Su, Huawei",
+        "Guo, Hao"
       ],
-      "journal": "ARTIFICIAL INTELLIGENCE IN AGRICULTURE",
+      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
       "year": 2026,
-      "volume": "16",
-      "issue": "2",
-      "pages": "1109-1132",
-      "doi": "10.1016/j.aiia.2026.04.013",
+      "volume": "252",
+      "issue": "",
+      "pages": "Art. 112098",
+      "doi": "10.1016/j.compag.2026.112098",
       "abstract": "",
       "keywords": [
         "Precision livestock farming",
-        "Data management",
-        "Large-scale foundation model",
-        "Large language model",
-        "Large vision model",
-        "Multimodal large language model"
+        "Artificial Intelligence",
+        "Unsupervised learning",
+        "Keypoint detection",
+        "Foundation model"
       ],
       "citations": 0,
       "open_access": false,
       "sources": [
-        "keyword",
-        "journal"
+        "keyword"
       ],
       "matched_queries": [
-        "keyword:foundation models",
-        "keyword:large language models",
-        "journal:ARTIFICIAL INTELLIGENCE IN AGRICULTURE"
-      ]
+        "keyword:foundation models"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001810202100002",
+      "title": "MaizeStereo: 2D Gaussian splatting-driven stereo foundation model for in-field proximal 3D maize phenotyping",
+      "authors": [
+        "Niu, Ziang",
+        "Liu, Siqi",
+        "Gao, Yuan",
+        "Huang, Ting",
+        "He, Yong",
+        "Qiu, Zhengjun"
+      ],
+      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
+      "year": 2026,
+      "volume": "252",
+      "issue": "",
+      "pages": "Art. 112055",
+      "doi": "10.1016/j.compag.2026.112055",
+      "abstract": "",
+      "keywords": [
+        "Stereo matching",
+        "Domain-specific",
+        "Fine-tuning",
+        "Phenotypic trait",
+        "Pipeline"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "keyword"
+      ],
+      "matched_queries": [
+        "keyword:foundation models"
+      ],
+      "is_new": true
     },
     {
       "uid": "WOS:001785282700001",
@@ -6949,31 +7004,6 @@
       ]
     },
     {
-      "uid": "WOS:001746919500001",
-      "title": "Algebraic language models for inverse design of metamaterials via diffusion transformers",
-      "authors": [
-        "Zheng, Li",
-        "Kumar, Siddhant",
-        "Kochmann, Dennis M."
-      ],
-      "journal": "NATURE MACHINE INTELLIGENCE",
-      "year": 2026,
-      "volume": "8",
-      "issue": "4",
-      "pages": "",
-      "doi": "10.1038/s42256-026-01218-8",
-      "abstract": "",
-      "keywords": [],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "keyword"
-      ],
-      "matched_queries": [
-        "keyword:diffusion models"
-      ]
-    },
-    {
       "uid": "WOS:001746928300024",
       "title": "ArchesWeatherGen: Skillful and compute-efficient probabilistic weather forecasting with machine learning",
       "authors": [
@@ -7036,31 +7066,39 @@
       ]
     },
     {
-      "uid": "WOS:001779902400005",
-      "title": "Disentangled autoencoding equivariant diffusion model for controlled generation of 3D molecules",
+      "uid": "WOS:001808205900001",
+      "title": "SDrAwberry: Scale-referenced Depth-Anything-3 long-sequence reconstruction for Strawberry canopy volume estimation",
       "authors": [
-        "Li, Tianxiao",
-        "Liu, Haoran",
-        "Guo, Hongyu",
-        "Gerstein, Mark",
-        "Min, Martin Renqiang"
+        "Huang, Zijing",
+        "Lee, Won Suk",
+        "Qin, Ruoyao",
+        "Medeiros, Henry",
+        "Jeon, Hongyoung",
+        "Zhu, Heping"
       ],
-      "journal": "NATURE COMMUNICATIONS",
+      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
       "year": 2026,
-      "volume": "17",
-      "issue": "1",
-      "pages": "Art. 4824",
-      "doi": "10.1038/s41467-026-71441-9",
+      "volume": "252",
+      "issue": "",
+      "pages": "Art. 112088",
+      "doi": "10.1016/j.compag.2026.112088",
       "abstract": "",
-      "keywords": [],
+      "keywords": [
+        "3D reconstruction",
+        "Feed-forward multi-view geometry",
+        "Long-sequence mapping",
+        "Metric scale estimation",
+        "Vision-based phenotyping"
+      ],
       "citations": 0,
       "open_access": false,
       "sources": [
         "keyword"
       ],
       "matched_queries": [
-        "keyword:diffusion models"
-      ]
+        "keyword:transformers"
+      ],
+      "is_new": true
     },
     {
       "uid": "WOS:001807023800001",
@@ -7092,8 +7130,7 @@
       ],
       "matched_queries": [
         "keyword:transformers"
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "WOS:001795822300031",
@@ -7122,12 +7159,10 @@
       "citations": 0,
       "open_access": false,
       "sources": [
-        "keyword",
-        "journal"
+        "keyword"
       ],
       "matched_queries": [
-        "keyword:transformers",
-        "journal:SCIENCE ADVANCES"
+        "keyword:transformers"
       ]
     },
     {
@@ -7163,8 +7198,7 @@
       ],
       "matched_queries": [
         "keyword:transformers"
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "WOS:001788802100020",
@@ -7276,6 +7310,40 @@
       ]
     },
     {
+      "uid": "WOS:001748273200001",
+      "title": "Evaluation of Multi-Object Detection models for automated goat behavior identification in intensive farming facilities",
+      "authors": [
+        "Mendez, Daniel Alexander",
+        "Viloria, Blanca Fajardo",
+        "Vidal, Eliseo Gil",
+        "Calvet, Salvador",
+        "Costantino, Andrea"
+      ],
+      "journal": "ARTIFICIAL INTELLIGENCE IN AGRICULTURE",
+      "year": 2026,
+      "volume": "16",
+      "issue": "2",
+      "pages": "820-836",
+      "doi": "10.1016/j.aiia.2026.03.006",
+      "abstract": "",
+      "keywords": [
+        "Artificial intelligence",
+        "Computer vision",
+        "Convolutional neural networks",
+        "Deep learning",
+        "Precision livestock farming",
+        "Transformers"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "keyword"
+      ],
+      "matched_queries": [
+        "keyword:transformers"
+      ]
+    },
+    {
       "uid": "WOS:001777090900011",
       "title": "Explainable time-series forecasting with sampling-free SHAP for Transformers",
       "authors": [
@@ -7336,29 +7404,64 @@
       ]
     },
     {
-      "uid": "WOS:001724180100001",
-      "title": "Ai-driven carbon Monitoring: Transformer-Based reconstruction of atmospheric CO2 in Canadian poultry regions",
+      "uid": "WOS:001808431400001",
+      "title": "An agentic artificially intelligent X-ray scientist",
       "authors": [
-        "Prajesh, Padmanabhan Jagannathan",
-        "Ragunath, Kaliaperumal",
-        "Gordon, Miriam",
-        "Rathgeber, Bruce",
-        "Neethirajan, Suresh"
+        "Chen, Zhantao",
+        "Petsch, Alexander N.",
+        "Israelski, Aidan J.",
+        "Plumley, Rajan",
+        "Shen, Lingjia",
+        "Wang, Cong",
+        "Peng, Cheng",
+        "Bansil, Arun",
+        "Ni, Yuan",
+        "Chowdhury, Sugata",
+        "Li, Mingda",
+        "Thayer, Jana B.",
+        "Thampy, Vivek",
+        "Turner, Joshua J."
       ],
-      "journal": "INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION",
+      "journal": "NATURE MACHINE INTELLIGENCE",
       "year": 2026,
-      "volume": "149",
+      "volume": "",
       "issue": "",
-      "pages": "Art. 105248",
-      "doi": "10.1016/j.jag.2026.105248",
+      "pages": "",
+      "doi": "10.1038/s42256-026-01261-5",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "keyword",
+        "journal"
+      ],
+      "matched_queries": [
+        "keyword:large language models",
+        "journal:NATURE MACHINE INTELLIGENCE"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001813269800001",
+      "title": "Remote sensing change captioning meets large language and vision models",
+      "authors": [
+        "Ricci, R.",
+        "Bazi, Y.",
+        "Melgani, F."
+      ],
+      "journal": "ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING",
+      "year": 2026,
+      "volume": "239",
+      "issue": "",
+      "pages": "793-807",
+      "doi": "10.1016/j.isprsjprs.2026.06.003",
       "abstract": "",
       "keywords": [
-        "Satellite carbon monitoring",
-        "OCO-2",
-        "Vision Transformers",
-        "Livestock emissions",
-        "Atmospheric CO 2 reconstruction",
-        "Earth observation AI"
+        "Change captioning",
+        "Large language models",
+        "Large multi-modal models",
+        "LLM-evaluation"
       ],
       "citations": 0,
       "open_access": false,
@@ -7366,8 +7469,41 @@
         "keyword"
       ],
       "matched_queries": [
-        "keyword:transformers"
-      ]
+        "keyword:large language models"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001805609400001",
+      "title": "T2Net: Taxonomy-Guided Tree-Structured Prompt Learning for Few-Shot Remote Sensing Scene Classification",
+      "authors": [
+        "Zheng, Yufei",
+        "Wang, Shengsheng",
+        "Gao, Yansheng",
+        "Liu, Dong"
+      ],
+      "journal": "ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING",
+      "year": 2026,
+      "volume": "239",
+      "issue": "",
+      "pages": "510-523",
+      "doi": "10.1016/j.isprsjprs.2026.06.017",
+      "abstract": "",
+      "keywords": [
+        "Remote sensing",
+        "Vision language models",
+        "Large language models",
+        "Taxonomic knowledge"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "keyword"
+      ],
+      "matched_queries": [
+        "keyword:large language models"
+      ],
+      "is_new": true
     },
     {
       "uid": "WOS:001799106400001",
@@ -7478,34 +7614,31 @@
       ]
     },
     {
-      "uid": "WOS:001787888400001",
-      "title": "Autonomous construction of crop pest and disease knowledge graphs at scale via LLM-driven expert modeling",
+      "uid": "WOS:001784159500001",
+      "title": "Explicit dynamic cross-strand interactions for DNA sequence language modelling",
       "authors": [
-        "Wu, Hao",
-        "Xie, Nengfu",
-        "Fan, JingChao",
-        "Wang, Xiaoli",
-        "Liu, Hailong",
-        "Zheng, Huoguo",
-        "Xu, Qian",
-        "Meng, Zhibo",
-        "Wang, Xin",
-        "Lv, Qianjie"
+        "Yang, Cheng",
+        "Liu, Yuansheng",
+        "Ling, Lei",
+        "Liu, Yang",
+        "Li, Fengxin",
+        "Chen, Changjian",
+        "Wang, Long",
+        "Yu, Feng",
+        "Qiao, Liang",
+        "Zeng, Xiangxiang",
+        "Li, Kenli",
+        "Schonhuth, Alexander",
+        "Luo, Xiao"
       ],
-      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
+      "journal": "NATURE MACHINE INTELLIGENCE",
       "year": 2026,
-      "volume": "250",
-      "issue": "",
-      "pages": "Art. 111970",
-      "doi": "10.1016/j.compag.2026.111970",
+      "volume": "8",
+      "issue": "6",
+      "pages": "",
+      "doi": "10.1038/s42256-026-01249-1",
       "abstract": "",
-      "keywords": [
-        "Crop diseases and pests",
-        "Knowledge graph",
-        "Large language models",
-        "Fully automated",
-        "Prompt engineering"
-      ],
+      "keywords": [],
       "citations": 0,
       "open_access": false,
       "sources": [
@@ -7861,6 +7994,122 @@
       ]
     },
     {
+      "uid": "WOS:001813019100001",
+      "title": "Machine learning-optimized composting strategies can enhance nutrient recycling and transform food system waste into a net carbon sink (vol 7, pg pg 601, 2026)",
+      "authors": [
+        "Zhang, Lu",
+        "Yang, Junyu",
+        "Liu, Junjie",
+        "Zhou, Qishun",
+        "Wang, Xuan",
+        "Zhang, Haodi",
+        "Ren, Yazhan",
+        "Bai, Zhaohai",
+        "Ma, Lin"
+      ],
+      "journal": "NATURE FOOD",
+      "year": 2026,
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.1038/s43016-026-01397-y",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:NATURE FOOD"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001810647300001",
+      "title": "Global dietary estimates for conducting health, environmental and economic impact assessments",
+      "authors": [
+        "Springmann, Marco"
+      ],
+      "journal": "NATURE FOOD",
+      "year": 2026,
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.1038/s43016-026-01388-z",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:NATURE FOOD"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001810649400001",
+      "title": "Reduced meat and dairy consumption improves health, environmental and most nutritional outcomes without increasing diet costs among Scottish adults",
+      "authors": [
+        "Kennedy, Joe",
+        "Clark, Michael",
+        "Stewart, Cristina",
+        "Runions, Ricki",
+        "Vonderschmidt, Alexander",
+        "Frank, Sarah M.",
+        "Scarborough, Peter",
+        "Comrie, Fiona",
+        "McDonald, Alana",
+        "McNeill, Geraldine",
+        "Alexander, Peter",
+        "Jaacks, Lindsay M."
+      ],
+      "journal": "NATURE FOOD",
+      "year": 2026,
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.1038/s43016-026-01384-3",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:NATURE FOOD"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001808186700001",
+      "title": "A cognitive perspective for climate-smart agricultural policy in the Indo-Pacific region",
+      "authors": [
+        "Goswami, Rupak",
+        "Nandi, Somen"
+      ],
+      "journal": "NATURE FOOD",
+      "year": 2026,
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.1038/s43016-026-01391-4",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:NATURE FOOD"
+      ],
+      "is_new": true
+    },
+    {
       "uid": "WOS:001800206800001",
       "title": "Five archetypes of small-scale fisheries reveal a continuum of production strategies to guide governance and policymaking (vol 6, pg 1020, 2025)",
       "authors": [
@@ -7887,8 +8136,7 @@
       ],
       "matched_queries": [
         "journal:NATURE FOOD"
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "WOS:001799015800001",
@@ -7989,71 +8237,18 @@
       ]
     },
     {
-      "uid": "WOS:001796274500001",
-      "title": "Ultraprocessed food research and scientific discourse",
+      "uid": "WOS:001813024400001",
+      "title": "Future-proofing interpretations of the Paris Agreement's limit of well below 2 °C",
       "authors": [
-        "Louie, Jimmy Chun Yu"
+        "Lamboll, Robin D.",
+        "Rogelj, Joeri"
       ],
-      "journal": "NATURE FOOD",
+      "journal": "NATURE CLIMATE CHANGE",
       "year": 2026,
-      "volume": "7",
-      "issue": "6",
-      "pages": "521-526",
-      "doi": "10.1038/s43016-026-01372-7",
-      "abstract": "",
-      "keywords": [],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE FOOD"
-      ]
-    },
-    {
-      "uid": "WOS:001796029000001",
-      "title": "Cropland edges influence climate resilience",
-      "authors": [
-        "Wang, Jieyong",
-        "Liu, Yaqun"
-      ],
-      "journal": "NATURE FOOD",
-      "year": 2026,
-      "volume": "7",
-      "issue": "6",
-      "pages": "499-500",
-      "doi": "10.1038/s43016-026-01374-5",
-      "abstract": "",
-      "keywords": [],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE FOOD"
-      ]
-    },
-    {
-      "uid": "WOS:001793226700001",
-      "title": "Climate change and interprovincial trade move grain production and environmental burdens northwards in China",
-      "authors": [
-        "Wang, Chen",
-        "Zhang, Xiuming",
-        "Ren, Chenchen",
-        "Xuan, Xin",
-        "Cheng, Luxi",
-        "Zou, Yiyang",
-        "Xu, Jianming",
-        "Gu, Baojing"
-      ],
-      "journal": "NATURE FOOD",
-      "year": 2026,
-      "volume": "7",
-      "issue": "6",
+      "volume": "",
+      "issue": "",
       "pages": "",
-      "doi": "10.1038/s43016-026-01373-6",
+      "doi": "10.1038/s41558-026-02685-y",
       "abstract": "",
       "keywords": [],
       "citations": 0,
@@ -8062,27 +8257,24 @@
         "journal"
       ],
       "matched_queries": [
-        "journal:NATURE FOOD"
-      ]
+        "journal:NATURE CLIMATE CHANGE"
+      ],
+      "is_new": true
     },
     {
-      "uid": "WOS:001793216600001",
-      "title": "Limited net-export capacity undermines the Netherlands' 'feeding the world' narrative",
+      "uid": "WOS:001809342300001",
+      "title": "Multi-centennial response of marine carbon pumps to global warming (JUN, 10.1038/s41558-026-02686-x, 2026)",
       "authors": [
-        "van Selm, Ben",
-        "van Middelaar, Corina E.",
-        "van Hal, Ollie",
-        "Oosting, Simon J.",
-        "Hijbeek, Renske",
-        "van Ittersum, Martin K.",
-        "de Boer, Imke J. M."
+        "Khatiwala, Samar",
+        "Strachan, Olivia",
+        "Schmittner, Andreas"
       ],
-      "journal": "NATURE FOOD",
+      "journal": "NATURE CLIMATE CHANGE",
       "year": 2026,
-      "volume": "7",
-      "issue": "6",
+      "volume": "",
+      "issue": "",
       "pages": "",
-      "doi": "10.1038/s43016-026-01369-2",
+      "doi": "10.1038/s41558-026-02719-5",
       "abstract": "",
       "keywords": [],
       "citations": 0,
@@ -8091,26 +8283,22 @@
         "journal"
       ],
       "matched_queries": [
-        "journal:NATURE FOOD"
-      ]
+        "journal:NATURE CLIMATE CHANGE"
+      ],
+      "is_new": true
     },
     {
-      "uid": "WOS:001793232600001",
-      "title": "Global reallocation of rainfed crops can boost production and reduce climate risk",
+      "uid": "WOS:001808076300001",
+      "title": "Uncovering the unequal geography of climate change",
       "authors": [
-        "Li, Cai",
-        "Hadjikakou, Michalis",
-        "Deng, Zhongci",
-        "Wang, Zhen",
-        "Shi, Zhihua",
-        "Bryan, Brett A."
+        "Rode, Ashwin"
       ],
-      "journal": "NATURE FOOD",
+      "journal": "NATURE CLIMATE CHANGE",
       "year": 2026,
-      "volume": "7",
-      "issue": "6",
+      "volume": "",
+      "issue": "",
       "pages": "",
-      "doi": "10.1038/s43016-026-01365-6",
+      "doi": "10.1038/s41558-026-02674-1",
       "abstract": "",
       "keywords": [],
       "citations": 0,
@@ -8119,8 +8307,92 @@
         "journal"
       ],
       "matched_queries": [
-        "journal:NATURE FOOD"
-      ]
+        "journal:NATURE CLIMATE CHANGE"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001807367300001",
+      "title": "Residual emissions may perpetuate community-scale inequalities in US air pollution",
+      "authors": [
+        "Bergero, Candelaria",
+        "Cheng, Jing",
+        "Zhang, Qiang",
+        "Ou, Yang",
+        "McJeon, Haewon",
+        "Edwards, Morgan R.",
+        "Nock, Destenie",
+        "Azevedo, Ines",
+        "Davis, Steven J."
+      ],
+      "journal": "NATURE CLIMATE CHANGE",
+      "year": 2026,
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.1038/s41558-026-02675-0",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:NATURE CLIMATE CHANGE"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001808089100001",
+      "title": "Warming dominates over circulation slowdown in reducing marine carbon storage under high-mitigation scenarios",
+      "authors": [
+        "Khatiwala, Samar"
+      ],
+      "journal": "NATURE CLIMATE CHANGE",
+      "year": 2026,
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.1038/s41558-026-02687-w",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:NATURE CLIMATE CHANGE"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001805627800001",
+      "title": "Distinguishing leaf scorching from senescence under climate extremes",
+      "authors": [
+        "Bergstrom, Maxwell",
+        "Wu, Zhaofei",
+        "Grossiord, Charlotte",
+        "Vitasse, Yann"
+      ],
+      "journal": "NATURE CLIMATE CHANGE",
+      "year": 2026,
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.1038/s41558-026-02682-1",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:NATURE CLIMATE CHANGE"
+      ],
+      "is_new": true
     },
     {
       "uid": "WOS:001805634400001",
@@ -8143,8 +8415,7 @@
       ],
       "matched_queries": [
         "journal:NATURE CLIMATE CHANGE"
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "WOS:001805624000001",
@@ -8168,8 +8439,7 @@
       ],
       "matched_queries": [
         "journal:NATURE CLIMATE CHANGE"
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "WOS:001805623700001",
@@ -8197,8 +8467,7 @@
       ],
       "matched_queries": [
         "journal:NATURE CLIMATE CHANGE"
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "WOS:001805242800001",
@@ -8221,156 +8490,405 @@
       ],
       "matched_queries": [
         "journal:NATURE CLIMATE CHANGE"
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "WOS:001805216900001",
-      "title": "Climate change is causing more local extinction of temperate species than tropical species",
-      "authors": [
-        "Murali, Gopal",
-        "Wiens, John J."
-      ],
-      "journal": "NATURE CLIMATE CHANGE",
-      "year": 2026,
-      "volume": "",
-      "issue": "",
-      "pages": "",
-      "doi": "10.1038/s41558-026-02671-4",
-      "abstract": "",
-      "keywords": [],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE CLIMATE CHANGE"
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "WOS:001804108400001",
-      "title": "Declining tropical sea surface temperature variability under post-2050s greenhouse warming",
-      "authors": [
-        "Wang, Guojian",
-        "Santoso, Agus"
-      ],
-      "journal": "NATURE CLIMATE CHANGE",
-      "year": 2026,
-      "volume": "",
-      "issue": "",
-      "pages": "",
-      "doi": "10.1038/s41558-026-02684-z",
-      "abstract": "",
-      "keywords": [],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE CLIMATE CHANGE"
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "WOS:001804124300001",
-      "title": "Multi-centennial response of marine carbon pumps to global warming",
-      "authors": [
-        "Khatiwala, Samar",
-        "Strachan, Olivia",
-        "Schmittner, Andreas"
-      ],
-      "journal": "NATURE CLIMATE CHANGE",
-      "year": 2026,
-      "volume": "",
-      "issue": "",
-      "pages": "",
-      "doi": "10.1038/s41558-026-02686-x",
-      "abstract": "",
-      "keywords": [],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE CLIMATE CHANGE"
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "WOS:001800000800001",
-      "title": "Long-term multiple global change interactions amplify belowground carbon allocation",
-      "authors": [
-        "Chen, Xinli",
-        "Chen, Han Y. H.",
-        "Rocci, Katherine S.",
-        "Worm, Kally",
-        "Zheng, Liting",
-        "Reich, Peter B."
-      ],
-      "journal": "NATURE CLIMATE CHANGE",
-      "year": 2026,
-      "volume": "",
-      "issue": "",
-      "pages": "",
-      "doi": "10.1038/s41558-026-02678-x",
-      "abstract": "",
-      "keywords": [],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE CLIMATE CHANGE"
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "WOS:001798857200001",
-      "title": "Global heat stress intensification and its expanding footprint on the human population",
-      "authors": [
-        "Emerton, Rebecca",
-        "Nicolas, Julien",
-        "Lombardi, Anna",
-        "Di Napoli, Claudia"
-      ],
-      "journal": "NATURE CLIMATE CHANGE",
-      "year": 2026,
-      "volume": "",
-      "issue": "",
-      "pages": "",
-      "doi": "10.1038/s41558-026-02670-5",
-      "abstract": "",
-      "keywords": [],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE CLIMATE CHANGE"
       ]
     },
     {
-      "uid": "WOS:001798854100001",
-      "title": "Ecological integrity of avoided deforestation projects",
+      "uid": "WOS:001814553700001",
+      "title": "Magnonic spontaneous oscillation induced by parametric pumping",
       "authors": [
-        "Ong, Kelly",
-        "Chen, Tao",
-        "Chen, Zhimin",
-        "Perez-Brito, Carlos T.",
-        "Zeng, Yiwen"
+        "Li, Yi",
+        "Kiehl, Carissa",
+        "Lim, Jinho",
+        "Abbott, Cliff",
+        "Pal, Pratap K.",
+        "Szymczak, Alex J.",
+        "Li, Juliang",
+        "Divan, Ralu",
+        "Chang, Clarence L.",
+        "Phatak, Charudatta",
+        "Bozhko, Dmytro A.",
+        "Hoffmann, Axel",
+        "Novosad, Valentine"
       ],
-      "journal": "NATURE CLIMATE CHANGE",
+      "journal": "NATURE COMMUNICATIONS",
+      "year": 2026,
+      "volume": "17",
+      "issue": "1",
+      "pages": "Art. 5918",
+      "doi": "10.1038/s41467-026-71916-9",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:NATURE COMMUNICATIONS"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001814559200007",
+      "title": "Evolutionary drivers of encephalization and facial reduction in the genus <i>Homo</i>",
+      "authors": [
+        "Hubbe, Mark",
+        "Harvati, Katerina"
+      ],
+      "journal": "NATURE COMMUNICATIONS",
+      "year": 2026,
+      "volume": "17",
+      "issue": "1",
+      "pages": "Art. 5625",
+      "doi": "10.1038/s41467-026-74739-w",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:NATURE COMMUNICATIONS"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001814559200003",
+      "title": "Microseismic monitoring with the quake neural operator",
+      "authors": [
+        "Sun, Hongyu"
+      ],
+      "journal": "NATURE COMMUNICATIONS",
+      "year": 2026,
+      "volume": "17",
+      "issue": "1",
+      "pages": "Art. 5677",
+      "doi": "10.1038/s41467-026-73965-6",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:NATURE COMMUNICATIONS"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001814559200001",
+      "title": "Fibronectin-induced overactivation of αβ-PI3K-PIP3-PDK1-ILK signaling drives aortic disease in Marfan syndrome",
+      "authors": [
+        "Alarcon-Ruiz, Ivan",
+        "Ruiz-Rodriguez, Maria Jesus",
+        "Martinez-Martinez, Sara",
+        "Toral, Marta",
+        "Martin-Bermejo, Noelia",
+        "Mateos-Garcia, Sergio",
+        "Gil-Ruiz, Teresa",
+        "Herrero-Galan, Elias",
+        "Mendez-Olivares, Maria Jose",
+        "Lopez-Maderuelo, Dolores",
+        "Gutierrez-Martinez, Carolina",
+        "Clemente, Cristina",
+        "Clemente-Manteca, Alejandro",
+        "H-Alcantara, Alberto",
+        "Guala, Andrea",
+        "Evangelista, Arturo",
+        "Teixido-Tura, Gisela",
+        "Rodriguez-Puyol, Diego",
+        "Nistal, Juan Francisco",
+        "Alegre-Cebollada, Jorge",
+        "Vazquez, Jesus",
+        "Duarte, Juan",
+        "Redondo, Juan Miguel",
+        "Campanero, Miguel R."
+      ],
+      "journal": "NATURE COMMUNICATIONS",
+      "year": 2026,
+      "volume": "17",
+      "issue": "1",
+      "pages": "Art. 5631",
+      "doi": "10.1038/s41467-026-74707-4",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:NATURE COMMUNICATIONS"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001814559200002",
+      "title": "<i>Salmonella</i> SopB suppresses post-transcriptionally regulated cytokine release to reduce early tissue inflammation and delay disease progression",
+      "authors": [
+        "Diab, Nour",
+        "Yong, Chiun Huei",
+        "Stange, Eva-Lena",
+        "Birk, Marlene S.",
+        "Schmitz, Matthias A.",
+        "Dusterhoft, Stefan",
+        "Pes, Jonas",
+        "Ferle, Kira Noemi",
+        "Karkossa, Isabel",
+        "Schubert, Kristin",
+        "Deiwick, Jorg",
+        "Vucur, Mihael",
+        "Luedde, Tom",
+        "Torow, Natalia",
+        "Ludwig, Andreas",
+        "Dupont, Aline",
+        "Selkrig, Joel",
+        "von Bergen, Martin",
+        "Hensel, Michael",
+        "Zhang, Kaiyi",
+        "Hornef, Mathias W."
+      ],
+      "journal": "NATURE COMMUNICATIONS",
+      "year": 2026,
+      "volume": "17",
+      "issue": "1",
+      "pages": "Art. 5884",
+      "doi": "10.1038/s41467-026-74942-9",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:NATURE COMMUNICATIONS"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001814559200005",
+      "title": "Applying Artificial Intelligence and machine learning in precision nutrition",
+      "authors": [
+        "Massara, Paraskevi",
+        "Kirkland, Jonathan",
+        "Pagani, Ioanna",
+        "Huey, Samantha L.",
+        "Hirsh, Haym",
+        "McDonald, Daniel",
+        "Patel, Lucas",
+        "Finkelstein, Julia L.",
+        "Gantz, Marie",
+        "Wang, Fei",
+        "Erickson, David",
+        "Wells, Martin T.",
+        "Elemento, Olivier",
+        "Knight, Rob",
+        "Mehta, Saurabh"
+      ],
+      "journal": "NATURE COMMUNICATIONS",
+      "year": 2026,
+      "volume": "17",
+      "issue": "1",
+      "pages": "Art. 5880",
+      "doi": "10.1038/s41467-026-75004-w",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:NATURE COMMUNICATIONS"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001814559200004",
+      "title": "Programmable Construction of Supramolecular Polymers Achieved in Neutral Lipid Environments",
+      "authors": [
+        "Naruse, Miku",
+        "Fukaya, Natsumi",
+        "Imai, Yoshiki",
+        "Ogi, Soichiro",
+        "Taki, Masayasu",
+        "Yamaguchi, Shigehiro"
+      ],
+      "journal": "NATURE COMMUNICATIONS",
+      "year": 2026,
+      "volume": "17",
+      "issue": "1",
+      "pages": "Art. 5732",
+      "doi": "10.1038/s41467-026-74683-9",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:NATURE COMMUNICATIONS"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001814559200006",
+      "title": "FLOWR.ROOT - A flow matching-based foundation model for joint multi-purpose structure-aware 3D ligand generation and affinity prediction",
+      "authors": [
+        "Cremer, Julian",
+        "Le, Tuan",
+        "Ghahremanpour, Mohammad M.",
+        "Slugocka, Emilia",
+        "Menezes, Filipe",
+        "Clevert, Djork-Arne"
+      ],
+      "journal": "NATURE COMMUNICATIONS",
+      "year": 2026,
+      "volume": "17",
+      "issue": "1",
+      "pages": "Art. 5883",
+      "doi": "10.1038/s41467-026-74130-9",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:NATURE COMMUNICATIONS"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001810878800001",
+      "title": "Joint trajectories of brain atrophy, white matter hyperintensities and cognition quantify brain maintenance",
+      "authors": [
+        "Menze, Inga",
+        "Bernal, Jose",
+        "Kievit, Rogier A.",
+        "Tripathi, Kumar Parijat",
+        "Kaleck, Timo",
+        "Yakupov, Renat",
+        "Altenstein, Slawek",
+        "Bartels, Claudia",
+        "Buerger, Katharina",
+        "Butryn, Michaela",
+        "Dechent, Peter",
+        "Ewers, Michael",
+        "Fliessbach, Klaus",
+        "Frommann, Ingo",
+        "Gemenetzi, Maria",
+        "Glanz, Wenzel",
+        "Gref, Daria",
+        "Hellmann-Regen, Julian",
+        "Hetzer, Stefan",
+        "Incesoy, Enise I.",
+        "Janowitz, Daniel",
+        "Kiliman, Ingo",
+        "Kleineidam, Luca",
+        "Kronmuller, Marie Theres",
+        "Laske, Christoph",
+        "van Lent, Debora Melo",
+        "Lusebrink, Falk",
+        "Perneczky, Robert",
+        "Peters, Oliver",
+        "Preis, Lukas",
+        "Priller, Josef",
+        "Rauchmann, Boris-Stephan",
+        "Rostamzadeh, Ayda",
+        "Roeske, Sandra",
+        "Scheffler, Klaus",
+        "Schott, Bjorn-Hendrik",
+        "Schneider, Anja",
+        "Sodenkamp, Sebastian",
+        "Spottke, Annika",
+        "Spruth, Eike Jakob",
+        "Stark, Melina",
+        "Teipel, Stefan",
+        "Wagner, Michael",
+        "Wiltfang, Jens",
+        "Jessen, Frank",
+        "Ramirez, Alfredo",
+        "Schreiber, Stefanie",
+        "Duzel, Emrah",
+        "Ziegler, Gabriel"
+      ],
+      "journal": "NATURE COMMUNICATIONS",
+      "year": 2026,
+      "volume": "17",
+      "issue": "1",
+      "pages": "Art. 5846",
+      "doi": "10.1038/s41467-026-74957-2",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:NATURE COMMUNICATIONS"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001810878800002",
+      "title": "The burden of antimicrobial-resistant bacterial infections: a causal perspective",
+      "authors": [
+        "Lim, Cherry",
+        "Pouwels, Koen B.",
+        "Lee, Sue J.",
+        "Mo, Yin",
+        "Van Doorn, Rogier H.",
+        "Turner, Paul",
+        "Cooper, Ben S."
+      ],
+      "journal": "NATURE COMMUNICATIONS",
+      "year": 2026,
+      "volume": "17",
+      "issue": "1",
+      "pages": "Art. 5847",
+      "doi": "10.1038/s41467-026-74934-9",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:NATURE COMMUNICATIONS"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001809830100001",
+      "title": "Increased dengue transmission following highway paving in the Peruvian Amazon",
+      "authors": [
+        "Singleton, Alyson L.",
+        "Lescano, Andres G.",
+        "Martel, Kevin S.",
+        "MacDonald, Andrew J.",
+        "Mandle, Lisa",
+        "Sipin, Terrell J.",
+        "Bautista, Ana S. M.",
+        "Carrera, Esteban D. R.",
+        "Choque, Gustavo A.",
+        "Munayco, Cesar V.",
+        "Luby, Stephen P.",
+        "Mordecai, Erin A."
+      ],
+      "journal": "NATURE SUSTAINABILITY",
       "year": 2026,
       "volume": "",
       "issue": "",
       "pages": "",
-      "doi": "10.1038/s41558-026-02657-2",
+      "doi": "10.1038/s41893-026-01879-8",
       "abstract": "",
       "keywords": [],
       "citations": 0,
@@ -8379,65 +8897,51 @@
         "journal"
       ],
       "matched_queries": [
-        "journal:NATURE CLIMATE CHANGE"
-      ]
-    },
-    {
-      "uid": "WOS:001804872000001",
-      "title": "Wild tomato genome assemblies reveal structural variants and repeat content act as recombination barriers",
-      "authors": [
-        "van Rengs, Willem M. J.",
-        "Fuentes, Roven Rommel",
-        "Zangishei, Zahra",
-        "Primetis, Elias",
-        "Wang, Yazhong",
-        "Fernandes, Joiselle B.",
-        "Susanto, Tamara",
-        "Lian, Qichao",
-        "Effgen, Sieglinde",
-        "Huettel, Bruno",
-        "Alseekh, Saleh",
-        "Usadel, Bjorn",
-        "Underwood, Charles J."
-      ],
-      "journal": "NATURE COMMUNICATIONS",
-      "year": 2026,
-      "volume": "17",
-      "issue": "1",
-      "pages": "Art. 5590",
-      "doi": "10.1038/s41467-026-74784-5",
-      "abstract": "",
-      "keywords": [],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE COMMUNICATIONS"
+        "journal:NATURE SUSTAINABILITY"
       ],
       "is_new": true
     },
     {
-      "uid": "WOS:001805771700003",
-      "title": "Stepwise emergence of recombination suppression precedes fissiparous asexuality in the planarian <i>Schmidtea mediterranea</i>",
+      "uid": "WOS:001806985800001",
+      "title": "Biodiversity recovery is slow following clear-cut harvest of boreal forests",
       "authors": [
-        "Brand, Jeremias N.",
-        "Patil, Ajinkya Bharatraj",
-        "Pandolfini, Luca",
-        "Zadesenets, Kira",
-        "Rubtsov, Nikolay",
-        "Robledillo, Laura",
-        "Zhang, Meng",
-        "Marques, Andre",
-        "Rink, Jochen C."
+        "Macdonald, S. Ellen",
+        "McIntosh, Anne C. S.",
+        "Schut, Selena",
+        "Bartels, Samuel",
+        "Lee, Seung-Il",
+        "Baisheva, Elvira",
+        "Battigelli, Jeff",
+        "Bayne, Erin",
+        "Bergeron, Yves",
+        "Bouchard, Mathieu",
+        "Casey, Brendan",
+        "Dynesius, Mats",
+        "Handa, I. Tanya",
+        "Hjalten, Joakim",
+        "Hylander, Kristoffer",
+        "Koivula, Matti",
+        "Kouki, Jari",
+        "Lofroth, Therese",
+        "Lohmus, Asko",
+        "Nielsen, Anders",
+        "Odsen, Sonya",
+        "Panzacchi, Manuela",
+        "Pinzon, Jaime",
+        "Reich, Peter B.",
+        "Shirokikh, Pavel",
+        "Shorohova, Ekaterina",
+        "Vanha-Majamaa, Ilkka",
+        "Venier, Lisa",
+        "Work, Tim",
+        "Wu, Linhao"
       ],
-      "journal": "NATURE COMMUNICATIONS",
+      "journal": "NATURE SUSTAINABILITY",
       "year": 2026,
-      "volume": "17",
-      "issue": "1",
-      "pages": "Art. 5588",
-      "doi": "10.1038/s41467-026-74605-9",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.1038/s41893-026-01868-x",
       "abstract": "",
       "keywords": [],
       "citations": 0,
@@ -8446,23 +8950,23 @@
         "journal"
       ],
       "matched_queries": [
-        "journal:NATURE COMMUNICATIONS"
+        "journal:NATURE SUSTAINABILITY"
       ],
       "is_new": true
     },
     {
-      "uid": "WOS:001805771700006",
-      "title": "Beyond resistance and tolerance: rethinking evolutionary responses to antibiotics from the perspective of individual bacterial cells",
+      "uid": "WOS:001806985200001",
+      "title": "A campus sustainability journey",
       "authors": [
-        "MacLean, R. Craig",
-        "Pena-Miller, Rafael"
+        "Zhang, Yaoqing",
+        "Maric, Radenka"
       ],
-      "journal": "NATURE COMMUNICATIONS",
+      "journal": "NATURE SUSTAINABILITY",
       "year": 2026,
-      "volume": "17",
-      "issue": "1",
-      "pages": "Art. 5587",
-      "doi": "10.1038/s41467-026-74829-9",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.1038/s41893-026-01884-x",
       "abstract": "",
       "keywords": [],
       "citations": 0,
@@ -8471,40 +8975,23 @@
         "journal"
       ],
       "matched_queries": [
-        "journal:NATURE COMMUNICATIONS"
+        "journal:NATURE SUSTAINABILITY"
       ],
       "is_new": true
     },
     {
-      "uid": "WOS:001805771700002",
-      "title": "<i>Saccharomyces cerevisiae</i> reduces vulvovaginal candidiasis severity through modulation of fungal pathogenicity and inflammatory responses",
+      "uid": "WOS:001805633000001",
+      "title": "Fast solvation restructuring accelerates interfacial charge transfer",
       "authors": [
-        "Sillen, Mart",
-        "El Abyad, Dania",
-        "Vreys, Nina",
-        "Baldewijns, Silke",
-        "Palmans, Ilse",
-        "Van Goethem, Odessa",
-        "Cheng, Kar On",
-        "Vande Velde, Greetje",
-        "Montano, Dolly E.",
-        "Berghmans, Nele",
-        "Gouwy, Mieke",
-        "Sharpe, Agustin R.",
-        "De Groef, Lies",
-        "Dietschmann, Axel",
-        "Vandecruys, Paul",
-        "Lebeer, Sarah",
-        "Demuyser, Liesbeth",
-        "Gresnigt, Mark S.",
-        "Van Dijck, Patrick"
+        "Zhao, Chang-Xin",
+        "Wang, Chunsheng"
       ],
-      "journal": "NATURE COMMUNICATIONS",
+      "journal": "NATURE SUSTAINABILITY",
       "year": 2026,
-      "volume": "17",
-      "issue": "1",
-      "pages": "Art. 5580",
-      "doi": "10.1038/s41467-026-74733-2",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.1038/s41893-026-01866-z",
       "abstract": "",
       "keywords": [],
       "citations": 0,
@@ -8513,203 +9000,7 @@
         "journal"
       ],
       "matched_queries": [
-        "journal:NATURE COMMUNICATIONS"
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "WOS:001805771700007",
-      "title": "A biomimetic hybrid nanoplatform for encapsulation and precisely controlled delivery of theranostic agents",
-      "authors": [
-        "Wang, Hai",
-        "Agarwal, Pranay",
-        "Zhao, Shuting",
-        "Yu, Jianhua",
-        "Lu, Xiongbin",
-        "He, Xiaoming"
-      ],
-      "journal": "NATURE COMMUNICATIONS",
-      "year": 2026,
-      "volume": "17",
-      "issue": "1",
-      "pages": "Art. 5586",
-      "doi": "10.1038/s41467-026-74778-3",
-      "abstract": "",
-      "keywords": [],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE COMMUNICATIONS"
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "WOS:001805771700004",
-      "title": "Targeted production of reactive oxygen species in mitochondria to overcome cancer drug resistance",
-      "authors": [
-        "Wang, Hai",
-        "Gao, Zan",
-        "Liu, Xuanyou",
-        "Agarwal, Pranay",
-        "Zhao, Shuting",
-        "Conroy, Daniel W.",
-        "Ji, Guang",
-        "Yu, Jianhua",
-        "Jaroniec, Christopher P.",
-        "Liu, Zhenguo",
-        "Lu, Xiongbin",
-        "Li, Xiaodong",
-        "He, Xiaoming"
-      ],
-      "journal": "NATURE COMMUNICATIONS",
-      "year": 2026,
-      "volume": "17",
-      "issue": "1",
-      "pages": "Art. 5581",
-      "doi": "10.1038/s41467-026-74649-x",
-      "abstract": "",
-      "keywords": [],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE COMMUNICATIONS"
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "WOS:001805771700001",
-      "title": "Affinity- and epitope-dependent pathogenicity of GM-CSF autoantibodies in patients with autoimmune pulmonary alveolar proteinosis",
-      "authors": [
-        "Futami, Shinji",
-        "Kawai, Chie",
-        "Kishikawa, Jun-ichi",
-        "Hirose, Masaki",
-        "Kida, Hiroshi",
-        "Wang, Po-hung",
-        "Yamashita, Kazuo",
-        "Ishikawa, Fumihiko",
-        "Kato, Takayuki",
-        "Inoue, Yoshikazu",
-        "Kumanogoh, Atsushi",
-        "Kurosaki, Tomohiro",
-        "Inoue, Takeshi"
-      ],
-      "journal": "NATURE COMMUNICATIONS",
-      "year": 2026,
-      "volume": "17",
-      "issue": "1",
-      "pages": "Art. 5556",
-      "doi": "10.1038/s41467-026-74717-2",
-      "abstract": "",
-      "keywords": [],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE COMMUNICATIONS"
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "WOS:001805771700005",
-      "title": "Integrating 3D phenotyping and functional-structural plant models for crop ideotype breeding",
-      "authors": [
-        "Wei, Quan",
-        "Zou, Xin",
-        "Yu, Jiasheng",
-        "Liao, Shiyu",
-        "Yin, Hua",
-        "Liang, Xiaogui",
-        "Jones, Ashley",
-        "Henke, Michael",
-        "He, Haohua",
-        "Song, Youhong"
-      ],
-      "journal": "NATURE COMMUNICATIONS",
-      "year": 2026,
-      "volume": "17",
-      "issue": "1",
-      "pages": "Art. 5582",
-      "doi": "10.1038/s41467-026-74679-5",
-      "abstract": "",
-      "keywords": [],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE COMMUNICATIONS"
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "WOS:001804288800001",
-      "title": "Topological suppression of quantum tunnelling in a lanthanide single-ion molecular magnet",
-      "authors": [
-        "Paul, Sagar",
-        "Moreno-Pineda, Eufemio",
-        "Molina-Jiron, Concepcion",
-        "Sunil, Appu",
-        "Ruben, Mario",
-        "Garg, Anupam",
-        "Wernsdorfer, Wolfgang"
-      ],
-      "journal": "NATURE COMMUNICATIONS",
-      "year": 2026,
-      "volume": "17",
-      "issue": "1",
-      "pages": "Art. 5579",
-      "doi": "10.1038/s41467-026-74798-z",
-      "abstract": "",
-      "keywords": [],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE COMMUNICATIONS"
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "WOS:001801189100016",
-      "title": "Linking species local trends from assemblage monitoring to global extinction risk",
-      "authors": [
-        "Antao, Laura H.",
-        "Moyes, Faye",
-        "Dornelas, Maria",
-        "Blowes, Shane A.",
-        "McGill, Brian J.",
-        "Chow, Cher F. Y.",
-        "Fontrodona-Eslava, Ada",
-        "Magurran, Anne E.",
-        "Gotelli, Nicholas J."
-      ],
-      "journal": "NATURE COMMUNICATIONS",
-      "year": 2026,
-      "volume": "17",
-      "issue": "1",
-      "pages": "Art. 5071",
-      "doi": "10.1038/s41467-026-74132-7",
-      "abstract": "",
-      "keywords": [],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE COMMUNICATIONS"
+        "journal:NATURE SUSTAINABILITY"
       ],
       "is_new": true
     },
@@ -8734,8 +9025,7 @@
       ],
       "matched_queries": [
         "journal:NATURE SUSTAINABILITY"
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "WOS:001804583500001",
@@ -8762,8 +9052,42 @@
       ],
       "matched_queries": [
         "journal:NATURE SUSTAINABILITY"
+      ]
+    },
+    {
+      "uid": "WOS:001804792500001",
+      "title": "Greater losses from heat exposure experienced by female smallholders in sub-Saharan Africa",
+      "authors": [
+        "Wu, Lan",
+        "Zhang, Yingnan",
+        "Long, Hualou",
+        "Bao, Wenkai",
+        "Xiao, Wu",
+        "Gong, Binlei",
+        "Chigbu, Uchendu Eugene",
+        "Ma, Li",
+        "Peng, Liqing",
+        "Li, Wenbo",
+        "Gao, Xuwen",
+        "Zhu, Yuanli",
+        "Rao, Fujie"
       ],
-      "is_new": true
+      "journal": "NATURE SUSTAINABILITY",
+      "year": 2026,
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.1038/s41893-026-01881-0",
+      "abstract": "",
+      "keywords": [],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:NATURE SUSTAINABILITY"
+      ]
     },
     {
       "uid": "WOS:001801149800001",
@@ -8788,8 +9112,7 @@
       ],
       "matched_queries": [
         "journal:NATURE SUSTAINABILITY"
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "WOS:001800135100001",
@@ -8820,8 +9143,7 @@
       ],
       "matched_queries": [
         "journal:NATURE SUSTAINABILITY"
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "WOS:001798874400001",
@@ -8863,21 +9185,26 @@
       ]
     },
     {
-      "uid": "WOS:001798871200001",
-      "title": "Respiratory-inspired electrostatic open-microfluidics for air purification",
+      "uid": "WOS:001809754300001",
+      "title": "Reshaping biomolecular structure prediction through strategic conformational exploration with HelixFold-S1",
       "authors": [
-        "Chen, Hanxu",
-        "Li, Ning",
-        "Lu, Minhui",
-        "Wang, Junkai",
-        "Zhao, Yuanjin"
+        "Liu, Lihang",
+        "Liu, Yang",
+        "Ye, Xianbin",
+        "Zhang, Shanzhuo",
+        "Li, Yuxin",
+        "Zhu, Kunrui",
+        "Xue, Yang",
+        "Zhou, Jingbo",
+        "Zhang, Xiaonan",
+        "Fang, Xiaomin"
       ],
-      "journal": "NATURE SUSTAINABILITY",
+      "journal": "NATURE MACHINE INTELLIGENCE",
       "year": 2026,
       "volume": "",
       "issue": "",
       "pages": "",
-      "doi": "10.1038/s41893-026-01872-1",
+      "doi": "10.1038/s42256-026-01264-2",
       "abstract": "",
       "keywords": [],
       "citations": 0,
@@ -8886,33 +9213,29 @@
         "journal"
       ],
       "matched_queries": [
-        "journal:NATURE SUSTAINABILITY"
-      ]
+        "journal:NATURE MACHINE INTELLIGENCE"
+      ],
+      "is_new": true
     },
     {
-      "uid": "WOS:001797311500001",
-      "title": "A versatile sustainable biosubstrate stabilizing metal conductors for soft sensors",
+      "uid": "WOS:001809743400001",
+      "title": "Empowering biomedical evidence exploration and synthesis with deep knowledge graph research",
       "authors": [
-        "Dang, Chao",
-        "Shao, Yizhe",
-        "Zhu, Ting",
-        "Tang, Jiulin",
-        "Qi, Haobo",
-        "Zhao, Yijing",
-        "Pei, Haoran",
-        "Shao, Changyou",
-        "Zhang, Sihan",
-        "Jin, Yidan",
-        "Wu, Kai",
-        "Lu, Tongqing",
-        "Zhai, Wei"
+        "Wang, Zifeng",
+        "Chen, Zheng",
+        "Yang, Ziwei",
+        "Wang, Xuan",
+        "Jin, Qiao",
+        "Peng, Yifan",
+        "Lu, Zhiyong",
+        "Sun, Jimeng"
       ],
-      "journal": "NATURE SUSTAINABILITY",
+      "journal": "NATURE MACHINE INTELLIGENCE",
       "year": 2026,
       "volume": "",
       "issue": "",
       "pages": "",
-      "doi": "10.1038/s41893-026-01870-3",
+      "doi": "10.1038/s42256-026-01266-0",
       "abstract": "",
       "keywords": [],
       "citations": 0,
@@ -8921,37 +9244,9 @@
         "journal"
       ],
       "matched_queries": [
-        "journal:NATURE SUSTAINABILITY"
-      ]
-    },
-    {
-      "uid": "WOS:001797310200001",
-      "title": "Synergistic pathways to mitigate climate and water scarcity risks",
-      "authors": [
-        "Lv, Haodong",
-        "Li, Jizhe",
-        "Li, Kai",
-        "Fan, Jingli",
-        "Meng, Jing",
-        "Hubacek, Klaus",
-        "Zhang, Xian"
+        "journal:NATURE MACHINE INTELLIGENCE"
       ],
-      "journal": "NATURE SUSTAINABILITY",
-      "year": 2026,
-      "volume": "",
-      "issue": "",
-      "pages": "",
-      "doi": "10.1038/s41893-026-01880-1",
-      "abstract": "",
-      "keywords": [],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE SUSTAINABILITY"
-      ]
+      "is_new": true
     },
     {
       "uid": "WOS:001800034400001",
@@ -8978,8 +9273,7 @@
       ],
       "matched_queries": [
         "journal:NATURE MACHINE INTELLIGENCE"
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "WOS:001794245000001",
@@ -9010,22 +9304,27 @@
       ]
     },
     {
-      "uid": "WOS:001790716400001",
-      "title": "From virtual experiments to biomedical insight with synthetic data",
+      "uid": "WOS:001808712600016",
+      "title": "Tetraphosphorylated phthalocyanine-based self-assembled monolayer stabilizes perovskite photovoltaics",
       "authors": [
-        "Victoriano, Margarida",
-        "Pavlovic, Milena",
-        "Sandve, Geir Kjetil",
-        "P. Oliveira, Helder",
-        "Rocha, Artur",
-        "Greiff, Victor"
+        "Qin, Zhenzhen",
+        "Wang, Yanbo",
+        "Xiang, Wenxiang",
+        "Chen, Siyuan",
+        "Chen, Mengjiong",
+        "Zhang, Ziyang",
+        "Luan, Xiangfeng",
+        "Mai, Yiyong",
+        "Wu, Yongzhen",
+        "Gratzel, Michael",
+        "Han, Liyuan"
       ],
-      "journal": "NATURE MACHINE INTELLIGENCE",
+      "journal": "SCIENCE ADVANCES",
       "year": 2026,
-      "volume": "8",
-      "issue": "6",
-      "pages": "866-879",
-      "doi": "10.1038/s42256-026-01244-6",
+      "volume": "12",
+      "issue": "27",
+      "pages": "Art. eaee4175",
+      "doi": "10.1126/sciadv.aee4175",
       "abstract": "",
       "keywords": [],
       "citations": 0,
@@ -9034,104 +9333,32 @@
         "journal"
       ],
       "matched_queries": [
-        "journal:NATURE MACHINE INTELLIGENCE"
-      ]
-    },
-    {
-      "uid": "WOS:001788941100001",
-      "title": "Reusability report: Assessment of reproducibility and applicability to external datasets for RXNGraphormer",
-      "authors": [
-        "Zhang, Chonghuan",
-        "Zeng, Majian",
-        "Lin, Qianghua",
-        "Liao, Kuangbiao"
-      ],
-      "journal": "NATURE MACHINE INTELLIGENCE",
-      "year": 2026,
-      "volume": "",
-      "issue": "",
-      "pages": "",
-      "doi": "10.1038/s42256-026-01257-1",
-      "abstract": "",
-      "keywords": [],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE MACHINE INTELLIGENCE"
-      ]
-    },
-    {
-      "uid": "WOS:001788207400001",
-      "title": "Navigating molecular OOD-ness",
-      "authors": [
-        "Tomberg, Anna",
-        "Carson, Nessa"
-      ],
-      "journal": "NATURE MACHINE INTELLIGENCE",
-      "year": 2026,
-      "volume": "8",
-      "issue": "6",
-      "pages": "862-863",
-      "doi": "10.1038/s42256-026-01251-7",
-      "abstract": "",
-      "keywords": [],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE MACHINE INTELLIGENCE"
-      ]
-    },
-    {
-      "uid": "WOS:001800274100001",
-      "title": "Solutions, challenges and rising tensions in AI and mathematics",
-      "authors": [],
-      "journal": "NATURE MACHINE INTELLIGENCE",
-      "year": 2026,
-      "volume": "8",
-      "issue": "6",
-      "pages": "857-857",
-      "doi": "10.1038/s42256-026-01269-x",
-      "abstract": "",
-      "keywords": [],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:NATURE MACHINE INTELLIGENCE"
+        "journal:SCIENCE ADVANCES"
       ],
       "is_new": true
     },
     {
-      "uid": "WOS:001799126500001",
-      "title": "Discovery of TYR inhibitors from de novo molecular generation to dual-track lead optimization: \"Competition\" between AI and chemists",
+      "uid": "WOS:001808712600010",
+      "title": "Structural and mutational insights define ERMA as the ER Mg<SUP>2+</SUP> ATPase and reservoir gatekeeper",
       "authors": [
-        "Sun, Yinyan",
-        "Wang, Jiahui",
-        "Chen, Wenchao",
-        "Jiang, Xiaoying",
-        "Wang, Shan",
-        "Zhi, Jia",
-        "Li, Feifan",
-        "Feng, Meiling",
-        "Niu, Xiaotian",
-        "Ju, Bin",
-        "Guo, Jianan",
-        "Bai, Renren"
+        "Venkatesan, Manigandan",
+        "Oldham, Michael L.",
+        "Shi, Ning",
+        "Chidambaram, Adhishree",
+        "Vishnu, Neelanjan",
+        "Madesh, Abitha K.",
+        "Bentz, Kristen",
+        "Stathopulos, Peter B.",
+        "Kalathur, Ravi C.",
+        "Jiang, Youxing",
+        "Madesh, Muniswamy"
       ],
       "journal": "SCIENCE ADVANCES",
       "year": 2026,
       "volume": "12",
-      "issue": "25",
-      "pages": "Art. eaeg0376",
-      "doi": "10.1126/sciadv.aeg0376",
+      "issue": "27",
+      "pages": "Art. eaef4971",
+      "doi": "10.1126/sciadv.aef4971",
       "abstract": "",
       "keywords": [],
       "citations": 0,
@@ -9141,24 +9368,22 @@
       ],
       "matched_queries": [
         "journal:SCIENCE ADVANCES"
-      ]
+      ],
+      "is_new": true
     },
     {
-      "uid": "WOS:001795822300033",
-      "title": "Broadening participation: 20-year outcomes from undergraduate science training programs",
+      "uid": "WOS:001808712600039",
+      "title": "Earth is mostly diffusive: A global analysis of landscape evolution",
       "authors": [
-        "Woodcock, Anna",
-        "Aguilar, Samantha D.",
-        "Hernandez, Paul R.",
-        "Peterson, Mary E.",
-        "Schultz, P. Wesley"
+        "Martin, Harrison K.",
+        "Lamb, Michael P."
       ],
       "journal": "SCIENCE ADVANCES",
       "year": 2026,
       "volume": "12",
-      "issue": "25",
-      "pages": "Art. eaeh0739",
-      "doi": "10.1126/sciadv.aeh0739",
+      "issue": "27",
+      "pages": "Art. eaeb5187",
+      "doi": "10.1126/sciadv.aeb5187",
       "abstract": "",
       "keywords": [],
       "citations": 0,
@@ -9168,28 +9393,29 @@
       ],
       "matched_queries": [
         "journal:SCIENCE ADVANCES"
-      ]
+      ],
+      "is_new": true
     },
     {
-      "uid": "WOS:001795822300009",
-      "title": "Spatial transcriptomics identifies distinct domains regulating yield-component traits of the wheat ear",
+      "uid": "WOS:001808712600005",
+      "title": "Tethered agonist- and GAIN domain-independent signaling of an adhesion GPCR",
       "authors": [
-        "Qu, Yue",
-        "Tan, Cong",
-        "Yang, Liujing",
-        "Pasquariello, Marianna",
-        "Alabdullah, Abdul Kader",
-        "Sun, Shiyu",
-        "Iqbal, Munir",
-        "Salamon, John",
-        "Boden, Scott A."
+        "Wang, Jie",
+        "Miao, Yi",
+        "Wang, Jinzhao",
+        "Zhu, Shaoyuan",
+        "Zhang, Yu",
+        "Wong, Tsz Lok",
+        "Yousif, Ahmed",
+        "Wernig, Marius",
+        "Sudhof, Thomas C."
       ],
       "journal": "SCIENCE ADVANCES",
       "year": 2026,
       "volume": "12",
-      "issue": "25",
-      "pages": "Art. eaed1407",
-      "doi": "10.1126/sciadv.aed1407",
+      "issue": "27",
+      "pages": "Art. eadu3822",
+      "doi": "10.1126/sciadv.adu3822",
       "abstract": "",
       "keywords": [],
       "citations": 0,
@@ -9199,23 +9425,28 @@
       ],
       "matched_queries": [
         "journal:SCIENCE ADVANCES"
-      ]
+      ],
+      "is_new": true
     },
     {
-      "uid": "WOS:001795822300026",
-      "title": "Abiotic sources of fixed nitrogen sustained early ecosystems for several hundred million years after the origin of life",
+      "uid": "WOS:001808712600036",
+      "title": "Hemisphere-wide evidence of Early Paleoindian megaherbivore specialization",
       "authors": [
-        "Boden, Joanne S.",
-        "Ni, Zhanghan",
-        "Anderson, Rika E.",
-        "Stueken, Eva E."
+        "Potter, Ben A.",
+        "Chatters, James C.",
+        "Prates, Luciano",
+        "Perez, S. Ivan",
+        "Surovell, Todd",
+        "Politis, Gustavo",
+        "Wooller, Matthew J.",
+        "Kelly, Robert L."
       ],
       "journal": "SCIENCE ADVANCES",
       "year": 2026,
       "volume": "12",
-      "issue": "25",
-      "pages": "Art. eaec4450",
-      "doi": "10.1126/sciadv.aec4450",
+      "issue": "27",
+      "pages": "Art. eaef9628",
+      "doi": "10.1126/sciadv.aef9628",
       "abstract": "",
       "keywords": [],
       "citations": 0,
@@ -9225,24 +9456,29 @@
       ],
       "matched_queries": [
         "journal:SCIENCE ADVANCES"
-      ]
+      ],
+      "is_new": true
     },
     {
-      "uid": "WOS:001795822300021",
-      "title": "A programmable bifunctional flavoenzyme for direct amine-to-ester conversion",
+      "uid": "WOS:001808712600021",
+      "title": "Rapid evolution of lncRNAs introduces novel regulatory inputs into ancestral cancer pathways",
       "authors": [
-        "Wu, Yaoyun",
-        "Song, Wei",
-        "Wei, Wanqing",
-        "Liu, Liming",
-        "Wu, Jing"
+        "Sun, Li",
+        "Dong, Chuan",
+        "Hong, Dandan",
+        "Du, Meng-Ze",
+        "Xia, Shengqian",
+        "Fan, Hao",
+        "Lynch, Michael",
+        "Li, Yongmei",
+        "Wei, Wen"
       ],
       "journal": "SCIENCE ADVANCES",
       "year": 2026,
       "volume": "12",
-      "issue": "25",
-      "pages": "Art. eaef2491",
-      "doi": "10.1126/sciadv.aef2491",
+      "issue": "27",
+      "pages": "Art. eaeb5510",
+      "doi": "10.1126/sciadv.aeb5510",
       "abstract": "",
       "keywords": [],
       "citations": 0,
@@ -9252,25 +9488,53 @@
       ],
       "matched_queries": [
         "journal:SCIENCE ADVANCES"
-      ]
+      ],
+      "is_new": true
     },
     {
-      "uid": "WOS:001795822300010",
-      "title": "Doppler-encoded Mie scattering rainbow of flying particles",
+      "uid": "WOS:001808712600001",
+      "title": "Toward autonomous robotic-assisted and microrobotic surgery",
       "authors": [
-        "Wang, Rui",
-        "Wang, Pushihan",
-        "Lang, Yuxuan",
-        "Zhang, Yao",
-        "Liang, Chenjie",
-        "Xie, Shangran"
+        "Yang, Sungyun",
+        "Kang, Byung Ha",
+        "Min, Hyeongho",
+        "Wachs, Juan P.",
+        "Alambeigi, Farshid",
+        "Desai, Jaydev P.",
+        "Dupont, Pierre E.",
+        "Yaeger, Kurt",
+        "Anderson, Katherine",
+        "Kuntz, Alan",
+        "Alterovitz, Ron",
+        "Webster, Robert J.",
+        "Hata, Nobuhiko",
+        "Reisenauer, Janani S.",
+        "Clinch, McKenna",
+        "Abramson, Alex",
+        "Wu, Jie Ying",
+        "Ranzani, Tommaso",
+        "Kim, Peter C.",
+        "Huang, Alex S.",
+        "Sun, Cheng",
+        "Zhang, Hao F.",
+        "Riviere, Cameron N.",
+        "Henderson, Eric R.",
+        "Yip, Michael",
+        "Dong, Xiaoguang",
+        "Wollin, Daniel A.",
+        "Gracias, David H.",
+        "Mair, Lamar O.",
+        "Karpelson, Michael",
+        "Wood, Robert J.",
+        "Cohen, Itai",
+        "Strano, Michael S."
       ],
       "journal": "SCIENCE ADVANCES",
       "year": 2026,
       "volume": "12",
-      "issue": "25",
-      "pages": "Art. eaef7659",
-      "doi": "10.1126/sciadv.aef7659",
+      "issue": "27",
+      "pages": "Art. eaec4197",
+      "doi": "10.1126/sciadv.aec4197",
       "abstract": "",
       "keywords": [],
       "citations": 0,
@@ -9280,30 +9544,40 @@
       ],
       "matched_queries": [
         "journal:SCIENCE ADVANCES"
-      ]
+      ],
+      "is_new": true
     },
     {
-      "uid": "WOS:001795822300006",
-      "title": "Metaceramic enables ultrahigh-temperature record rectification and programmable 3D thermal control",
+      "uid": "WOS:001808712600013",
+      "title": "Realization of strongly correlated 2D honeycomb boron",
       "authors": [
-        "Su, Yishu",
-        "Huo, Haoliang",
-        "Wu, Qianqian",
-        "Yang, Shuihua",
-        "Yan, Chengrui",
-        "Chen, Zongbing",
-        "Han, Jiecai",
-        "Zhang, Xinghong",
-        "Colombo, Paolo",
-        "Qiu, Cheng-Wei",
-        "Xiong, Jian"
+        "Kato, Takemi",
+        "Nakamura, Tomonori",
+        "Nakayama, Kosuke",
+        "Osumi, Takumi",
+        "Souma, Seigo",
+        "Honma, Asuka",
+        "Antezak, Alexandre",
+        "Rezende Goncalves, Pedro",
+        "Tanaka, Kiyohisa",
+        "Kitamura, Miho",
+        "Ozawa, Kenichi",
+        "Horiba, Koji",
+        "Kumigashira, Hiroshi",
+        "Takahashi, Takashi",
+        "Fortuna, Franck",
+        "Santander-Syro, Andres Felipe",
+        "Settai, Rikio",
+        "Onuki, Yoshichika",
+        "Okada, Yoshinori",
+        "Sato, Takafumi"
       ],
       "journal": "SCIENCE ADVANCES",
       "year": 2026,
       "volume": "12",
-      "issue": "25",
-      "pages": "Art. eaef4765",
-      "doi": "10.1126/sciadv.aef4765",
+      "issue": "27",
+      "pages": "Art. eaee3116",
+      "doi": "10.1126/sciadv.aee3116",
       "abstract": "",
       "keywords": [],
       "citations": 0,
@@ -9313,23 +9587,30 @@
       ],
       "matched_queries": [
         "journal:SCIENCE ADVANCES"
-      ]
+      ],
+      "is_new": true
     },
     {
-      "uid": "WOS:001795822300027",
-      "title": "Rule-breaking in chemical synthesis",
+      "uid": "WOS:001808712600020",
+      "title": "Diffraction anomalous fine structure pinpoints electrochemically active sites in robust heterojunctions",
       "authors": [
-        "Gonzalez, Jordan A. M.",
-        "Miseo, Giulianna A.",
-        "Houk, K. N.",
-        "Garg, Neil K."
+        "Zhang, Pengjun",
+        "Zhang, Guikai",
+        "Wang, Ruijie",
+        "Wei, Shiqiang",
+        "Chen, Shuangming",
+        "Shou, Hongwei",
+        "Wang, Changda",
+        "Chu, Shengqi",
+        "Zhang, Jing",
+        "Song, Li"
       ],
       "journal": "SCIENCE ADVANCES",
       "year": 2026,
       "volume": "12",
-      "issue": "25",
-      "pages": "Art. eaeg7124",
-      "doi": "10.1126/sciadv.aeg7124",
+      "issue": "27",
+      "pages": "Art. eaec1952",
+      "doi": "10.1126/sciadv.aec1952",
       "abstract": "",
       "keywords": [],
       "citations": 0,
@@ -9339,27 +9620,30 @@
       ],
       "matched_queries": [
         "journal:SCIENCE ADVANCES"
-      ]
+      ],
+      "is_new": true
     },
     {
-      "uid": "WOS:001795822300025",
-      "title": "Heatwaves enable wildfire activity in the western United States",
+      "uid": "WOS:001808712600034",
+      "title": "<i>O</i>-methyltransferase variation enables a specific volatile alarm call in rice",
       "authors": [
-        "Kalashnikov, Dmitri A.",
-        "Abatzoglou, John T.",
-        "Williams, Emily L.",
-        "Yin, Cong",
-        "Gurazada, Madhulika",
-        "Kumar, Mukesh",
-        "Thomas, Ashwin P.",
-        "Ebiendele, Precious E."
+        "Li, Huijing",
+        "Liu, Mengyu",
+        "Chen, Yumeng",
+        "Jin, Gaochen",
+        "Wang, Lanlan",
+        "Liu, Shuting",
+        "Shang, Lianguang",
+        "Gershenzon, Jonathan",
+        "Baldwin, Ian T.",
+        "Li, Ran"
       ],
       "journal": "SCIENCE ADVANCES",
       "year": 2026,
       "volume": "12",
-      "issue": "25",
-      "pages": "Art. eaea1277",
-      "doi": "10.1126/sciadv.aea1277",
+      "issue": "27",
+      "pages": "Art. eaeg6081",
+      "doi": "10.1126/sciadv.aeg6081",
       "abstract": "",
       "keywords": [],
       "citations": 0,
@@ -9369,7 +9653,8 @@
       ],
       "matched_queries": [
         "journal:SCIENCE ADVANCES"
-      ]
+      ],
+      "is_new": true
     },
     {
       "uid": "WOS:001796604500001",
@@ -9612,6 +9897,41 @@
       "matched_queries": [
         "journal:ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING"
       ]
+    },
+    {
+      "uid": "WOS:001808883700001",
+      "title": "Enabling seamless spatiotemporal flood monitoring via bridging observational gaps with a case study on the 2024 Bangladesh flood",
+      "authors": [
+        "Jiao, Zhijun",
+        "Wu, Pengtianhao",
+        "Chen, Biyan",
+        "Zhang, Zhimei",
+        "Mahmood, Syed Amer",
+        "Wu, Lixin"
+      ],
+      "journal": "INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION",
+      "year": 2026,
+      "volume": "151",
+      "issue": "",
+      "pages": "Art. 105412",
+      "doi": "10.1016/j.jag.2026.105412",
+      "abstract": "",
+      "keywords": [
+        "Seamless flood tracking",
+        "SAR optical synergy",
+        "Flood depth estimation",
+        "Observational gaps filling",
+        "Sustainable development goals"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION"
+      ],
+      "is_new": true
     },
     {
       "uid": "WOS:001798366100001",
@@ -9887,29 +10207,37 @@
       ]
     },
     {
-      "uid": "WOS:001792371500001",
-      "title": "DBE-Net: a dual-branch bounding box-embedding network for individual tree segmentation from LiDAR",
+      "uid": "WOS:001808904700006",
+      "title": "RAST: Reliability-Aware Spatiotemporal Modeling for Multiobject Tracking in Satellite Videos",
       "authors": [
-        "Gao, Yonggang",
-        "Liang, Wenge",
-        "Li, Mengmeng",
-        "Chen, Leying",
-        "Zou, Xinyu",
-        "Zhan, Junjie"
+        "Shi, Yuting",
+        "Wang, Guanqun",
+        "Zhuang, Yin",
+        "Zhang, Tong",
+        "Chen, He"
       ],
-      "journal": "INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION",
+      "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
       "year": 2026,
-      "volume": "151",
+      "volume": "64",
       "issue": "",
-      "pages": "Art. 105381",
-      "doi": "10.1016/j.jag.2026.105381",
+      "pages": "Art. 5628419",
+      "doi": "10.1109/TGRS.2026.3705110",
       "abstract": "",
       "keywords": [
-        "Individual tree segmentation",
-        "Deep learning",
-        "Bounding box branch",
-        "DBE-Net",
-        "Point cloud"
+        "Satellites",
+        "Videos",
+        "Modeling",
+        "Tracking",
+        "Signal detection",
+        "Trajectory",
+        "Design methodology",
+        "Interference",
+        "Object tracking",
+        "Marine vehicles",
+        "Multiobject tracking (MOT)",
+        "reliability-aware",
+        "satellite video",
+        "spatiotemporal modeling"
       ],
       "citations": 0,
       "open_access": false,
@@ -9917,43 +10245,218 @@
         "journal"
       ],
       "matched_queries": [
-        "journal:INTERNATIONAL JOURNAL OF APPLIED EARTH OBSERVATION AND GEOINFORMATION"
-      ]
+        "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
+      ],
+      "is_new": true
     },
     {
-      "uid": "WOS:001795899600023",
-      "title": "Patchwise Neural Network for Height Estimation in Forested Areas Based on Multichannel SAR Data",
+      "uid": "WOS:001808904700013",
+      "title": "An Endmember Bundles-Guided Dual-Branch Multiscale Network for Nonlinear Unmixing",
       "authors": [
-        "Yang, Wenyu",
-        "Vitale, Sergio",
-        "Aghababaei, Hossein",
-        "Ferraioli, Giampaolo",
-        "Pascazio, Vito",
-        "Schirinzi, Gilda"
+        "Huang, Yefei",
+        "Zhang, Yu",
+        "Akoudad, Youssef",
+        "Gao, Wei",
+        "Chen, Jie"
       ],
       "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
       "year": 2026,
       "volume": "64",
       "issue": "",
-      "pages": "Art. 5209816",
-      "doi": "10.1109/TGRS.2026.3698928",
+      "pages": "Art. 5518415",
+      "doi": "10.1109/TGRS.2026.3705087",
       "abstract": "",
       "keywords": [
-        "Forests",
         "Modeling",
-        "Laser radar",
+        "Pixel",
+        "Estimation",
+        "Modules (abstract algebra)",
+        "Educational institutions",
+        "Art",
+        "Computers",
+        "Decoding",
+        "Learning (artificial intelligence)",
+        "Probability",
+        "Deep learning (DL)",
+        "dual-branch architecture",
+        "endmember bundle",
+        "nonlinear unmixing",
+        "spectral variability (SV)"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001808904700011",
+      "title": "Multisystem Spaceborne GNSS-R for Retrieving Sea Ice Concentration With Spatial Autocorrelation Correction",
+      "authors": [
+        "Zhu, Yongchao",
+        "Ren, Xinyu",
+        "Ge, Maorong",
+        "Bu, Jinwei",
+        "Huang, Feixiong",
+        "Yu, Kegen",
+        "Tao, Tingye"
+      ],
+      "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
+      "year": 2026,
+      "volume": "64",
+      "issue": "",
+      "pages": "Art. 4301814",
+      "doi": "10.1109/TGRS.2026.3701347",
+      "abstract": "",
+      "keywords": [
+        "Global navigation satellite system",
+        "Sea ice",
+        "Silicon carbide",
+        "Modeling",
+        "Global Positioning System",
+        "Satellites",
+        "Educational institutions",
+        "Convolutional neural networks",
+        "Remote sensing",
+        "Noise reduction",
+        "Delay-Doppler maps (DDMs)",
+        "global navigation satellite system-reflectometry (GNSS-R)",
+        "ResCNet",
+        "sea ice concentration (SIC)"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001808904700009",
+      "title": "OMC-STFT: An Adaptive Phase Filtering Method for InSAR Based on Optimal Magnitude Combination",
+      "authors": [
+        "Li, Jian",
+        "Fan, Hongdong",
+        "Tian, Zeming",
+        "Sen, Du",
+        "Huang, Hai"
+      ],
+      "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
+      "year": 2026,
+      "volume": "64",
+      "issue": "",
+      "pages": "Art. 5210616",
+      "doi": "10.1109/TGRS.2026.3706355",
+      "abstract": "",
+      "keywords": [
+        "Filters",
+        "Filtering",
+        "Noise",
+        "Bandwidth",
+        "Algorithms",
+        "Noise reduction",
+        "Optimization",
+        "Windows",
+        "Geoscience",
+        "PSNR",
+        "Constructive interference",
+        "interferometric synthetic aperture radar (InSAR)",
+        "optimal magnitude combination (OMC)",
+        "phase filtering",
+        "short-time Fourier transform (STFT)",
+        "spatially-variant bandwidth"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001808904700005",
+      "title": "Performance and Efficiency of Climate In Situ Data Reconstruction: Why Optimized IDW Outperforms Kriging and Implicit Neural Representation",
+      "authors": [
+        "Walczak, Jakub"
+      ],
+      "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
+      "year": 2026,
+      "volume": "64",
+      "issue": "",
+      "pages": "Art. 5007011",
+      "doi": "10.1109/TGRS.2026.3701545",
+      "abstract": "",
+      "keywords": [
+        "Modeling",
+        "Meteorology",
+        "Climate",
+        "Optimization",
+        "Distance measurement",
+        "Measurement",
+        "Testing",
+        "Timing",
+        "Interpolation",
+        "Training",
+        "Climate data approximation",
+        "implicit neural representation (INR)",
+        "inverse distance weighting (IDW)",
+        "ordinary kriging (OK)",
+        "spatial reconstruction"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001808904700017",
+      "title": "Full-Trajectory Reconstruction for UHR-SAR Large-Scene Imaging via Joint Residual Motion Errors and Dominant Target Positions Estimation",
+      "authors": [
+        "Zhong, Shen",
+        "Hai, Yu",
+        "Li, Zhongyu",
+        "Wu, Junjie",
+        "Li, Ruoming",
+        "Yang, Jianyu"
+      ],
+      "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
+      "year": 2026,
+      "volume": "64",
+      "issue": "",
+      "pages": "Art. 5210718",
+      "doi": "10.1109/TGRS.2026.3702960",
+      "abstract": "",
+      "keywords": [
+        "Trajectory",
+        "Distance measurement",
+        "Azimuth",
         "Synthetic aperture radar",
         "Specific absorption rate",
-        "Grounding",
-        "Estimation",
-        "Covariance matrices",
-        "Training",
-        "Deep learning",
-        "Deep learning (DL)",
-        "forest height",
-        "synthetic aperture radar (SAR)",
-        "underlying topography",
-        "U-Net"
+        "Apertures",
+        "Optimization",
+        "Accuracy",
+        "History",
+        "Personal digital devices",
+        "Dominant target position errors",
+        "residual motion errors",
+        "trajectory fusion",
+        "trajectory reconstruction",
+        "ultrahigh-resolution (UHR) large-scene imaging"
       ],
       "citations": 0,
       "open_access": false,
@@ -9966,38 +10469,37 @@
       "is_new": true
     },
     {
-      "uid": "WOS:001795899600014",
-      "title": "Improving Coastal Sea Surface Salinity Retrieval During Rain Using Machine Learning",
+      "uid": "WOS:001808904700003",
+      "title": "MPGU-Net: Multimodel Physics-Guided Network for Nonlinear Hyperspectral Unmixing",
       "authors": [
-        "Zhang, Lanjie",
-        "Song, Haoming",
-        "Fan, Wen",
-        "Yin, Xiaobin",
-        "Zhang, Yibo"
+        "Tao, Xuanwen",
+        "Koirala, Bikram",
+        "Rasti, Behnood",
+        "Plaza, Antonio",
+        "Scheunders, Paul"
       ],
       "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
       "year": 2026,
       "volume": "64",
       "issue": "",
-      "pages": "Art. 4208421",
-      "doi": "10.1109/TGRS.2026.3699410",
+      "pages": "Art. 5518522",
+      "doi": "10.1109/TGRS.2026.3705097",
       "abstract": "",
       "keywords": [
         "Modeling",
-        "Rain",
-        "Salinity (geophysical)",
-        "Accuracy",
-        "Oceans",
-        "Satellites",
-        "Surfaces",
-        "Distance measurement",
-        "Machining",
-        "Sea surface salinity",
-        "Coastal sea surface salinity (SSS) retrieval",
-        "estuarine regions",
-        "Soil Moisture Active Passive (SMAP)",
-        "rain",
-        "SSS product correction"
+        "Pixel",
+        "Materials",
+        "Estimation",
+        "Grounding",
+        "Vegetation",
+        "Trees (botanical)",
+        "Ray tracing",
+        "Noise",
+        "Roads",
+        "Linearizing space transformation (LST)",
+        "multilinear mixing model (MLM)",
+        "multimodel physics-guided unmixing network",
+        "postnonlinear mixing model (PPNM)"
       ],
       "citations": 0,
       "open_access": false,
@@ -10010,214 +10512,131 @@
       "is_new": true
     },
     {
-      "uid": "WOS:001795899600040",
-      "title": "Frequency-Driven State-Space Model for Remote Sensing Pansharpening",
+      "uid": "WOS:001808904700004",
+      "title": "Quantitative Assessment of Cloud-Penetration Capability for Spaceborne Photon-Counting Lidar in Surface Observations",
       "authors": [
-        "Zhang, Xiaochen",
-        "Li, Jiangyun",
-        "Wang, Hao",
-        "Zhuang, Peixian"
+        "Liu, Xinyuan",
+        "Zheng, Huiying",
+        "Zhang, Zhiyu",
+        "Yang, Jian",
+        "Zhao, Pufan",
+        "Li, Song",
+        "Ma, Yue",
+        "Wu, Songhua"
       ],
       "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
       "year": 2026,
       "volume": "64",
       "issue": "",
-      "pages": "Art. 5911314",
-      "doi": "10.1109/TGRS.2026.3699514",
+      "pages": "Art. 5703022",
+      "doi": "10.1109/TGRS.2026.3703821",
+      "abstract": "",
+      "keywords": [
+        "Clouds",
+        "Modeling",
+        "Oceans",
+        "Snow",
+        "Surfaces",
+        "Tracking",
+        "Reflectivity",
+        "Scattering",
+        "Noise",
+        "Beams",
+        "Cloud optical depth (COD)",
+        "cloud-penetrating capability",
+        "Ice",
+        "Cloud",
+        "and land Elevation Satellite-2 (ICESat-2)",
+        "spaceborne photon-counting lidar (SPL)"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001808904700014",
+      "title": "C2F-GESNet: Synergizing Global Dynamics and Local Topology for UAV-H<SUP>2</SUP> Imagery Classification via a Coarse-to-Fine Framework",
+      "authors": [
+        "Zhou, Wenqing",
+        "Bai, Lin",
+        "Xue, Danni",
+        "Zhang, Yunqi",
+        "Lu, Lekang",
+        "Hui, Meng"
+      ],
+      "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
+      "year": 2026,
+      "volume": "64",
+      "issue": "",
+      "pages": "Art. 5518617",
+      "doi": "10.1109/TGRS.2026.3705443",
+      "abstract": "",
+      "keywords": [
+        "Modeling",
+        "Pixel",
+        "Autonomous aerial vehicles",
+        "Training",
+        "Hyperspectral imaging",
+        "Image classification",
+        "Memory",
+        "Convolution",
+        "Architecture",
+        "Computer architecture",
+        "Dynamic convolution",
+        "graph neural networks (GNNs)",
+        "spatial-spectral fusion",
+        "UAV-H-2 imagery classification"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "WOS:001808904700012",
+      "title": "M-SSIM-3DIFWI: 3-D Implicit Full Waveform Inversion Based on the Multiscale Structural Similarity",
+      "authors": [
+        "He, Liangsheng",
+        "Song, Chao",
+        "Alkhalifah, Tariq",
+        "Chen, Tiansheng",
+        "Liu, Tao",
+        "Liu, Cai"
+      ],
+      "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
+      "year": 2026,
+      "volume": "64",
+      "issue": "",
+      "pages": "Art. 5912215",
+      "doi": "10.1109/TGRS.2026.3704938",
       "abstract": "",
       "keywords": [
         "Modeling",
         "Frequency",
-        "Pansharpening",
-        "High frequency",
-        "Fuses",
-        "Conferences",
-        "Visualization",
-        "Matrices",
-        "Modules (abstract algebra)",
-        "Remote sensing",
-        "Deep learning (DL)",
-        "frequency domain",
-        "pansharpening",
-        "state-space model"
-      ],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "WOS:001795899600018",
-      "title": "Polarimetric Ground and Volume Decomposition Based on the PolInSAR Two-Layer Model",
-      "authors": [
-        "Alonso-Gonzalez, Alberto",
-        "Romero-Puig, Noelia",
-        "Lopez-Martinez, Carlos",
-        "Papathanassiou, Konstantinos P."
-      ],
-      "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
-      "year": 2026,
-      "volume": "64",
-      "issue": "",
-      "pages": "Art. 5209914",
-      "doi": "10.1109/TGRS.2026.3700682",
-      "abstract": "",
-      "keywords": [
-        "Grounding",
-        "Modeling",
-        "Coherence",
-        "Matrices",
-        "Scattering",
-        "Specific absorption rate",
-        "Synthetic aperture radar",
-        "Forests",
-        "L-band",
-        "Polarization",
-        "Polarimetric interferometric synthetic aperture radar (PolInSAR)",
-        "polarimetric synthetic aperture radar (PolSAR) interferometry",
-        "polarimetry",
-        "synthetic aperture radar (SAR)",
-        "two-layer model"
-      ],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "WOS:001795899600025",
-      "title": "Few-Shot Domain Adaptation Transformer for Hyperspectral Image Change Detection",
-      "authors": [
-        "Wang, Yanheng",
-        "Sha, Jianjun",
-        "Qin, Kai",
-        "Xing, Jianghe",
-        "Gao, Yongsheng",
-        "Gao, Lianru"
-      ],
-      "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
-      "year": 2026,
-      "volume": "64",
-      "issue": "",
-      "pages": "Art. 5516511",
-      "doi": "10.1109/TGRS.2026.3700816",
-      "abstract": "",
-      "keywords": [
-        "Labeling",
-        "Modeling",
-        "Training",
-        "Testing",
-        "Signal detection",
-        "Transformers",
-        "Hyperspectral imaging",
-        "Few shot learning",
-        "Optimization",
-        "Remote sensing",
-        "Change detection (CD)",
-        "domain adaptation (DA)",
-        "few-shot learning (FSL)",
-        "generative pretrained Transformer",
-        "hyperspectral images (HSIs)"
-      ],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "WOS:001795899600037",
-      "title": "Seamless Global AOD Reconstruction Based on Transformer Model and Fusion of Multisource Satellite Products",
-      "authors": [
-        "Wu, Meng",
-        "Wang, Ning",
-        "Ma, Lingling",
-        "Zhu, Jiajia",
-        "Hu, JiaQi",
-        "Zhao, Yongguang",
-        "Chen, Xingfeng",
-        "Zhang, Beibei",
-        "Li, Jingmei",
-        "Han, Qijin"
-      ],
-      "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
-      "year": 2026,
-      "volume": "64",
-      "issue": "",
-      "pages": "Art. 4108122",
-      "doi": "10.1109/TGRS.2026.3692215",
-      "abstract": "",
-      "keywords": [
-        "Modeling",
-        "Satellites",
-        "Aerosols",
-        "Imputation",
-        "Transformers",
+        "Timing",
+        "Geophysics",
+        "Memory",
+        "Propagation",
         "Accuracy",
-        "Clouds",
-        "MODIS",
-        "Training",
-        "Fuses",
-        "Multisource product fusion",
-        "satellite aerosol optical depth (AOD) products",
-        "seamless global reconstruction",
-        "transformer model"
-      ],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "WOS:001795899600013",
-      "title": "On-Orbit SWIR Imagery MTF Compensation for the Geology-1 Satellite Using Cross-Spectral Structural Priors",
-      "authors": [
-        "He, Haixu",
-        "Yan, Jining",
-        "Jing, Zichen",
-        "Wang, Lizhe"
-      ],
-      "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
-      "year": 2026,
-      "volume": "64",
-      "issue": "",
-      "pages": "Art. 5516115",
-      "doi": "10.1109/TGRS.2026.3698656",
-      "abstract": "",
-      "keywords": [
+        "Energy",
+        "Three-dimensional displays",
         "Optimization",
-        "Modeling",
-        "Estimation",
-        "Satellites",
-        "Noise",
-        "Remote sensing",
-        "Degradation",
-        "Geology",
-        "Kernel",
-        "Educational institutions",
-        "Blind compensation",
-        "Geology-1",
-        "modulation transfer function (MTF) compensation",
-        "short-wave infrared (SWIR)"
+        "3-D",
+        "cycle skipping",
+        "full waveform inversion (FWI)",
+        "implicit neural representation (INR)",
+        "structural similarity index measure"
       ],
       "citations": 0,
       "open_access": false,
@@ -10230,81 +10649,32 @@
       "is_new": true
     },
     {
-      "uid": "WOS:001795899600039",
-      "title": "Efficient Remote Sensing Instance Segmentation With Linear-Time State-Space-Distilled Visual Foundation Models",
+      "uid": "WOS:001808210600001",
+      "title": "Soybean leaf physicochemical parameter inversion based on radiative transfer model screening constraints and measured-noise enhancement",
       "authors": [
-        "Yang, Qinzhe",
-        "Chen, Keyan",
-        "Xu, Jia",
-        "Shi, Zhenwei",
-        "Zou, Zhengxia"
+        "Xu, Sheng",
+        "Jin, Zhongyu",
+        "Guo, Si'en",
+        "Wang, Nan",
+        "Xu, Le",
+        "Cao, Liying",
+        "Yu, Fenghua",
+        "Xu, Tongyu"
       ],
-      "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
+      "journal": "COMPUTERS AND ELECTRONICS IN AGRICULTURE",
       "year": 2026,
-      "volume": "64",
+      "volume": "252",
       "issue": "",
-      "pages": "Art. 5625417",
-      "doi": "10.1109/TGRS.2026.3696104",
+      "pages": "Art. 112070",
+      "doi": "10.1016/j.compag.2026.112070",
       "abstract": "",
       "keywords": [
-        "Modeling",
-        "Remote sensing",
-        "Instance segmentation",
-        "Training",
-        "Conferences",
-        "Computers",
-        "Architecture",
-        "Computer architecture",
-        "Computer vision",
-        "Foundation models",
-        "Knowledge distillation",
-        "remote sensing",
-        "state-space model",
-        "visual foundation model"
-      ],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal",
-        "arxiv"
-      ],
-      "matched_queries": [
-        "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
-        "arxiv:Foundation models for Earth observation"
-      ]
-    },
-    {
-      "uid": "WOS:001795899600027",
-      "title": "CaUCD: Causal Unsupervised Change Detection",
-      "authors": [
-        "Ren, Dong",
-        "Zhang, Yang",
-        "Wang, Wenbin",
-        "Xia, Gui-Song",
-        "Bai, Xiang"
-      ],
-      "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
-      "year": 2026,
-      "volume": "64",
-      "issue": "",
-      "pages": "Art. 4410718",
-      "doi": "10.1109/TGRS.2026.3702032",
-      "abstract": "",
-      "keywords": [
-        "Signal detection",
-        "Labeling",
-        "Modeling",
-        "Training",
-        "Context",
-        "Semantic segmentation",
-        "Bismuth",
-        "Business intelligence",
-        "Computers",
-        "Probability",
-        "Causal inference",
-        "counterfactual",
-        "semantic segmentation",
-        "unsupervised change detection (UCD)"
+        "Soybean",
+        "PROSPECT model",
+        "Hyperspectral",
+        "Physicochemical parameters",
+        "Noise enhancement",
+        "Look-up table constraints"
       ],
       "citations": 0,
       "open_access": false,
@@ -10312,51 +10682,7 @@
         "journal"
       ],
       "matched_queries": [
-        "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "WOS:001795899600005",
-      "title": "DINO-MTP: Topology-Aware Multimodal Fusion of GPS Trajectories and Optical Imagery for Remote Sensing Road Extraction",
-      "authors": [
-        "Yao, Yiming",
-        "Chu, Peng",
-        "Li, Jiayuan",
-        "Wang, Zhen",
-        "You, Zhuhong"
-      ],
-      "journal": "IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING",
-      "year": 2026,
-      "volume": "64",
-      "issue": "",
-      "pages": "Art. 5625718",
-      "doi": "10.1109/TGRS.2026.3695443",
-      "abstract": "",
-      "keywords": [
-        "Roads",
-        "Modeling",
-        "Remote sensing",
-        "Trajectory",
-        "Global Positioning System",
-        "Modules (abstract algebra)",
-        "Pixel",
-        "Visualization",
-        "Accuracy",
-        "Decoding",
-        "Multimodal fusion",
-        "remote sensing",
-        "road extraction",
-        "self-supervised representation",
-        "topology-aware"
-      ],
-      "citations": 0,
-      "open_access": false,
-      "sources": [
-        "journal"
-      ],
-      "matched_queries": [
-        "journal:IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING"
+        "journal:COMPUTERS AND ELECTRONICS IN AGRICULTURE"
       ],
       "is_new": true
     },
@@ -10393,8 +10719,7 @@
       ],
       "matched_queries": [
         "journal:COMPUTERS AND ELECTRONICS IN AGRICULTURE"
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "WOS:001799069600001",
@@ -10652,6 +10977,44 @@
       ]
     },
     {
+      "uid": "WOS:001773537800001",
+      "title": "Seed imaging omics: A bridge from perception to cognition for the future of seed phenotyping",
+      "authors": [
+        "Song, Anran",
+        "Wang, Baiyan",
+        "Guo, Xinyu",
+        "Wen, Weiliang",
+        "Li, Yuankun",
+        "Zhang, Ying",
+        "Wang, Chuanyu",
+        "Chen, Xiaoqian",
+        "Zhao, Chunjiang"
+      ],
+      "journal": "ARTIFICIAL INTELLIGENCE IN AGRICULTURE",
+      "year": 2026,
+      "volume": "16",
+      "issue": "2",
+      "pages": "1164-1180",
+      "doi": "10.1016/j.aiia.2026.04.006",
+      "abstract": "",
+      "keywords": [
+        "Seed",
+        "Phenomics",
+        "Seed imaging omics",
+        "Deep learning",
+        "Multimodal fusion",
+        "Foundation model"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:ARTIFICIAL INTELLIGENCE IN AGRICULTURE"
+      ]
+    },
+    {
       "uid": "WOS:001773537200001",
       "title": "From plots to region: Machine learning-based UAV-satellite integration for mapping fractional coverage of peanut southern blight",
       "authors": [
@@ -10679,6 +11042,44 @@
         "UAV-satellite integration",
         "Machine learning",
         "Precision agriculture"
+      ],
+      "citations": 0,
+      "open_access": false,
+      "sources": [
+        "journal"
+      ],
+      "matched_queries": [
+        "journal:ARTIFICIAL INTELLIGENCE IN AGRICULTURE"
+      ]
+    },
+    {
+      "uid": "WOS:001773536400001",
+      "title": "How large-scale foundation models benefit precision livestock farming: A survey",
+      "authors": [
+        "Tian, Mengxiao",
+        "Guo, Hao",
+        "Long, Chengjiang",
+        "Zhu, Jun",
+        "Zhao, Wenwen",
+        "Li, Hongxi",
+        "Ruchay, Alexey",
+        "Pezzuolo, Andrea",
+        "Li, Bin"
+      ],
+      "journal": "ARTIFICIAL INTELLIGENCE IN AGRICULTURE",
+      "year": 2026,
+      "volume": "16",
+      "issue": "2",
+      "pages": "1109-1132",
+      "doi": "10.1016/j.aiia.2026.04.013",
+      "abstract": "",
+      "keywords": [
+        "Precision livestock farming",
+        "Data management",
+        "Large-scale foundation model",
+        "Large language model",
+        "Large vision model",
+        "Multimodal large language model"
       ],
       "citations": 0,
       "open_access": false,
@@ -11199,8 +11600,7 @@
       ],
       "matched_queries": [
         "journal:FIELD CROPS RESEARCH"
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "WOS:001797835900001",
@@ -11941,6 +12341,36 @@
       ]
     },
     {
+      "uid": "arxiv:2607.08449",
+      "title": "Predicting Viticulture Potential through an Ensemble of U-Net and a Geospatial Foundation Model",
+      "authors": [
+        "Jorge Ignacio Perez",
+        "Hwaai Kang Kee",
+        "Lucas Rassbach"
+      ],
+      "journal": "arXiv",
+      "year": "2026",
+      "volume": "",
+      "issue": "",
+      "pages": "arXiv:2607.08449",
+      "doi": "10.48550/arXiv.2607.08449",
+      "abstract": "",
+      "keywords": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "citations": 0,
+      "open_access": true,
+      "sources": [
+        "arxiv"
+      ],
+      "matched_queries": [
+        "arxiv:Remote sensing for agriculture",
+        "arxiv:Foundation models for Earth observation"
+      ],
+      "is_new": true
+    },
+    {
       "uid": "arxiv:2606.29664",
       "title": "Benchmarking Geospatial Foundation Models for Agriculture Applications",
       "authors": [
@@ -11965,10 +12395,8 @@
         "arxiv"
       ],
       "matched_queries": [
-        "arxiv:Remote sensing for agriculture",
-        "arxiv:Foundation models for Earth observation"
-      ],
-      "is_new": true
+        "arxiv:Remote sensing for agriculture"
+      ]
     },
     {
       "uid": "arxiv:2606.23615",
@@ -12227,42 +12655,6 @@
       ]
     },
     {
-      "uid": "arxiv:2604.24575",
-      "title": "Diffusion Model as a Generalist Segmentation Learner",
-      "authors": [
-        "Haoxiao Wang",
-        "Antao Xiang",
-        "Haiyang Sun",
-        "Peilin Sun",
-        "Changhao Pan",
-        "Yifu Chen",
-        "Minjie Hong",
-        "Weijie Wang",
-        "Shuang Chen",
-        "Yue Chen",
-        "Zhou Zhao"
-      ],
-      "journal": "arXiv",
-      "year": "2026",
-      "volume": "",
-      "issue": "",
-      "pages": "arXiv:2604.24575",
-      "doi": "10.48550/arXiv.2604.24575",
-      "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
-      "citations": 0,
-      "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Remote sensing for agriculture",
-        "arxiv:Diffusion models + remote sensing"
-      ]
-    },
-    {
       "uid": "arxiv:2606.25174",
       "title": "An iterative energy-based multimodal transformer for joint retrieval of wheat soil moisture, leaf area index, and plant height from Sentinel-1 and Sentinel-2 time series",
       "authors": [
@@ -12502,6 +12894,34 @@
       ]
     },
     {
+      "uid": "arxiv:2607.06585",
+      "title": "Pixel-Precise Explainable Stress Indexing: A Semantic Segmentation Framework for Disease Severity Quantification in Field Crops",
+      "authors": [
+        "Raunak Kumar",
+        "Soumyashree Kar"
+      ],
+      "journal": "arXiv",
+      "year": "2026",
+      "volume": "",
+      "issue": "",
+      "pages": "arXiv:2607.06585",
+      "doi": "10.48550/arXiv.2607.06585",
+      "abstract": "",
+      "keywords": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "citations": 0,
+      "open_access": true,
+      "sources": [
+        "arxiv"
+      ],
+      "matched_queries": [
+        "arxiv:Precision agriculture"
+      ],
+      "is_new": true
+    },
+    {
       "uid": "arxiv:2607.02055",
       "title": "Beyond the Performance Illusion: Structure-Aware Stratified Partitioning and Curriculum Distributionally Robust Optimization for Spatially Correlated Domains",
       "authors": [
@@ -12528,8 +12948,7 @@
       ],
       "matched_queries": [
         "arxiv:Precision agriculture"
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "arxiv:2606.26828",
@@ -12644,37 +13063,6 @@
       ]
     },
     {
-      "uid": "arxiv:2606.08714",
-      "title": "Hybrid Neural Network and Conventional Controller Approach for Robust Control of Highly Unstable Systems: Application to Tilt-Rotor Control",
-      "authors": [
-        "Ali Kafili Gavgani",
-        "Amin Talaeizadeh",
-        "Aria Alasty",
-        "Hossein Nejat Pishkenari"
-      ],
-      "journal": "arXiv",
-      "year": "2026",
-      "volume": "",
-      "issue": "",
-      "pages": "arXiv:2606.08714",
-      "doi": "10.6084/m9.figshare.32572083",
-      "abstract": "",
-      "keywords": [
-        "eess.SY",
-        "cs.AI",
-        "cs.LG",
-        "cs.RO"
-      ],
-      "citations": 0,
-      "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Precision agriculture"
-      ]
-    },
-    {
       "uid": "arxiv:2607.00638",
       "title": "Uncertainty-aware tree height change regression",
       "authors": [
@@ -12701,10 +13089,8 @@
         "arxiv"
       ],
       "matched_queries": [
-        "arxiv:GeoAI",
-        "arxiv:Foundation models for Earth observation"
-      ],
-      "is_new": true
+        "arxiv:GeoAI"
+      ]
     },
     {
       "uid": "arxiv:2606.31029",
@@ -12733,8 +13119,7 @@
       ],
       "matched_queries": [
         "arxiv:GeoAI"
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "arxiv:2606.25128",
@@ -12793,8 +13178,7 @@
       ],
       "matched_queries": [
         "arxiv:GeoAI"
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "arxiv:2605.22328",
@@ -13081,8 +13465,7 @@
       ],
       "matched_queries": [
         "arxiv:Diffusion models + remote sensing"
-      ],
-      "is_new": true
+      ]
     },
     {
       "uid": "arxiv:2606.16124",
@@ -13312,6 +13695,289 @@
       ]
     },
     {
+      "uid": "arxiv:2604.24575",
+      "title": "Diffusion Model as a Generalist Segmentation Learner",
+      "authors": [
+        "Haoxiao Wang",
+        "Antao Xiang",
+        "Haiyang Sun",
+        "Peilin Sun",
+        "Changhao Pan",
+        "Yifu Chen",
+        "Minjie Hong",
+        "Weijie Wang",
+        "Shuang Chen",
+        "Yue Chen",
+        "Zhou Zhao"
+      ],
+      "journal": "arXiv",
+      "year": "2026",
+      "volume": "",
+      "issue": "",
+      "pages": "arXiv:2604.24575",
+      "doi": "10.48550/arXiv.2604.24575",
+      "abstract": "",
+      "keywords": [
+        "cs.CV"
+      ],
+      "citations": 0,
+      "open_access": true,
+      "sources": [
+        "arxiv"
+      ],
+      "matched_queries": [
+        "arxiv:Diffusion models + remote sensing"
+      ]
+    },
+    {
+      "uid": "arxiv:2607.09583",
+      "title": "Promptable Concept Segmentation from Above: Evaluating SAM 3's Zero-Shot and One-Shot Capabilities in Remote Sensing",
+      "authors": [
+        "Mohammad Dabaja",
+        "Turgay Celik"
+      ],
+      "journal": "arXiv",
+      "year": "2026",
+      "volume": "",
+      "issue": "",
+      "pages": "arXiv:2607.09583",
+      "doi": "10.48550/arXiv.2607.09583",
+      "abstract": "",
+      "keywords": [
+        "cs.CV"
+      ],
+      "citations": 0,
+      "open_access": true,
+      "sources": [
+        "arxiv"
+      ],
+      "matched_queries": [
+        "arxiv:Foundation models for Earth observation"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "arxiv:2607.08945",
+      "title": "Is sub-metre resolution necessary for cocoa mapping? A landscape-stratified evaluation of very high resolution imagery, decametric Earth Observation inputs, and operational products in Cote d'Ivoire",
+      "authors": [
+        "Kasimir Orlowski",
+        "Filip Sabo",
+        "Michele Meroni",
+        "Astrid Verhegghen",
+        "Mariana Belgiu",
+        "Felix Rembold"
+      ],
+      "journal": "arXiv",
+      "year": "2026",
+      "volume": "",
+      "issue": "",
+      "pages": "arXiv:2607.08945",
+      "doi": "10.48550/arXiv.2607.08945",
+      "abstract": "",
+      "keywords": [
+        "cs.CV"
+      ],
+      "citations": 0,
+      "open_access": true,
+      "sources": [
+        "arxiv"
+      ],
+      "matched_queries": [
+        "arxiv:Foundation models for Earth observation"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "arxiv:2607.08221",
+      "title": "LUMI: Tokenizer-Agnostic LLM-Based Lossless Image Compression",
+      "authors": [
+        "Chris Xing Tian",
+        "Chengkai Wu",
+        "Ziyu Wang",
+        "Rongqun Lin",
+        "Kecheng Chen",
+        "Xiandong Meng",
+        "Haoliang Li",
+        "Shiqi Wang",
+        "Siwei Ma"
+      ],
+      "journal": "arXiv",
+      "year": "2026",
+      "volume": "",
+      "issue": "",
+      "pages": "arXiv:2607.08221",
+      "doi": "10.48550/arXiv.2607.08221",
+      "abstract": "",
+      "keywords": [
+        "cs.CV"
+      ],
+      "citations": 0,
+      "open_access": true,
+      "sources": [
+        "arxiv"
+      ],
+      "matched_queries": [
+        "arxiv:Foundation models for Earth observation"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "arxiv:2607.07758",
+      "title": "Scalable and Trustworthy Earth Observation Foundation Models",
+      "authors": [
+        "Syed Usama Imtiaz",
+        "Mitra Nasr Azadani",
+        "Nasrin Alamdari"
+      ],
+      "journal": "arXiv",
+      "year": "2026",
+      "volume": "",
+      "issue": "",
+      "pages": "arXiv:2607.07758",
+      "doi": "10.48550/arXiv.2607.07758",
+      "abstract": "",
+      "keywords": [
+        "cs.LG"
+      ],
+      "citations": 0,
+      "open_access": true,
+      "sources": [
+        "arxiv"
+      ],
+      "matched_queries": [
+        "arxiv:Foundation models for Earth observation"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "arxiv:2607.03949",
+      "title": "TESSERA v2: Scaling Pixel-wise Earth Foundation Models",
+      "authors": [
+        "Zhengpeng Feng",
+        "Sadiq Jaffer",
+        "Ira Shokar",
+        "Jovana Knezevic",
+        "Mark Elvers",
+        "Clement Atzberger",
+        "Robin Young",
+        "Aneesh Naik",
+        "Niall Robinson",
+        "Andrew Blake",
+        "David Coomes",
+        "Anil Madhavapeddy",
+        "Srinivasan Keshav"
+      ],
+      "journal": "arXiv",
+      "year": "2026",
+      "volume": "",
+      "issue": "",
+      "pages": "arXiv:2607.03949",
+      "doi": "10.48550/arXiv.2607.03949",
+      "abstract": "",
+      "keywords": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "citations": 0,
+      "open_access": true,
+      "sources": [
+        "arxiv"
+      ],
+      "matched_queries": [
+        "arxiv:Foundation models for Earth observation"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "arxiv:2607.03760",
+      "title": "GeoSAM-Lite: A Lightweight Foundation Model for Onboard Remote Sensing Segmentation",
+      "authors": [
+        "Yongcong Wang",
+        "Jie Zhang",
+        "Rui Jiang",
+        "Xubing Yang",
+        "Ting Yun",
+        "Li Zhang"
+      ],
+      "journal": "arXiv",
+      "year": "2026",
+      "volume": "",
+      "issue": "",
+      "pages": "arXiv:2607.03760",
+      "doi": "10.48550/arXiv.2607.03760",
+      "abstract": "",
+      "keywords": [
+        "cs.CV"
+      ],
+      "citations": 0,
+      "open_access": true,
+      "sources": [
+        "arxiv"
+      ],
+      "matched_queries": [
+        "arxiv:Foundation models for Earth observation"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "arxiv:2607.03644",
+      "title": "Moonstone: A Multimodal Foundation Model and Benchmark for Lunar Remote Sensing",
+      "authors": [
+        "Ayush Prasad",
+        "Swarnalee Mazumder"
+      ],
+      "journal": "arXiv",
+      "year": "2026",
+      "volume": "",
+      "issue": "",
+      "pages": "arXiv:2607.03644",
+      "doi": "10.48550/arXiv.2607.03644",
+      "abstract": "",
+      "keywords": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "citations": 0,
+      "open_access": true,
+      "sources": [
+        "arxiv"
+      ],
+      "matched_queries": [
+        "arxiv:Foundation models for Earth observation"
+      ],
+      "is_new": true
+    },
+    {
+      "uid": "arxiv:2607.03298",
+      "title": "A harmonised dataset for Earth system foundation models",
+      "authors": [
+        "Carlos Rodriguez-Pardo",
+        "Massimo Tavoni"
+      ],
+      "journal": "arXiv",
+      "year": "2026",
+      "volume": "",
+      "issue": "",
+      "pages": "arXiv:2607.03298",
+      "doi": "10.48550/arXiv.2607.03298",
+      "abstract": "",
+      "keywords": [
+        "cs.LG",
+        "cs.AI",
+        "econ.GN",
+        "physics.ao-ph"
+      ],
+      "citations": 0,
+      "open_access": true,
+      "sources": [
+        "arxiv"
+      ],
+      "matched_queries": [
+        "arxiv:Foundation models for Earth observation"
+      ],
+      "is_new": true
+    },
+    {
       "uid": "arxiv:2607.02471",
       "title": "Interpretation-Oriented Cloud Removal via Observation-Anchored Residual Flow with Geo-Contextual Alignment",
       "authors": [
@@ -13341,62 +14007,34 @@
       ],
       "matched_queries": [
         "arxiv:Foundation models for Earth observation"
-      ],
-      "is_new": true
+      ]
     },
     {
-      "uid": "arxiv:2607.00417",
-      "title": "EO-VGGT: Orbital Ray-Conditioned 3D Foundation Models for Satellite Multi-View Reconstruction",
+      "uid": "arxiv:2607.05614",
+      "title": "BaFCo: A Document Understanding Benchmark for Complex Bangla Form Comprehension",
       "authors": [
-        "Qiyan Luo",
-        "Yingdong Pi",
-        "Lekang Wen",
-        "Jie Yang",
-        "Xiaoyu Wang",
-        "Haiming Zhang",
-        "Mi Wang"
+        "Abu Tyeb Azad",
+        "Ishita Sur Apan",
+        "Fahim Ahmed",
+        "Sumaiya Karim Katha",
+        "Ezharuddin Jubaer",
+        "Armun Alam",
+        "Pranjal Kumar Nandi",
+        "Amin Ahsan Ali",
+        "Aman Chadha",
+        "Md Mofijul Islam",
+        "AKM Mahbubur Rahman"
       ],
       "journal": "arXiv",
       "year": "2026",
       "volume": "",
       "issue": "",
-      "pages": "arXiv:2607.00417",
-      "doi": "10.48550/arXiv.2607.00417",
+      "pages": "arXiv:2607.05614",
+      "doi": "10.48550/arXiv.2607.05614",
       "abstract": "",
       "keywords": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "citations": 0,
-      "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Foundation models for Earth observation"
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "arxiv:2606.31668",
-      "title": "SAMBA: A Scatter-Guided Masked Bidirectional Mamba Foundation Model for SAR Target Recognition",
-      "authors": [
-        "Ke Wang",
-        "Xiaoyi Pan",
-        "Zhaoyu Gu",
-        "Xiaofeng Ai",
-        "Zhiming Xu",
-        "Feng Zhao",
-        "Shunping Xiao"
-      ],
-      "journal": "arXiv",
-      "year": "2026",
-      "volume": "",
-      "issue": "",
-      "pages": "arXiv:2606.31668",
-      "doi": "10.48550/arXiv.2606.31668",
-      "abstract": "",
-      "keywords": [
+        "cs.CL",
+        "cs.AI",
         "cs.CV"
       ],
       "citations": 0,
@@ -13405,125 +14043,9 @@
         "arxiv"
       ],
       "matched_queries": [
-        "arxiv:Foundation models for Earth observation"
+        "arxiv:LLMs in agriculture"
       ],
       "is_new": true
-    },
-    {
-      "uid": "arxiv:2606.30244",
-      "title": "Semantic-Driven Scale and Spatial Selection for Efficient Cross-Modal Alignment in Referring Remote Sensing Image Segmentation",
-      "authors": [
-        "Kun Li",
-        "Shengxi Gui",
-        "Francesco Nex",
-        "Michael Ying Yang"
-      ],
-      "journal": "arXiv",
-      "year": "2026",
-      "volume": "",
-      "issue": "",
-      "pages": "arXiv:2606.30244",
-      "doi": "10.48550/arXiv.2606.30244",
-      "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
-      "citations": 0,
-      "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Foundation models for Earth observation"
-      ],
-      "is_new": true
-    },
-    {
-      "uid": "arxiv:2606.27018",
-      "title": "On-board Remote-Sensing Foundation Models for Unsupervised Change Detection of Disaster Events",
-      "authors": [
-        "S. Ramírez-Gallego"
-      ],
-      "journal": "arXiv",
-      "year": "2026",
-      "volume": "",
-      "issue": "",
-      "pages": "arXiv:2606.27018",
-      "doi": "10.48550/arXiv.2606.27018",
-      "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "citations": 0,
-      "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Foundation models for Earth observation"
-      ]
-    },
-    {
-      "uid": "arxiv:2606.25312",
-      "title": "LEVIRDet: A Million-Scale 159-Category Dataset and Foundation Model for Universal Remote Sensing Object Detection",
-      "authors": [
-        "Qinzhe Yang",
-        "Dongyu Wang",
-        "Haohan Niu",
-        "Jia Xu",
-        "Zhenwei Shi",
-        "Zhengxia Zou"
-      ],
-      "journal": "arXiv",
-      "year": "2026",
-      "volume": "",
-      "issue": "",
-      "pages": "arXiv:2606.25312",
-      "doi": "10.48550/arXiv.2606.25312",
-      "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
-      "citations": 0,
-      "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Foundation models for Earth observation"
-      ]
-    },
-    {
-      "uid": "arxiv:2606.24120",
-      "title": "Flood Mapping from RGB imagery using a Vision Foundation Model",
-      "authors": [
-        "Vladyslav Polushko",
-        "Tilman Bucher",
-        "Ronald Rösch",
-        "Thomas März",
-        "Markus Rauhut",
-        "Andreas Weinmann"
-      ],
-      "journal": "arXiv",
-      "year": "2026",
-      "volume": "",
-      "issue": "",
-      "pages": "arXiv:2606.24120",
-      "doi": "10.48550/arXiv.2606.24120",
-      "abstract": "",
-      "keywords": [
-        "cs.CV",
-        "eess.IV"
-      ],
-      "citations": 0,
-      "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:Foundation models for Earth observation"
-      ]
     },
     {
       "uid": "arxiv:2606.10803",
@@ -13770,37 +14292,6 @@
       "issue": "",
       "pages": "arXiv:2604.17278",
       "doi": "10.48550/arXiv.2604.17278",
-      "abstract": "",
-      "keywords": [
-        "cs.CV"
-      ],
-      "citations": 0,
-      "open_access": true,
-      "sources": [
-        "arxiv"
-      ],
-      "matched_queries": [
-        "arxiv:LLMs in agriculture"
-      ]
-    },
-    {
-      "uid": "arxiv:2604.09920",
-      "title": "Does Your VFM Speak Plant? The Botanical Grammar of Vision Foundation Models for Object Detection",
-      "authors": [
-        "Lars Lundqvist",
-        "Earl Ranario",
-        "Hamid Kamangir",
-        "Heesup Yun",
-        "Christine Diepenbrock",
-        "Brian N. Bailey",
-        "J. Mason Earles"
-      ],
-      "journal": "arXiv",
-      "year": "2026",
-      "volume": "",
-      "issue": "",
-      "pages": "arXiv:2604.09920",
-      "doi": "10.48550/arXiv.2604.09920",
       "abstract": "",
       "keywords": [
         "cs.CV"
